@@ -1,0 +1,393 @@
+{
+  "brand": {
+    "name": "Bia Munaretto",
+    "founderName": "Bia Munaretto",
+    "razaoSocial": "[FALTA: Razão Social]",
+    "cnpj": "[FALTA: CNPJ]",
+    "whatsapp": "5579988342043",
+    "supportEmail": "contato.biamunaretto@gmail.com",
+    "domain": "biamunaretto.com.br",
+    "year": 2026
+  },
+
+  "seo": {
+    "title": "A Jornada do Autoamor — Bia Munaretto",
+    "description": "Uma jornada de 12 meses para aprender a se colocar em primeiro lugar — sem culpa, sem ansiedade, sem abrir mão de quem você ama.",
+    "ogImage": "/images/og.jpg"
+  },
+
+  "tracking": {
+    "gtmId": "[FALTA: GTM ID]"
+  },
+
+  "cta": {
+    "text": "Quero começar minha jornada",
+    "shortText": "Começar",
+    "link": "#oferta",
+    "checkoutPlatform": "Hotmart"
+  },
+
+  "header": {
+    "navItems": [
+      { "label": "o método", "href": "#metodo" },
+      { "label": "depoimentos", "href": "#depoimentos" },
+      { "label": "os produtos", "href": "#oferta" }
+    ]
+  },
+
+  "hero": {
+    "eyebrow": "Psicologia · Corpo · Espiritualidade",
+    "headline": "Você se doa para todos — e ainda assim nunca é suficiente para você mesma.",
+    "subheadline": "Um método, três formas de entrar. Do livro ao acompanhamento completo de 12 meses — escolha o próximo passo da sua jornada.",
+    "image": "/images/hero.jpg",
+    "imageAlt": "Bia Munaretto, psicóloga e mentora de autoamor",
+    "proofNumber": "+14 mil",
+    "proofLabel": "mulheres já viveram essa transformação",
+    "urgency": "Inscrições abertas · acesso imediato ao módulo 1",
+    "microcopy": "7 dias para experimentar. Não amou? Devolvemos tudo."
+  },
+
+  "kpis": {
+    "show": true,
+    "items": [
+      { "num": "+14k", "label": "Mulheres transformadas" },
+      { "num": "12", "label": "Meses de jornada" },
+      { "num": "8", "label": "Módulos ao vivo por ano" },
+      { "num": "7", "label": "Dias de garantia" }
+    ]
+  },
+
+  "manifesto": {
+    "eyebrow": "Carta aberta",
+    "title": "Você não está quebrada. Você está programada.",
+    "paragraphs": [
+      "Desde pequena te ensinaram que seu valor depende de quanto você doa, serve e está disponível para o outro. Esse ensinamento não foi uma escolha sua — foi uma programação geracional, instalada muito antes de você ter palavras para questioná-la.",
+      "Então você fez tudo certo. Cuidou de todo mundo, sustentou o emocional de todos, deu conta de tudo. E mesmo assim — no silêncio da noite — sentiu um vazio que nenhuma conquista consegue preencher.",
+      "Você já tentou terapia, cursos, meditação. Ajudou. Mas algo ficou intocado. Porque a programação não vive só na mente. Ela vive no corpo, na ancestralidade, no campo energético. E é exatamente aí que o Método Trikona intervém."
+    ],
+    "question": "Quando foi a última vez que você se escolheu?"
+  },
+
+  "recognize": {
+    "eyebrow": "Você se reconhece?",
+    "title": "Talvez você esteja sentindo isso há mais tempo do que admite",
+    "items": [
+      {
+        "top": "Acordar já exausta, antes mesmo do dia começar.",
+        "bottom": "como se descansar fosse um luxo que você não pode."
+      },
+      {
+        "top": "Cuidar de todo mundo — e sentir culpa quando tenta cuidar de si.",
+        "bottom": "porque aprenderam que suas necessidades sempre podem esperar."
+      },
+      {
+        "top": "Repetir os mesmos padrões em relacionamentos, no dinheiro, na rotina.",
+        "bottom": "e não entender por que mesmo sabendo, você não consegue mudar."
+      },
+      {
+        "top": "Dizer 'tá tudo bem' sem nem checar se está.",
+        "bottom": "porque parar de performar dá mais medo do que continuar."
+      },
+      {
+        "top": "Sentir que existe uma versão sua mais leve, mais livre, mais inteira.",
+        "bottom": "mas não saber como chegar até ela."
+      },
+      {
+        "top": "Procurar respostas em todo lugar e ainda assim sentir que falta algo.",
+        "bottom": "porque o que falta não é mais conhecimento — é prática e pertencimento."
+      }
+    ]
+  },
+
+  "founder": {
+    "eyebrow": "Quem te guia nessa jornada",
+    "name": "Bia Munaretto",
+    "image": "/images/founder.jpg",
+    "imageAlt": "Bia Munaretto, psicóloga e mulher tântrica",
+    "bio": [
+      "Aos 20 anos, eu vivia o que hoje ensino a transformar. Bem-sucedida na aparência, vazia por dentro. Libido zerada, corpo desconectado, relações que não me sustentavam.",
+      "A virada chegou como uma frase que aterrissou no momento certo: onde está o seu maior nó, está o seu maior propósito. Naquele instante entendi que o que mais me envergonhava era exatamente o que me tornaria singular.",
+      "Hoje sou psicóloga, mulher tântrica, terapeuta integrativa e fundadora da Jornada do Autoamor. Em 11 anos de trajetória, desenvolvi o Método Trikona — a única abordagem que integra psicologia, corpo e espiritualidade simultaneamente, atuando na raiz da programação, não nos sintomas."
+    ],
+    "signature": "— Bia Munaretto",
+    "mediaLogos": []
+  },
+
+  "ctaBands": [
+    {
+      "title": "Já sente que é hora?",
+      "subtitle": "Você não chegou até aqui por acaso."
+    },
+    {
+      "title": "Pronta para colocar você em primeiro lugar?",
+      "subtitle": "A jornada começa assim que você confirmar sua entrada."
+    }
+  ],
+
+  "promise": {
+    "eyebrow": "No fim, você vai...",
+    "title": "Voltar para casa — para dentro de você",
+    "items": [
+      {
+        "verb": "Acordar",
+        "object": "com tempo e leveza",
+        "reframe": "sem a culpa de estar cuidando de você antes de cuidar de todo mundo"
+      },
+      {
+        "verb": "Falar 'não'",
+        "object": "sem ansiedade",
+        "reframe": "e sentir que escolher você não é egoísmo — é coragem"
+      },
+      {
+        "verb": "Reconhecer",
+        "object": "e quebrar os padrões que te prendem",
+        "reframe": "sem precisar passar anos no mesmo ciclo pra entender o que muda"
+      },
+      {
+        "verb": "Ritualizar",
+        "object": "a sua rotina",
+        "reframe": "pra que cuidar de si vire prazer, não mais uma tarefa da lista"
+      },
+      {
+        "verb": "Sentir",
+        "object": "que você pertence a um lugar",
+        "reframe": "rodeada de mulheres que entendem exatamente o que você está vivendo"
+      },
+      {
+        "verb": "Olhar",
+        "object": "para o espelho com ternura",
+        "reframe": "e reconhecer a mulher que sempre esteve esperando por você"
+      }
+    ]
+  },
+
+  "method": {
+    "eyebrow": "O método",
+    "title": "A geometria da transformação",
+    "name": "Método Trikona",
+    "summary": "Trikona é o triângulo sagrado em sânscrito — símbolo da força feminina primordial. Três vértices em equilíbrio, porque a programação se instalou nos três ao mesmo tempo.",
+    "pillars": [
+      {
+        "name": "Mente",
+        "description": "Psicologia cognitiva, hipnose ericksoniana e PNL para nomear e reprogramar os padrões e crenças que operam abaixo do nível consciente."
+      },
+      {
+        "name": "Corpo",
+        "description": "Práticas bioenergéticas e tântricas para liberar o que ficou preso no corpo — porque a programação não vive só na cabeça."
+      },
+      {
+        "name": "Campo",
+        "description": "Constelação sistêmica, xamanismo e espiritualidade aplicada para romper padrões ancestrais e reconectar com sua força vital feminina."
+      }
+    ]
+  },
+
+  "curriculum": {
+    "eyebrow": "Dentro da jornada",
+    "title": "12 meses. 8 módulos. Uma mulher diferente.",
+    "modules": [
+      { "name": "Gestão do Tempo e Autoamor", "duration": "Módulo 1", "format": "Eliminar culpa · organizar a casa interior" },
+      { "name": "Rompendo Correntes Familiares", "duration": "Módulo 2", "format": "Cura de feridas parentais · libertação de padrões herdados" },
+      { "name": "Maturidade Emocional", "duration": "Módulo 3", "format": "Gestão das emoções · limites saudáveis · integração feminino/masculino" },
+      { "name": "Dinheiro, Poder e Independência", "duration": "Módulo 4", "format": "Ferramentas financeiras · conexão com a abundância" },
+      { "name": "Autoestima e Sexualidade", "duration": "Módulo 5", "format": "Sexualidade sagrada · cura de feridas do passado" },
+      { "name": "Relacionamentos Amorosos", "duration": "Módulo 6", "format": "Liberação de padrões · atração de amor saudável" },
+      { "name": "Propósito e Manifestação", "duration": "Módulo 7", "format": "Escrita criativa · visualização · criação de realidade" },
+      { "name": "ALMA: Práticas Espirituais Diárias", "duration": "Módulo 8", "format": "Intuição · rituais · sonhos · guias espirituais" }
+    ]
+  },
+
+  "bonus": {
+    "eyebrow": "Bônus exclusivos",
+    "title": "Presentes para a sua jornada",
+    "items": [
+      {
+        "name": "Jornada do Autoamor — Iniciação",
+        "description": "Guia digital de 21 dias para você começar a transformação antes mesmo de entrar no programa.",
+        "valueOld": "467"
+      },
+      {
+        "name": "Livro Físico — 365 Mensagens",
+        "description": "Um oráculo para o ano todo: mensagens diárias e cartas para acompanhar cada fase da sua jornada.",
+        "valueOld": "157"
+      },
+      {
+        "name": "Caderno de Exercícios",
+        "description": "Material físico para registrar, refletir e acompanhar sua evolução ao longo dos 12 meses.",
+        "valueOld": "107"
+      },
+      {
+        "name": "Guia da Solidão Consciente",
+        "description": "Um convite para aprender a estar consigo mesma — com presença, não com vazio.",
+        "valueOld": "97"
+      }
+    ]
+  },
+
+  "testimonials": {
+    "eyebrow": "Mulheres como você",
+    "title": "O que dizem as mulheres que já passaram por aqui",
+    "items": [
+      {
+        "name": "Ingridy Lucena",
+        "city": "Brasil",
+        "image": "/images/dep/dep1.jpg",
+        "quote": "Aprendi a me priorizar sem culpa. Foi a primeira vez na minha vida que senti que cuidar de mim não era egoísmo."
+      },
+      {
+        "name": "Larissa Pablina",
+        "city": "Brasil",
+        "image": "/images/dep/dep2.jpg",
+        "quote": "Cheguei exausta de tentar dar conta de tudo. Hoje tenho rotina, limites e, pela primeira vez, tempo pra mim."
+      },
+      {
+        "name": "Roberta Souza",
+        "city": "Brasil",
+        "image": "/images/dep/dep3.jpg",
+        "quote": "Mais do que um programa, encontrei uma comunidade. Mulheres que me entendem — e que viraram minhas irmãs de alma."
+      },
+      {
+        "name": "Vitória Heman",
+        "city": "Brasil",
+        "image": "/images/dep/dep4.jpg",
+        "quote": "Quebrei padrões que estavam na minha família há gerações. Não sabia que era possível mudar tão profundamente."
+      }
+    ]
+  },
+
+  "offer": {
+    "eyebrow": "Escolha seu próximo passo",
+    "title": "Onde a sua jornada começa",
+    "subtitle": "Três portas. Cada uma certa para um momento diferente. Todas levam para o mesmo lugar: você.",
+    "products": [
+      {
+        "tag": "Comece por aqui",
+        "featured": false,
+        "image": "/images/produtos/livro.jpg",
+        "name": "O Livro",
+        "subtitle": "A Jornada do Autoamor",
+        "description": "365 mensagens diárias como bússola — combinando Psicologia, Constelação Familiar, Tantra e Espiritualidade. Um encontro com você mesma todos os dias do ano.",
+        "includes": [
+          "365 reflexões diárias",
+          "Exercícios práticos de autoamor",
+          "Âncora espiritual para o cotidiano",
+          "Entrega em todo o Brasil"
+        ],
+        "priceOld": "157",
+        "priceMonthly": null,
+        "priceCash": "97",
+        "cta": "Quero meu livro",
+        "link": "[FALTA: link do livro]"
+      },
+      {
+        "tag": "21 dias de despertar",
+        "featured": false,
+        "image": "/images/produtos/iniciacao.jpg",
+        "name": "A Iniciação",
+        "subtitle": "Jornada do Autoamor — 21 dias",
+        "description": "Programa online completo para romper ciclos em 3 semanas. Ciência, espiritualidade e práticas energéticas — 10 a 25 minutos por dia, no seu ritmo.",
+        "includes": [
+          "Aulas gravadas (10–25 min/dia)",
+          "3 meditações guiadas + 3 tântricas",
+          "Guia de Solidão Consciente",
+          "Caderno terapêutico imprimível",
+          "Acesso por 1 ano"
+        ],
+        "priceOld": "497",
+        "priceMonthly": "30,54",
+        "priceCash": "297",
+        "cta": "Quero a Iniciação",
+        "link": "[FALTA: link da iniciação]"
+      },
+      {
+        "tag": "A jornada completa",
+        "featured": true,
+        "image": "/images/produtos/aprofundamento.jpg",
+        "name": "O Aprofundamento",
+        "subtitle": "Jornada do Autoamor — 12 meses",
+        "description": "Acompanhamento terapêutico em grupo por 12 meses. Encontros ao vivo, 40+ aulas gravadas, meditações tântricas, comunidade ativa e a Iniciação como bônus.",
+        "includes": [
+          "40+ aulas gravadas (Mente, Corpo, Alma)",
+          "Encontros ao vivo mensais (sextas, 19h–22h30)",
+          "3 meditações tântricas exclusivas",
+          "Comunidade Irmãs de Alma no WhatsApp",
+          "Caderno terapêutico físico",
+          "Bônus: A Iniciação completa (R$497)",
+          "Acesso por 1 ano"
+        ],
+        "priceOld": "2467",
+        "priceMonthly": "153,91",
+        "priceCash": "1397",
+        "cta": "Quero o Aprofundamento",
+        "link": "[FALTA: link do aprofundamento]"
+      }
+    ]
+  },
+
+  "guarantee": {
+    "eyebrow": "Você não tem nada a perder",
+    "title": "Garantia incondicional de 7 dias",
+    "days": 7,
+    "text": "Se nos primeiros 7 dias você sentir que esse caminho não é para você, devolvemos 100% do investimento. Sem perguntas, sem burocracia, sem julgamento.",
+    "comfort": "É só responder o e-mail de suporte. O reembolso é processado em até 5 dias úteis."
+  },
+
+  "faq": {
+    "eyebrow": "Perguntas honestas",
+    "title": "Algumas dúvidas que você pode ter",
+    "items": [
+      {
+        "question": "Trabalho fora e tenho filhos pequenos. Vou conseguir acompanhar?",
+        "answer": "O programa foi feito exatamente para você. Os encontros ao vivo acontecem às sextas, das 19h às 22h30 — e tudo é gravado. Você acessa no seu ritmo, nos horários que fizerem sentido pra sua vida."
+      },
+      {
+        "question": "Já fiz outras coisas que não funcionaram. Por que essa seria diferente?",
+        "answer": "Porque aqui o foco não é mais informação — é transformação real. Combinamos psicologia, práticas corporais e espiritualidade em um método único. E você tem uma comunidade ativa ao seu lado, não está sozinha no processo."
+      },
+      {
+        "question": "Preciso participar dos encontros ao vivo?",
+        "answer": "Não. Tudo é gravado e disponibilizado para assistir quando quiser, com acesso por 1 ano completo."
+      },
+      {
+        "question": "Nunca fiz nada parecido. Funciona para iniciantes?",
+        "answer": "Sim. O programa foi desenhado para receber mulheres em qualquer estágio — seja sua primeira jornada de autoconhecimento ou uma continuação de um caminho já iniciado."
+      },
+      {
+        "question": "Isso tem conteúdo religioso?",
+        "answer": "Não. As práticas espirituais são baseadas em tradições terapêuticas e formação profissional — sem vinculação a nenhuma religião específica. Você pode ser de qualquer fé ou de nenhuma."
+      },
+      {
+        "question": "O que é meditação tântrica? Tem nudez?",
+        "answer": "Não há nudez nem conteúdo sexual explícito. A meditação tântrica usada aqui é uma filosofia que trabalha com respiração, som e movimento para elevar a energia vital e integrar as polaridades internas."
+      },
+      {
+        "question": "Quais as formas de pagamento?",
+        "answer": "Cartão de crédito (parcelado em até 12x de R$154) ou PIX à vista (R$1.397). Pagamento seguro."
+      },
+      {
+        "question": "Como recebo o acesso?",
+        "answer": "Em até 5 minutos após a confirmação do pagamento, você recebe o e-mail com seus dados de acesso. O módulo 1 fica disponível imediatamente."
+      }
+    ]
+  },
+
+  "letter": {
+    "paragraphs": [
+      "Querida,",
+      "Se você chegou até aqui, é porque alguma coisa em você reconheceu o convite. E isso já é suficiente.",
+      "Eu não vou te dizer que é fácil. Mas vou te dizer que é possível. Eu sei — porque vivi primeiro.",
+      "Quando uma mulher se cura, ela não se cura sozinha. Ela liberta as que vieram antes e abre caminho para as que vêm depois.",
+      "Quando se sentir pronta, eu estarei te esperando do outro lado dessa escolha."
+    ],
+    "signature": "Com amor,",
+    "signatureName": "Bia Munaretto"
+  },
+
+  "footer": {
+    "links": [
+      { "label": "Termos de uso", "href": "/termos" },
+      { "label": "Política de privacidade", "href": "/privacidade" },
+      { "label": "Suporte", "href": "mailto:contato.biamunaretto@gmail.com" }
+    ]
+  }
+}

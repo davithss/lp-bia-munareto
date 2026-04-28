@@ -1,0 +1,97 @@
+---
+import "../styles/global.css";
+import content from "../data/content.json";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = content.seo.title, description = content.seo.description } = Astro.props;
+const ogImage = content.seo.ogImage;
+const gtmId = content.tracking?.gtmId;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Fontes — substituir aqui se mudar o combo tipográfico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Tag Manager (configure GTM_ID em content.json > tracking) -->
+    {gtmId && gtmId !== "GTM-XXXXXX" && (
+      <script is:inline define:vars={{ gtmId }}>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer',gtmId);
+      </script>
+    )}
+  </head>
+  <body>
+    {gtmId && gtmId !== "GTM-XXXXXX" && (
+      <noscript>
+        <iframe
+          src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        ></iframe>
+      </noscript>
+    )}
+
+    <slot />
+
+    <!-- Sticky CTA mobile -->
+    <div class="sticky-cta" id="stickyCta">
+      <a href={content.cta.link} class="cta">{content.cta.text}</a>
+    </div>
+
+    <script is:inline>
+      (function() {
+        const sticky = document.getElementById('stickyCta');
+        if (!sticky) return;
+        let visible = false;
+        window.addEventListener('scroll', function() {
+          const shouldShow = window.scrollY > window.innerHeight * 0.6;
+          if (shouldShow !== visible) {
+            sticky.classList.toggle('visible', shouldShow);
+            visible = shouldShow;
+          }
+        }, { passive: true });
+
+        // Track CTA clicks no GTM
+        document.querySelectorAll('a.cta').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            if (window.dataLayer) {
+              window.dataLayer.push({ event: 'cta_click', cta_text: btn.innerText });
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

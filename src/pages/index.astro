@@ -1,0 +1,404 @@
+---
+import Layout from "../layouts/Layout.astro";
+import content from "../data/content.json";
+
+const { brand, cta, header, hero, kpis, manifesto, recognize, founder, ctaBands, promise, method, curriculum, bonus, testimonials, offer, guarantee, faq, letter, footer } = content;
+
+// Numeração romana auxiliar (i, ii, iii, iv, v, vi, vii, viii, ix, x)
+const roman = ["i","ii","iii","iv","v","vi","vii","viii","ix","x"];
+---
+
+<Layout>
+  <!-- ════════════════════════════════════════════════════════════════
+       00 · HEADER
+       ════════════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="container row">
+      <a href="/" class="logo">{brand.name}</a>
+      <nav>
+        {header.navItems.map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))}
+        <a href={cta.link} class="cta cta-mini">{cta.shortText}</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       01 · HERO
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">{hero.eyebrow}</div>
+        <h1>{hero.headline}</h1>
+        <p class="sub">{hero.subheadline}</p>
+        <div class="proof">
+          <strong>{hero.proofNumber}</strong>
+          <span>{hero.proofLabel}</span>
+        </div>
+        <div>
+          {hero.urgency && <p class="cta-urgency">{hero.urgency}</p>}
+          <a href={cta.link} class="cta">{cta.text}</a>
+          {hero.microcopy && <p class="cta-microcopy">{hero.microcopy}</p>}
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src={hero.image} alt={hero.imageAlt} loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       02 · KPIs
+       ════════════════════════════════════════════════════════════════ -->
+  {kpis.show && (
+    <section class="kpis">
+      <div class="container">
+        <div class="grid">
+          {kpis.items.map((kpi) => (
+            <div>
+              <div class="num">{kpi.num}</div>
+              <div class="lbl">{kpi.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ════════════════════════════════════════════════════════════════
+       03 · MANIFESTO
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="manifesto">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <div class="eyebrow">{manifesto.eyebrow}</div>
+          <h2>{manifesto.title}</h2>
+        </div>
+        <div class="body">
+          {manifesto.paragraphs.map((p) => <p>{p}</p>)}
+          <p class="question">{manifesto.question}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       04 · VOCÊ SE RECONHECE
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="recognize">
+    <div class="container">
+      <div class="header">
+        <div class="eyebrow">{recognize.eyebrow}</div>
+        <h2>{recognize.title}</h2>
+      </div>
+      <div class="list">
+        {recognize.items.map((item) => (
+          <div class="item">
+            <div class="top">{item.top}</div>
+            <div class="bottom">— {item.bottom}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       05 · FUNDADORA
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="founder">
+    <div class="container">
+      <div class="grid">
+        <img src={founder.image} alt={founder.imageAlt} loading="lazy" />
+        <div>
+          <div class="eyebrow">{founder.eyebrow}</div>
+          <h2>{founder.name}</h2>
+          <div class="bio">
+            {founder.bio.map((p) => <p>{p}</p>)}
+          </div>
+          <div class="signature">{founder.signature}</div>
+          {founder.mediaLogos && founder.mediaLogos.length > 0 && (
+            <div class="media-logos">
+              {founder.mediaLogos.map((logo) => (
+                <img src={logo.image} alt={logo.name} />
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       06 · CTA BAND
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>{ctaBands[0].title}</h2>
+      <p>{ctaBands[0].subtitle}</p>
+      <a href={cta.link} class="cta">{cta.text}</a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       07 · PROMESSA
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="promise">
+    <div class="container">
+      <div class="header">
+        <div class="eyebrow">{promise.eyebrow}</div>
+        <h2>{promise.title}</h2>
+      </div>
+      <div class="list">
+        {promise.items.map((item, i) => (
+          <div class="item">
+            <div class="icon">{roman[i]}</div>
+            <div class="text">
+              <strong>{item.verb}</strong> {item.object}
+              <em>— {item.reframe}</em>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       08 · MÉTODO
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="method" id="metodo">
+    <div class="container">
+      <div class="header">
+        <div class="eyebrow">{method.eyebrow}</div>
+        <h2>{method.title}</h2>
+        <div class="name">{method.name}</div>
+        <p>{method.summary}</p>
+      </div>
+      <div class="trikona">
+        {method.pillars.map((pillar, i) => (
+          <div class="pillar">
+            <div class="num">{roman[i]}</div>
+            <h3>{pillar.name}</h3>
+            <p>{pillar.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       09 · CURRÍCULO
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="curriculum">
+    <div class="container">
+      <div class="grid">
+        <div class="device">
+          <img src="/images/mockup.jpg" alt="Materiais da Jornada do Autoamor" loading="lazy" style="width:100%;border-radius:8px;display:block;" />
+        </div>
+        <div>
+          <div class="eyebrow">{curriculum.eyebrow}</div>
+          <h2>{curriculum.title}</h2>
+          <div class="modules">
+            {curriculum.modules.map((mod, i) => (
+              <div class="module">
+                <div class="n">{roman[i]}</div>
+                <div class="info">
+                  <strong>{mod.name}</strong>
+                  <span>{mod.duration} · {mod.format}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       10 · BÔNUS
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="bonus">
+    <div class="container">
+      <div class="header">
+        <div class="eyebrow" style="color: var(--ouro);">{bonus.eyebrow}</div>
+        <h2>{bonus.title}</h2>
+      </div>
+      <div class="grid">
+        {bonus.items.map((item, i) => (
+          <div class="card">
+            <span class="label">Bônus {roman[i]}</span>
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+            <p>
+              <span class="price-old">de R$ {item.valueOld}</span>
+              <span class="price-new">grátis</span>
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       11 · CTA BAND 2
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>{ctaBands[1].title}</h2>
+      <p>{ctaBands[1].subtitle}</p>
+      <a href={cta.link} class="cta">{cta.text}</a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       12 · DEPOIMENTOS
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="header">
+        <div class="eyebrow">{testimonials.eyebrow}</div>
+        <h2>{testimonials.title}</h2>
+      </div>
+      <div class="grid">
+        {testimonials.items.map((dep) => (
+          <div class="card">
+            <div class="top">
+              <img src={dep.image} alt={dep.name} loading="lazy" />
+              <div class="name">
+                <strong>{dep.name}</strong>
+                <span>{dep.city}</span>
+              </div>
+            </div>
+            <blockquote>{dep.quote}</blockquote>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       13 · PRODUTOS — ESCADA DE VALOR
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="offer" id="oferta">
+    <div class="container">
+      <div class="offer-header">
+        <div class="eyebrow">{offer.eyebrow}</div>
+        <h2>{offer.title}</h2>
+        <p class="offer-subtitle">{offer.subtitle}</p>
+      </div>
+      <div class="products-grid">
+        {offer.products.map((product) => (
+          <div class={`product-card ${product.featured ? 'featured' : ''}`}>
+            {product.featured && <span class="featured-badge">Mais escolhido</span>}
+            <div class="product-tag">{product.tag}</div>
+            <div class="product-img">
+              <img src={product.image} alt={product.name} loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">{product.name}</h3>
+              <p class="product-sub">{product.subtitle}</p>
+              <p class="product-desc">{product.description}</p>
+              <ul class="product-includes">
+                {product.includes.map((item) => <li>{item}</li>)}
+              </ul>
+              <div class="product-price">
+                <span class="p-old">de R$ {product.priceOld}</span>
+                {product.priceMonthly && (
+                  <div class="p-monthly">
+                    <span class="p-label">12x de</span>
+                    <strong>R$ {product.priceMonthly}</strong>
+                  </div>
+                )}
+                <div class="p-cash">
+                  {product.priceMonthly ? 'ou ' : ''}<strong>R$ {product.priceCash}</strong> à vista
+                </div>
+              </div>
+              <a href={product.link} class="cta product-cta">{product.cta}</a>
+              <p class="cta-microcopy">7 dias de garantia · pagamento seguro</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       14 · GARANTIA
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="guarantee">
+    <div class="container">
+      <div class="grid">
+        <div class="seal">
+          <div>
+            <strong>{guarantee.days}</strong>
+            <span>dias de garantia</span>
+          </div>
+        </div>
+        <div>
+          <div class="eyebrow">{guarantee.eyebrow}</div>
+          <h2>{guarantee.title}</h2>
+          <p>{guarantee.text}</p>
+          <p style="margin-top: 16px; font-style: italic; color: var(--muted);">
+            {guarantee.comfort}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       15 · FAQ
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="faq">
+    <div class="container">
+      <div class="header">
+        <div class="eyebrow">{faq.eyebrow}</div>
+        <h2>{faq.title}</h2>
+      </div>
+      <div class="list">
+        {faq.items.map((item) => (
+          <details>
+            <summary>{item.question}</summary>
+            <div class="answer">{item.answer}</div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       16 · CARTA FINAL
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="letter">
+    <div class="container">
+      <div class="box">
+        {letter.paragraphs.map((p) => <p>{p}</p>)}
+        <div class="signature">{letter.signature}</div>
+        <p class="signature-name">{letter.signatureName}</p>
+        <a href={cta.link} class="cta">{cta.text}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════
+       17 · FOOTER
+       ════════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="logo">{brand.name}</div>
+        <nav>
+          {footer.links.map((link) => (
+            <a href={link.href}>{link.label}</a>
+          ))}
+          <a href={`https://wa.me/${brand.whatsapp}`}>WhatsApp</a>
+        </nav>
+      </div>
+      <div class="legal">
+        © {brand.year} {brand.razaoSocial} · CNPJ {brand.cnpj} · Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+</Layout>
