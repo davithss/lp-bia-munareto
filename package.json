@@ -11,6 +11,6 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "astro": "^4.16.0"
+    "astro": "^6.1.10"
   }
 }
