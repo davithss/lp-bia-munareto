@@ -1,22 +1,22 @@
 /* ════════════════════════════════════════════════════════════════════
-   Tokens de design — Bia Munaretto · Mago + Tântrico + Editorial Escuro
-   Inspiração: Nicole Freya / Academia Freya
+   Tokens de design — Bia Munaretto · Editorial claro com destaque vermelho
+   Direção: fundo branco, texto preto e ênfases em vermelho elegante
    ════════════════════════════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* ── Paleta escura editorial ──────────────────────────────── */
-  --profundo:   #0B0705;   /* fundo principal (60%) — quase preto quente */
-  --noite:      #160C08;   /* cards, seções alternadas */
-  --vinho:      #1E0C10;   /* seções de destaque */
-  --cobre:      #C47B3A;   /* acento principal (10%) — CTAs, ícones */
-  --ouro:       #D4A55A;   /* headlines curtas, ornamentos, selos */
-  --ouro-palido:#F0D49A;   /* sub-headlines, destaques em texto */
-  --creme:      #F2E8DC;   /* texto principal */
-  --creme-soft: #C8B9A8;   /* texto secundário / muted */
-  --bordô:      #7A2530;   /* bordas de acento, separadores */
-  --line:       rgba(212,165,90,0.18); /* bordas finas (ouro baixa opacidade) */
+  /* ── Paleta editorial clara ───────────────────────────────── */
+  --profundo:   #FFFFFF;   /* fundo principal */
+  --noite:      #FAF7F4;   /* seções alternadas */
+  --vinho:      #FFF1F1;   /* seções de destaque suave */
+  --cobre:      #B11226;   /* acento vermelho secundário */
+  --ouro:       #C5162E;   /* destaque principal */
+  --ouro-palido:#E2384E;   /* hover / destaque secundário */
+  --creme:      #111111;   /* texto principal */
+  --creme-soft: #3A3A3A;   /* texto secundário */
+  --bordô:      #E7B4BB;   /* bordas de acento */
+  --line:       rgba(17,17,17,0.12); /* bordas finas */
 
   /* ── Tipografia ───────────────────────────────────────────── */
   --serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
@@ -43,6 +43,15 @@ body {
   background: var(--profundo);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+strong, b, em, mark {
+  color: var(--ouro);
+}
+
+mark {
+  background: transparent;
+  font-weight: 600;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -91,7 +100,7 @@ section { padding: 112px 0; }
 .cta {
   display: inline-block;
   background: var(--ouro);
-  color: var(--profundo);
+  color: #FFFFFF;
   padding: 20px 44px;
   font-family: var(--sans);
   font-weight: 700;
@@ -119,7 +128,7 @@ section { padding: 112px 0; }
   border: 1px solid var(--ouro);
   border-radius: 0;
 }
-.cta-mini:hover { background: var(--ouro); color: var(--profundo); border-bottom: none; }
+.cta-mini:hover { background: var(--ouro); color: #FFFFFF; border-bottom: none; }
 
 .cta-microcopy { font-size: 13px; color: var(--creme-soft); margin-top: 14px; }
 .cta-urgency {
@@ -133,7 +142,7 @@ section { padding: 112px 0; }
 
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(11,7,5,0.88);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--line);
   padding: 16px 0;
@@ -306,12 +315,12 @@ section { padding: 112px 0; }
   max-width: 960px; margin: 0 auto;
 }
 .recognize .item {
-  background: rgba(255,255,255,0.025);
+  background: rgba(17,17,17,0.025);
   padding: 32px 36px;
   border-left: 2px solid var(--ouro);
   transition: background 200ms;
 }
-.recognize .item:hover { background: rgba(255,255,255,0.045); }
+.recognize .item:hover { background: rgba(197,22,46,0.06); }
 .recognize .item .top {
   font-family: var(--serif); font-size: 20px;
   color: var(--creme); font-weight: 300; line-height: 1.4;
@@ -466,12 +475,12 @@ section { padding: 112px 0; }
 .curriculum .modules { display: grid; gap: 2px; }
 .curriculum .module {
   display: flex; gap: 20px; align-items: center;
-  background: rgba(255,255,255,0.03);
+  background: rgba(17,17,17,0.03);
   padding: 18px 24px;
   border-left: 2px solid var(--ouro);
   transition: background 200ms;
 }
-.curriculum .module:hover { background: rgba(255,255,255,0.06); }
+.curriculum .module:hover { background: rgba(197,22,46,0.06); }
 .curriculum .module .n {
   font-family: var(--serif); font-style: italic;
   color: var(--ouro); font-size: 24px; font-weight: 300;
@@ -496,7 +505,7 @@ section { padding: 112px 0; }
   max-width: 900px; margin: 0 auto;
 }
 .bonus .card {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.7);
   border: 1px solid var(--line);
   padding: 36px 32px;
   position: relative;
@@ -505,14 +514,14 @@ section { padding: 112px 0; }
 .bonus .card:hover { border-color: var(--ouro); }
 .bonus .card .label {
   position: absolute; top: -1px; left: 32px;
-  background: var(--ouro); color: var(--profundo);
+  background: var(--ouro); color: #FFFFFF;
   font-size: 10px; font-weight: 700;
   padding: 5px 14px;
   text-transform: uppercase; letter-spacing: 0.16em;
 }
 .bonus .card h3 { color: var(--creme); margin-bottom: 14px; font-size: clamp(18px, 2vw, 24px); }
 .bonus .card p { font-size: 15px; color: var(--creme-soft); margin-bottom: 20px; line-height: 1.6; }
-.bonus .card .price-old { color: rgba(255,255,255,0.3); text-decoration: line-through; font-size: 14px; }
+.bonus .card .price-old { color: rgba(17,17,17,0.35); text-decoration: line-through; font-size: 14px; }
 .bonus .card .price-new { color: var(--ouro); font-weight: 600; margin-left: 10px; font-size: 14px; }
 @media (max-width: 768px) { .bonus .grid { grid-template-columns: 1fr; } }
 
@@ -633,7 +642,7 @@ section { padding: 112px 0; }
 
 .featured-badge {
   position: absolute; top: -1px; right: 24px;
-  background: var(--ouro); color: var(--profundo);
+  background: var(--ouro); color: #FFFFFF;
   font-size: 10px; font-weight: 700;
   padding: 5px 14px;
   text-transform: uppercase; letter-spacing: 0.16em;
@@ -695,7 +704,7 @@ section { padding: 112px 0; }
 
 .product-price { margin-bottom: 24px; }
 .p-old {
-  font-size: 13px; color: rgba(255,255,255,0.25);
+  font-size: 13px; color: rgba(17,17,17,0.35);
   text-decoration: line-through; display: block; margin-bottom: 8px;
 }
 .p-monthly {
@@ -811,7 +820,7 @@ section { padding: 112px 0; }
    ════════════════════════════════════════════════════════════════════ */
 
 .site-footer {
-  background: #050302;
+  background: #F7F2EF;
   border-top: 1px solid var(--line);
   color: var(--creme-soft);
   padding: 48px 0 32px;
@@ -834,7 +843,7 @@ section { padding: 112px 0; }
 
 .sticky-cta {
   position: fixed; bottom: 0; left: 0; right: 0;
-  background: var(--ouro);
+  background: #FFFFFF;
   padding: 12px 16px;
   z-index: 100;
   transform: translateY(100%);
@@ -843,8 +852,8 @@ section { padding: 112px 0; }
   display: none;
 }
 .sticky-cta.visible { transform: translateY(0); }
-.sticky-cta .cta { width: 100%; padding: 14px; font-size: 13px; background: var(--profundo); color: var(--ouro); }
-.sticky-cta .cta:hover { background: var(--noite); }
+.sticky-cta .cta { width: 100%; padding: 14px; font-size: 13px; background: var(--ouro); color: #FFFFFF; }
+.sticky-cta .cta:hover { background: var(--ouro-palido); }
 @media (max-width: 768px) { .sticky-cta { display: block; } }
 
 /* ════════════════════════════════════════════════════════════════════
