@@ -1,0 +1,334 @@
+---
+import Layout from "../layouts/Layout.astro";
+import content from "../data/content.json";
+
+const { brand, cta, hero, founder, method, curriculum, bonus, testimonials, offer, guarantee, faq, letter } = content;
+
+const areas = [
+  "Autoamor sem culpa",
+  "Gestão do tempo e presença",
+  "Cura de padrões familiares",
+  "Maturidade emocional",
+  "Dinheiro, poder e independência",
+  "Autoestima e sexualidade sagrada",
+  "Relacionamentos amorosos",
+  "Propósito, espiritualidade e rotina"
+];
+
+const forYou = [
+  "Você cuida de todos, mas sente que nunca sobra energia para si.",
+  "Você já entendeu muita coisa racionalmente, mas ainda repete padrões no corpo, nas relações e na rotina.",
+  "Você sente que precisa de método, acolhimento e comunidade — não de mais um conteúdo solto.",
+  "Você quer viver espiritualidade com profundidade, sem abandonar clareza, psicologia e prática."
+];
+
+const notForYou = [
+  "Você procura uma promessa rápida ou milagrosa.",
+  "Você não quer olhar para si com honestidade.",
+  "Você espera que alguém faça o processo por você.",
+  "Você não está aberta a práticas corporais, emocionais e espirituais integradas."
+];
+
+const valueStack = [
+  { name: "Acompanhamento de 12 meses", value: "incluído" },
+  { name: "40+ aulas gravadas do Método Trikona", value: "incluído" },
+  { name: "Encontros ao vivo mensais", value: "incluído" },
+  { name: "Comunidade Irmãs de Alma", value: "incluído" },
+  { name: "A Iniciação — 21 dias", value: "incluído" },
+  ...bonus.items.map((item) => ({ name: item.name, value: `R$ ${item.valueOld}` }))
+];
+
+const featuredProduct = offer.products.find((product) => product.featured) ?? offer.products[offer.products.length - 1];
+const roman = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii"];
+---
+
+<Layout
+  title="Versão refinada — Jornada do Autoamor | Bia Munaretto"
+  description="Proposta refinada da landing da Jornada do Autoamor, com mais pertencimento, clareza de oferta e força comercial."
+>
+  <main class="refined-page">
+    <header class="refined-nav">
+      <a href="/" class="brand-mark">{brand.name}</a>
+      <nav>
+        <a href="#comunidade">Comunidade</a>
+        <a href="#metodo">Método</a>
+        <a href="#oferta">Oferta</a>
+        <a href={cta.link} class="nav-cta">Entrar na jornada</a>
+      </nav>
+    </header>
+
+    <section class="refined-hero">
+      <div class="hero-orb" aria-hidden="true"></div>
+      <div class="refined-container hero-grid">
+        <div class="hero-content">
+          <p class="refined-kicker">Jornada do Autoamor · Método Trikona</p>
+          <h1>E se você fosse a primeira mulher da sua história a se escolher sem culpa?</h1>
+          <p class="hero-lead">
+            Uma jornada de 12 meses para sair do ciclo de se abandonar, curar padrões emocionais e voltar para si com psicologia, corpo, espiritualidade e uma comunidade de mulheres caminhando juntas.
+          </p>
+          <div class="hero-actions">
+            <a href="#oferta" class="refined-cta">Quero conhecer a jornada</a>
+            <p>{hero.microcopy}</p>
+          </div>
+          <div class="hero-proof">
+            <strong>{hero.proofNumber}</strong>
+            <span>{hero.proofLabel}</span>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <img src={hero.image} alt={hero.imageAlt} loading="eager" />
+          <figcaption>Psicologia · Corpo · Campo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="refined-strip" id="comunidade">
+      <div class="refined-container strip-grid">
+        <p>Leveza, pertencimento e prática para voltar para casa — dentro de você.</p>
+        <a href="#oferta">Entrar para a Jornada</a>
+      </div>
+    </section>
+
+    <section class="refined-section intro-section">
+      <div class="refined-container two-col">
+        <div>
+          <p class="refined-kicker">Para quem sente que chegou a hora</p>
+          <h2>Não é sobre aprender mais uma técnica. É sobre parar de se abandonar.</h2>
+        </div>
+        <div class="serif-copy">
+          <p>Talvez você tenha aprendido cedo que amor era disponibilidade, silêncio e força. Que descansar era luxo. Que dizer “não” era egoísmo. Que cuidar de si podia esperar.</p>
+          <p>A Jornada do Autoamor nasce para mulheres que querem transformar essa programação na raiz — com método, presença e acompanhamento real.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="refined-section soft" id="metodo">
+      <div class="refined-container centered">
+        <p class="refined-kicker">O caminho</p>
+        <h2>{method.name}: três vértices para uma transformação inteira</h2>
+        <p class="section-lead">A Bia une mente, corpo e campo para trabalhar onde a programação realmente se instalou.</p>
+      </div>
+      <div class="refined-container pillar-grid">
+        {method.pillars.map((pillar, i) => (
+          <article class="pillar-card">
+            <span>{roman[i]}</span>
+            <h3>{pillar.name}</h3>
+            <p>{pillar.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="refined-section">
+      <div class="refined-container centered narrow">
+        <p class="refined-kicker">Você vai desenvolver</p>
+        <h2>Uma vida mais leve não nasce do acaso. Ela nasce de prática guiada.</h2>
+      </div>
+      <div class="refined-container area-cloud">
+        {areas.map((area) => <span>{area}</span>)}
+      </div>
+    </section>
+
+    <section class="refined-section split-checks">
+      <div class="refined-container check-grid">
+        <article>
+          <p class="refined-kicker">É para você se...</p>
+          <ul>{forYou.map((item) => <li>{item}</li>)}</ul>
+        </article>
+        <article class="muted-card">
+          <p class="refined-kicker">Não é para você se...</p>
+          <ul>{notForYou.map((item) => <li>{item}</li>)}</ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="refined-section founder-story">
+      <div class="refined-container founder-grid">
+        <img src={founder.image} alt={founder.imageAlt} loading="lazy" />
+        <div>
+          <p class="refined-kicker">Quem conduz</p>
+          <h2>{founder.name}</h2>
+          {founder.bio.map((p) => <p>{p}</p>)}
+          <strong>{founder.signature}</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="refined-section soft">
+      <div class="refined-container two-col">
+        <div>
+          <p class="refined-kicker">Dentro da Jornada</p>
+          <h2>{curriculum.title}</h2>
+          <p class="section-lead">Um percurso progressivo para reorganizar tempo, emoções, vínculos, corpo, dinheiro, espiritualidade e amor próprio.</p>
+        </div>
+        <div class="module-list">
+          {curriculum.modules.map((mod, i) => (
+            <div class="module-row">
+              <span>{roman[i]}</span>
+              <div>
+                <strong>{mod.name}</strong>
+                <p>{mod.format}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="refined-section testimonial-section" id="depoimentos">
+      <div class="refined-container centered narrow">
+        <p class="refined-kicker">Mulheres como você</p>
+        <h2>Quando uma mulher se escolhe, ela muda a direção da própria história.</h2>
+      </div>
+      <div class="refined-container quote-grid">
+        {testimonials.items.map((dep) => (
+          <blockquote>
+            <p>“{dep.quote}”</p>
+            <cite>{dep.name}</cite>
+          </blockquote>
+        ))}
+      </div>
+    </section>
+
+    <section class="refined-offer" id="oferta">
+      <div class="refined-container offer-grid">
+        <div class="offer-copy">
+          <p class="refined-kicker">A jornada completa</p>
+          <h2>{featuredProduct.name}</h2>
+          <p>{featuredProduct.description}</p>
+          <ul class="include-list">
+            {featuredProduct.includes.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+        <aside class="offer-box">
+          <span class="badge">Mais escolhido</span>
+          <h3>{featuredProduct.subtitle}</h3>
+          <div class="value-stack">
+            {valueStack.map((item) => (
+              <div><span>{item.name}</span><strong>{item.value}</strong></div>
+            ))}
+          </div>
+          <div class="price-block">
+            <span>Hoje por</span>
+            <strong>12x de R$ {featuredProduct.priceMonthly}</strong>
+            <p>ou R$ {featuredProduct.priceCash} à vista</p>
+          </div>
+          <a href={featuredProduct.link} class="refined-cta full">{featuredProduct.cta}</a>
+          <small>Link de checkout pendente de confirmação · {guarantee.days} dias de garantia</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="refined-section guarantee-section">
+      <div class="refined-container guarantee-grid">
+        <div class="seal-big">{guarantee.days}</div>
+        <div>
+          <p class="refined-kicker">{guarantee.eyebrow}</p>
+          <h2>{guarantee.title}</h2>
+          <p>{guarantee.text}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="refined-section faq-section">
+      <div class="refined-container narrow">
+        <p class="refined-kicker">Perguntas honestas</p>
+        <h2>{faq.title}</h2>
+        {faq.items.slice(0, 6).map((item) => (
+          <details>
+            <summary>{item.question}</summary>
+            <p>{item.answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="refined-final">
+      <div class="refined-container narrow">
+        {letter.paragraphs.map((p) => <p>{p}</p>)}
+        <strong>{letter.signatureName}</strong>
+        <a href="#oferta" class="refined-cta">Quero começar minha jornada</a>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .refined-page { --r-bg:#fffaf6; --r-soft:#f6ebe5; --r-ink:#231816; --r-muted:#6d5a55; --r-red:#b11226; --r-gold:#c8904b; background:var(--r-bg); color:var(--r-ink); }
+    .refined-container { width:min(1160px, calc(100% - 40px)); margin:0 auto; }
+    .refined-nav { position:sticky; top:0; z-index:20; display:flex; justify-content:space-between; align-items:center; padding:18px clamp(20px, 5vw, 56px); background:rgba(255,250,246,.88); backdrop-filter:blur(18px); border-bottom:1px solid rgba(35,24,22,.08); }
+    .brand-mark { font-family:var(--serif); font-size:28px; font-style:italic; color:var(--r-red); border:0; }
+    .refined-nav nav { display:flex; gap:26px; align-items:center; }
+    .refined-nav a { color:var(--r-muted); font-size:11px; text-transform:uppercase; letter-spacing:.18em; border:0; }
+    .refined-nav .nav-cta { color:#fff; background:var(--r-red); padding:11px 18px; }
+    .refined-hero { position:relative; overflow:hidden; min-height:88vh; display:flex; align-items:center; padding:70px 0 90px; }
+    .hero-orb { position:absolute; width:620px; height:620px; border-radius:50%; background:radial-gradient(circle, rgba(200,144,75,.25), transparent 68%); right:-180px; top:40px; }
+    .hero-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:70px; align-items:center; position:relative; }
+    .refined-kicker { color:var(--r-red); text-transform:uppercase; letter-spacing:.28em; font-size:11px; font-weight:700; margin-bottom:18px; }
+    .hero-content h1 { font-size:clamp(46px, 7vw, 86px); max-width:820px; }
+    .hero-lead, .section-lead { color:var(--r-muted); font-size:19px; line-height:1.75; max-width:660px; }
+    .hero-actions { margin:34px 0 24px; display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
+    .hero-actions p, .offer-box small { color:var(--r-muted); font-size:13px; margin:0; }
+    .refined-cta { display:inline-flex; justify-content:center; align-items:center; background:var(--r-red); color:#fff; padding:18px 30px; text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:800; border:0; box-shadow:0 20px 50px rgba(177,18,38,.18); }
+    .refined-cta.full { width:100%; }
+    .hero-proof { display:inline-flex; gap:14px; align-items:center; border:1px solid rgba(35,24,22,.12); padding:13px 18px; background:rgba(255,255,255,.45); }
+    .hero-proof strong { font-family:var(--serif); color:var(--r-red); font-size:28px; font-style:italic; }
+    .hero-proof span { color:var(--r-muted); font-size:14px; }
+    .hero-portrait { position:relative; padding:18px; background:#fff; border:1px solid rgba(35,24,22,.08); box-shadow:0 35px 90px rgba(80,45,35,.14); }
+    .hero-portrait img { width:100%; max-height:650px; object-fit:cover; object-position:top center; }
+    .hero-portrait figcaption { position:absolute; left:34px; bottom:34px; background:rgba(255,250,246,.92); padding:10px 14px; color:var(--r-red); font-size:11px; letter-spacing:.18em; text-transform:uppercase; }
+    .refined-strip { background:var(--r-red); color:#fff; padding:24px 0; }
+    .strip-grid { display:flex; justify-content:space-between; align-items:center; gap:24px; }
+    .strip-grid p { font-family:var(--serif); font-size:29px; font-style:italic; margin:0; }
+    .strip-grid a { color:#fff; text-transform:uppercase; letter-spacing:.16em; font-size:12px; border-color:rgba(255,255,255,.5); }
+    .refined-section { padding:105px 0; }
+    .soft { background:var(--r-soft); }
+    .two-col { display:grid; grid-template-columns:.9fr 1.1fr; gap:74px; align-items:start; }
+    .two-col h2, .centered h2, .founder-story h2, .refined-offer h2, .guarantee-section h2, .faq-section h2 { font-size:clamp(36px, 5vw, 62px); }
+    .serif-copy { font-family:var(--serif); font-size:25px; line-height:1.65; color:var(--r-ink); }
+    .centered { text-align:center; }
+    .centered .section-lead, .narrow { max-width:760px; }
+    .centered .section-lead { margin:20px auto 0; }
+    .pillar-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; margin-top:48px; }
+    .pillar-card, .check-grid article, .offer-box, .quote-grid blockquote { background:#fff; border:1px solid rgba(35,24,22,.08); padding:34px; }
+    .pillar-card span, .module-row span { color:var(--r-gold); font-family:var(--serif); font-size:30px; font-style:italic; }
+    .pillar-card p, .module-row p, .quote-grid p, .founder-story p, .guarantee-section p, .faq-section p { color:var(--r-muted); }
+    .area-cloud { display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:40px; }
+    .area-cloud span { border:1px solid rgba(177,18,38,.22); color:var(--r-red); background:#fff; padding:13px 18px; border-radius:999px; font-size:14px; }
+    .split-checks { background:#fff; }
+    .check-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .check-grid ul, .include-list { list-style:none; display:grid; gap:16px; }
+    .check-grid li, .include-list li { position:relative; padding-left:28px; color:var(--r-muted); }
+    .check-grid li:before, .include-list li:before { content:"✦"; position:absolute; left:0; color:var(--r-red); }
+    .muted-card { background:var(--r-soft) !important; }
+    .founder-grid { display:grid; grid-template-columns:.82fr 1.18fr; gap:70px; align-items:center; }
+    .founder-grid img { border-radius:2px; box-shadow:0 30px 80px rgba(80,45,35,.12); }
+    .module-list { display:grid; gap:12px; }
+    .module-row { display:grid; grid-template-columns:44px 1fr; gap:18px; padding:18px 0; border-bottom:1px solid rgba(35,24,22,.1); }
+    .module-row strong { color:var(--r-ink); }
+    .quote-grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:18px; margin-top:42px; }
+    .quote-grid blockquote { margin:0; }
+    .quote-grid cite { color:var(--r-red); font-style:normal; font-weight:700; }
+    .refined-offer { padding:110px 0; background:linear-gradient(135deg, #2b1416, #5c101a); color:#fff; }
+    .refined-offer h2, .refined-offer h3 { color:#fff; }
+    .offer-grid { display:grid; grid-template-columns:1fr .86fr; gap:56px; align-items:start; }
+    .offer-copy p, .refined-offer li { color:rgba(255,255,255,.78); }
+    .include-list { margin-top:28px; }
+    .offer-box { color:var(--r-ink); position:sticky; top:96px; }
+    .badge { display:inline-block; color:#fff; background:var(--r-red); padding:8px 12px; font-size:11px; text-transform:uppercase; letter-spacing:.16em; margin-bottom:20px; }
+    .value-stack { border-top:1px solid rgba(35,24,22,.1); margin:24px 0; }
+    .value-stack div { display:flex; justify-content:space-between; gap:18px; padding:11px 0; border-bottom:1px solid rgba(35,24,22,.08); font-size:13px; color:var(--r-muted); }
+    .value-stack strong { color:var(--r-red); white-space:nowrap; }
+    .price-block { background:var(--r-soft); padding:24px; margin-bottom:20px; text-align:center; }
+    .price-block span { color:var(--r-muted); text-transform:uppercase; letter-spacing:.18em; font-size:11px; }
+    .price-block strong { display:block; color:var(--r-red); font-size:30px; margin:8px 0; }
+    .guarantee-grid { display:grid; grid-template-columns:220px 1fr; gap:52px; align-items:center; }
+    .seal-big { width:180px; height:180px; border-radius:50%; display:grid; place-items:center; border:1px solid var(--r-red); color:var(--r-red); font-family:var(--serif); font-size:78px; font-style:italic; }
+    .faq-section details { border-bottom:1px solid rgba(35,24,22,.12); padding:22px 0; }
+    .faq-section summary { cursor:pointer; font-weight:700; color:var(--r-ink); }
+    .refined-final { padding:110px 0; text-align:center; background:var(--r-red); color:#fff; }
+    .refined-final p { font-family:var(--serif); font-size:28px; line-height:1.55; color:#fff; }
+    .refined-final strong { display:block; margin:22px 0 30px; color:#fff; }
+    .refined-final .refined-cta { background:#fff; color:var(--r-red); }
+    @media (max-width:900px){ .refined-nav nav a:not(.nav-cta){display:none;} .hero-grid,.two-col,.check-grid,.founder-grid,.offer-grid,.guarantee-grid{grid-template-columns:1fr;} .pillar-grid,.quote-grid{grid-template-columns:1fr;} .refined-hero{padding-top:40px;} .hero-actions{align-items:flex-start;} .strip-grid{display:block;} .offer-box{position:static;} }
+  </style>
+</Layout>
