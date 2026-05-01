@@ -1,7 +1,7 @@
 {
   "brand": {
-    "name": "Bia Munaretto",
-    "founderName": "Bia Munaretto",
+    "name": "Bia Munareto",
+    "founderName": "Bia Munareto",
     "razaoSocial": "[FALTA: Razão Social]",
     "cnpj": "[FALTA: CNPJ]",
     "whatsapp": "5579988342043",
@@ -11,7 +11,7 @@
   },
 
   "seo": {
-    "title": "A Jornada do Autoamor — Bia Munaretto",
+    "title": "A Jornada do Autoamor — Bia Munareto",
     "description": "Uma jornada de 12 meses para aprender a se colocar em primeiro lugar — sem culpa, sem ansiedade, sem abrir mão de quem você ama.",
     "ogImage": "/images/og.jpg"
   },
@@ -40,7 +40,7 @@
     "headline": "Você se doa para todos — e ainda assim nunca é suficiente para você mesma.",
     "subheadline": "Um método, três formas de entrar. Do livro ao acompanhamento completo de 12 meses — escolha o próximo passo da sua jornada.",
     "image": "/images/hero.jpg",
-    "imageAlt": "Bia Munaretto, psicóloga e mentora de autoamor",
+    "imageAlt": "Bia Munareto, psicóloga e mentora de autoamor",
     "proofNumber": "+14 mil",
     "proofLabel": "mulheres já viveram essa transformação",
     "urgency": "Inscrições abertas · acesso imediato ao módulo 1",
@@ -101,15 +101,15 @@
 
   "founder": {
     "eyebrow": "Quem te guia nessa jornada",
-    "name": "Bia Munaretto",
+    "name": "Bia Munareto",
     "image": "/images/founder.jpg",
-    "imageAlt": "Bia Munaretto, psicóloga e mulher tântrica",
+    "imageAlt": "Bia Munareto, psicóloga e mulher tântrica",
     "bio": [
       "Aos 20 anos, eu vivia o que hoje ensino a transformar. Bem-sucedida na aparência, vazia por dentro. Libido zerada, corpo desconectado, relações que não me sustentavam.",
       "A virada chegou como uma frase que aterrissou no momento certo: onde está o seu maior nó, está o seu maior propósito. Naquele instante entendi que o que mais me envergonhava era exatamente o que me tornaria singular.",
       "Hoje sou psicóloga, mulher tântrica, terapeuta integrativa e fundadora da Jornada do Autoamor. Em 11 anos de trajetória, desenvolvi o Método Trikona — a única abordagem que integra psicologia, corpo e espiritualidade simultaneamente, atuando na raiz da programação, não nos sintomas."
     ],
-    "signature": "— Bia Munaretto",
+    "signature": "— Bia Munareto",
     "mediaLogos": []
   },
 
@@ -380,7 +380,7 @@
       "Quando se sentir pronta, eu estarei te esperando do outro lado dessa escolha."
     ],
     "signature": "Com amor,",
-    "signatureName": "Bia Munaretto"
+    "signatureName": "Bia Munareto"
   },
 
   "footer": {
