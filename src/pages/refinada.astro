@@ -2,333 +2,397 @@
 import Layout from "../layouts/Layout.astro";
 import content from "../data/content.json";
 
-const { brand, cta, hero, founder, method, curriculum, bonus, testimonials, offer, guarantee, faq, letter } = content;
+const { brand } = content;
 
-const areas = [
-  "Autoamor sem culpa",
-  "Gestão do tempo e presença",
-  "Cura de padrões familiares",
-  "Maturidade emocional",
-  "Dinheiro, poder e independência",
-  "Autoestima e sexualidade sagrada",
-  "Relacionamentos amorosos",
-  "Propósito, espiritualidade e rotina"
+const ctaAnchor = "#precos";
+
+const proofItems = [
+  "+14 mil mulheres nos últimos 9 anos",
+  "9 anos de atuação profissional",
+  "+500 livros vendidos",
+  "Psicóloga, mãe, esposa e mulher tântrica",
+  "Fundadora do Instituto Autoamor"
+];
+
+const larSteps = [
+  {
+    letter: "L",
+    title: "Libertar",
+    text: [
+      "O primeiro passo é a purificação da mente e do coração.",
+      "Limpar o que foi acumulado, programado e instalado antes mesmo da consciência. Soltar padrões herdados, crenças que aprisionam e contrações que impedem o fluxo da vida.",
+      "Sem esse esvaziamento, não há espaço para o novo nascer. A mulher que pula essa etapa vai construir sobre o mesmo chão — e os velhos padrões voltam, sempre."
+    ]
+  },
+  {
+    letter: "A",
+    title: "Assumir",
+    text: [
+      "O segundo passo é a nutrição e edificação da nova identidade.",
+      "Assumir a liderança da própria vida e se vestir da própria essência. Reconhecer, nutrir e encarnar quem você é de verdade — não a partir do que os outros esperam, mas do que a alma reconhece como verdadeiro.",
+      "Não é descobrir quem você é. É reconhecer o que sempre esteve lá — e que foi encoberto. O retorno para a essência."
+    ]
+  },
+  {
+    letter: "R",
+    title: "Realizar",
+    text: [
+      "O terceiro passo é elevar, embelezar e receber.",
+      "Com a mente purificada e a identidade construída, a mulher entra no campo de cocriação: o espaço onde o interno se torna externo. Nos relacionamentos. No corpo. Na forma como o mundo responde.",
+      "A transformação para de ser interna e passa a ser visível."
+    ]
+  }
+];
+
+const mirrorQuotes = [
+  "Sou boa para todo mundo menos para mim mesma.",
+  "Trabalho muito, me doo muito. Mas sinto que falta algo.",
+  "Faço terapia, cursos, meditação. Tenho consciência, mas continuo andando em círculos e repetindo as mesmas histórias. Tô cansada!",
+  "Já sei o que preciso fazer, mas não faço. Parece que tem algo que me impede.",
+  "Sei a importância de me priorizar, mas me sinto culpada quando faço algo para mim."
+];
+
+const revealItems = [
+  "Você faz terapia há anos e continua andando em círculos…",
+  "Toma medicamento, mascara a dor, mas continua sentindo um vazio da alma…",
+  "Você reza, reza, reza e sua realidade não muda…",
+  "Você lê livros, mas não consegue colocar em prática…",
+  "Você faz atividade física, mas continua brigando com o espelho…"
+];
+
+const testimonialsOne = [
+  ["Renata S.", "São Paulo", "Eu entrei com muita coisa na cabeça e pouca coisa no corpo. Depois de 8 meses na Comunidade, finalmente estou habitando a minha própria vida. Não foi um momento — foi uma prática."],
+  ["Camila M.", "Belo Horizonte", "Não esperava que a parte mais transformadora fosse o WhatsApp. A irmandade é o que me mantém. É o único lugar onde não preciso me explicar."],
+  ["Fernanda L.", "Rio de Janeiro", "Fiz terapia por anos. A Comunidade chegou onde a terapia não chegou — porque aqui tem corpo, espiritual e suporte juntos. Parei de repetir o padrão de relacionamento que carregava há 10 anos."],
+  ["Patrícia V.", "Porto Alegre", "Achei que ia ser pesado, denso, difícil de acompanhar. Foi o contrário. É profundo — mas entra leve. Até agora não entendi direito como a Bia faz isso."]
+];
+
+const basicItems = [
+  "Boas-vindas e orientações para navegar a jornada completa",
+  "7 Camadas para chegar na raiz",
+  "7 dias de prática para acelerar seus resultados desde o início",
+  "Gestão de Tempo e Autoamor",
+  "Alma — espiritualidade na prática: ervas, cristais, pêndulos, sonhos e oráculos",
+  "Quebra de Correntes e Curas Familiares",
+  "Mantras e meditações guiadas",
+  "Encontros semanais ao vivo com Bia Munareto",
+  "Master Classes ao vivo"
+];
+
+const advancedItems = [
+  "A Mulher Tântrica — identidade tântrica, corpo como portal e prazer sagrado",
+  "Acelerador de Resultados — práticas de manifestação",
+  "21 dias de meditação tântrica ao vivo com Bia Munareto",
+  "Ritual diário para elevar sua frequência",
+  "Maturidade Emocional",
+  "Dinheiro, Poder e Independência",
+  "Autoestima e Sexualidade",
+  "Relacionamentos Amorosos",
+  "Propósito e Manifestação",
+  "8 Meditações Tântricas Exclusivas",
+  "Mapa da Individualidade: Astrologia, Numerologia e Desenho Humano"
+];
+
+const testimonialsTwo = [
+  ["Juliana P.", "Curitiba · 14 meses na Comunidade", "Fui de 'começa e para' para mais de um ano sem falhar. O segredo? Aqui não precisa de força de vontade todo dia. Tem estrutura. E estrutura sustenta quando a força acaba."],
+  ["Marcela T.", "Florianópolis · 10 meses na Comunidade", "O que eu achei que ia ser o mais superficial — o WhatsApp — acabou sendo o mais profundo. São mulheres que me conhecem de verdade. Isso não tem preço."],
+  ["Daniela R.", "Recife · 12 meses na Comunidade", "Entrei pelo Mensal. No segundo mês já mudei para o Anual. Não porque foi barato — porque eu sabia que queria todos os 12 meses. Fui muito mais fundo do que em qualquer processo anterior."],
+  ["Aline C.", "São Paulo · 8 meses na Comunidade", "A Comunidade me preparou para a Mentoria. Quando entrei no nível seguinte, já tinha o chão. Fui infinitamente mais fundo porque não estava começando do zero."]
 ];
 
 const forYou = [
-  "Você cuida de todos, mas sente que nunca sobra energia para si.",
-  "Você já entendeu muita coisa racionalmente, mas ainda repete padrões no corpo, nas relações e na rotina.",
-  "Você sente que precisa de método, acolhimento e comunidade — não de mais um conteúdo solto.",
-  "Você quer viver espiritualidade com profundidade, sem abandonar clareza, psicologia e prática."
+  "Você já se reconheceu nos seus padrões, mas continua repetindo.",
+  "Você tentou cursos e processos antes, e sabe que precisa de algo com mais suporte e constância.",
+  "Você sente que a transformação que quer pede mais do que conteúdo avulso.",
+  "Você quer um espaço que exista toda semana.",
+  "Você já tentou sozinha e não conseguiu.",
+  "Você está pronta para se dar os 12 meses que a mudança real precisa."
 ];
 
 const notForYou = [
-  "Você procura uma promessa rápida ou milagrosa.",
-  "Você não quer olhar para si com honestidade.",
-  "Você espera que alguém faça o processo por você.",
-  "Você não está aberta a práticas corporais, emocionais e espirituais integradas."
+  "Você está buscando uma solução rápida ou um conteúdo que resolve em um fim de semana.",
+  "Você não está disposta a se comprometer com uma jornada de transformação real.",
+  "Você prefere continuar adoecida."
 ];
 
-const valueStack = [
-  { name: "Acompanhamento de 12 meses", value: "incluído" },
-  { name: "40+ aulas gravadas do Método Trikona", value: "incluído" },
-  { name: "Encontros ao vivo mensais", value: "incluído" },
-  { name: "Comunidade Irmãs de Alma", value: "incluído" },
-  { name: "A Iniciação — 21 dias", value: "incluído" },
-  ...bonus.items.map((item) => ({ name: item.name, value: `R$ ${item.valueOld}` }))
+const monthlyIncludes = [
+  ...basicItems,
+  "WhatsApp Irmãs de Alma",
+  "Novos conteúdos e práticas liberados mensalmente",
+  "Caderno Terapêutico",
+  "Planilha Financeira",
+  "Ferramentas que facilitam a vida da mulher moderna"
 ];
 
-const featuredProduct = offer.products.find((product) => product.featured) ?? offer.products[offer.products.length - 1];
-const roman = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii"];
+const annualIncludes = [...monthlyIncludes, ...advancedItems];
+
+const faqs = [
+  ["Não vou ter tempo para acompanhar tudo.", "A Comunidade foi feita para a rotina real. Os módulos ficam disponíveis — você acessa quando pode. O que muda é que você para de estar sozinha no processo. Mesmo nas semanas em que mal consegue respirar, o WhatsApp existe. A live fica gravada. A jornada não para por você — ela espera."],
+  ["Já fiz muita coisa e não mudou.", "O que você fez antes provavelmente não tinha os três elementos juntos: método + ambiente + espiritualidade. Qualquer um dos três separado funciona até certo ponto. Os três juntos chegam onde nenhum chegou sozinho. A crença 'mais uma coisa não vai ser diferente' é exatamente o padrão que a Comunidade trabalha."],
+  ["Não sei se sou espiritual o suficiente.", "A Comunidade integra — não exige. Você começa de onde está. A Bia tem formação clínica robusta, e o sagrado aqui não é dogma: é prática. Se você tem resistência à espiritualidade, a Comunidade vai trabalhar com você nessa resistência também — porque ela costuma vir do mesmo lugar que o padrão de se anular."],
+  ["E se eu não me encaixar no grupo?", "O WhatsApp Irmãs de Alma é o único lugar onde você não precisa explicar por que está cansada de ser forte. As mulheres que chegam aqui chegam com o mesmo padrão, a mesma história, a mesma fome de ser compreendida. Você vai se reconhecer."],
+  ["Está caro.", "Compare com o que você já gastou em cursos avulsos, sessões de terapia ou processos que não tinham estrutura para sustentar a mudança. O que custa mais é continuar tentando sozinha e chegando no mesmo lugar. Quanto vale o tempo da vida que você tem perdido repetindo os mesmos ciclos?"],
+  ["E se eu começar e não gostar?", "Você pode começar pelo plano mensal e sentir a Comunidade antes de se comprometer com o ano. Mas as mulheres que mais se transformam são as que se deram os 12 meses que o método precisa — porque é o tempo real para a mudança fazer raiz, não só acontecer."],
+  ["Já comprei um curso antes e nunca terminei.", "A Comunidade não é um curso. É um espaço que existe toda semana — com ou sem impulso inicial, com ou sem hype. A estrutura foi feita para a mulher que já sabe que não sustenta sozinha. Você não precisa de força de vontade infinita. Você precisa de um lugar que não some."]
+];
 ---
 
 <Layout
-  title="Versão refinada — Jornada do Autoamor | Bia Munaretto"
-  description="Proposta refinada da landing da Jornada do Autoamor, com mais pertencimento, clareza de oferta e força comercial."
+  title="Comunidade Jornada do Autoamor — Bia Munareto"
+  description="Acompanhamento de 12 meses para mulheres que querem resgatar o autoamor, a autoestima e a autoconfiança com psicologia, tantra, constelação familiar e espiritualidade."
 >
-  <main class="refined-page">
-    <header class="refined-nav">
-      <a href="/" class="brand-mark">{brand.name}</a>
+  <main class="sales-page">
+    <header class="sales-nav">
+      <a href="/" class="brand">{brand.name}</a>
       <nav>
+        <a href="#metodo">Método LAR</a>
         <a href="#comunidade">Comunidade</a>
-        <a href="#metodo">Método</a>
-        <a href="#oferta">Oferta</a>
-        <a href={cta.link} class="nav-cta">Entrar na jornada</a>
+        <a href="#precos">Planos</a>
       </nav>
     </header>
 
-    <section class="refined-hero">
-      <div class="hero-orb" aria-hidden="true"></div>
-      <div class="refined-container hero-grid">
-        <div class="hero-content">
-          <p class="refined-kicker">Jornada do Autoamor · Método Trikona</p>
-          <h1>E se você fosse a primeira mulher da sua história a se escolher sem culpa?</h1>
-          <p class="hero-lead">
-            Uma jornada de 12 meses para sair do ciclo de se abandonar, curar padrões emocionais e voltar para si com psicologia, corpo, espiritualidade e uma comunidade de mulheres caminhando juntas.
-          </p>
-          <div class="hero-actions">
-            <a href="#oferta" class="refined-cta">Quero conhecer a jornada</a>
-            <p>{hero.microcopy}</p>
-          </div>
-          <div class="hero-proof">
-            <strong>{hero.proofNumber}</strong>
-            <span>{hero.proofLabel}</span>
-          </div>
+    <section class="hero-sales">
+      <div class="hero-overlay"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Comunidade Jornada do Autoamor</p>
+          <p class="subbrand">Bia Munareto · Psicologia, Tantra, Constelação Familiar e Espiritualidade</p>
+          <h1>Pare de chamar de destino a vida que você ainda não assumiu a liderança.</h1>
+          <h2>Torne-se a mulher mais feliz e realizada que você conhece resgatando seu Autoamor.</h2>
+          <p class="lead">A Comunidade Jornada do Autoamor é um espaço seguro para mulheres que precisam se desprender de dores e resgatar a alegria de viver. Um acompanhamento de 12 meses para construir a mulher que você deseja se tornar, com encontros ao vivo semanais, imersões, trilha de aulas, meditações, mantras, tarefas terapêuticas, práticas espirituais, acelerador de resultados, rituais de manifestação e uma irmandade para compartilhar a jornada.</p>
+          <a href={ctaAnchor} class="btn primary">Quero entrar na Comunidade</a>
+          <p class="micro">A partir de R$ 1,58 por dia</p>
         </div>
-        <figure class="hero-portrait">
-          <img src={hero.image} alt={hero.imageAlt} loading="eager" />
-          <figcaption>Psicologia · Corpo · Campo</figcaption>
+        <figure class="hero-photo">
+          <img src="/images/hero.jpg" alt="Bia Munareto" loading="eager" />
         </figure>
       </div>
     </section>
 
-    <section class="refined-strip" id="comunidade">
-      <div class="refined-container strip-grid">
-        <p>Leveza, pertencimento e prática para voltar para casa — dentro de você.</p>
-        <a href="#oferta">Entrar para a Jornada</a>
+    <section class="proof-bar">
+      <div class="wrap proof-grid">
+        {proofItems.map((item) => <div><span>✦</span><strong>{item}</strong></div>)}
       </div>
     </section>
 
-    <section class="refined-section intro-section">
-      <div class="refined-container two-col">
+    <section class="section lar-section" id="metodo">
+      <div class="wrap center narrow">
+        <p class="kicker">Método LAR</p>
+        <h2>A jornada segue o Método LAR</h2>
+        <p class="lead">A geometria de transformação que a Bia desenvolveu em 9 anos de trabalho clínico, vivência pessoal e em grupo.</p>
+      </div>
+      <div class="wrap lar-grid">
+        {larSteps.map((step) => (
+          <article class="lar-card">
+            <span>{step.letter}</span>
+            <h3>{step.title}</h3>
+            {step.text.map((p) => <p>{p}</p>)}
+          </article>
+        ))}
+      </div>
+      <div class="wrap lar-note">
+        <p>Libertar sem Assumir é purificação sem identidade. Assumir sem Realizar é identidade sem manifestação. Realizar sem Libertar é manifestação sem raiz.</p>
+        <strong>A jornada completa precisa das três etapas — e a Comunidade te conduz por elas.</strong>
+      </div>
+    </section>
+
+    <section class="section mirror-section">
+      <div class="wrap center narrow">
+        <p class="kicker">Espelho</p>
+        <h2>Você se reconhece em alguma dessas frases?</h2>
+      </div>
+      <div class="wrap quote-list">
+        {mirrorQuotes.map((quote) => <blockquote>“{quote}”</blockquote>)}
+      </div>
+      <div class="wrap center narrow">
+        <p class="recognition">Se alguma dessas frases pareceu familiar… você está no lugar certo.</p>
+        <h3>Não começou em ti, mas precisa terminar em ti.</h3>
+      </div>
+    </section>
+
+    <section class="section reveal-section">
+      <div class="wrap narrow center">
+        <p class="kicker">A revelação do padrão</p>
+        <h2>Porque A Jornada do Autoamor é diferente de tudo que você já tentou?</h2>
+        <div class="reveal-list">
+          {revealItems.map((item) => <p>{item}</p>)}
+        </div>
+        <p class="lead">Assim como você, clientes chegam até mim todos os dias e falam “estou cansada, não aguento mais”. E após minhas intervenções, dizem:</p>
+        <blockquote class="big-quote">“Isso é diferente de tudo que eu já fiz. Eu nunca tinha visto por esse caminho.”</blockquote>
+      </div>
+    </section>
+
+    <section class="section bia-section">
+      <div class="wrap bia-grid">
+        <img src="/images/founder.jpg" alt="Bia Munareto" loading="lazy" />
         <div>
-          <p class="refined-kicker">Para quem sente que chegou a hora</p>
-          <h2>Não é sobre aprender mais uma técnica. É sobre parar de se abandonar.</h2>
-        </div>
-        <div class="serif-copy">
-          <p>Talvez você tenha aprendido cedo que amor era disponibilidade, silêncio e força. Que descansar era luxo. Que dizer “não” era egoísmo. Que cuidar de si podia esperar.</p>
-          <p>A Jornada do Autoamor nasce para mulheres que querem transformar essa programação na raiz — com método, presença e acompanhamento real.</p>
+          <p class="kicker">A Bia</p>
+          <h2>Bia Munareto não ensina o que estudou. Ela ensina o que viveu.</h2>
+          <p>Psicóloga, terapeuta integrativa e mulher tântrica, Bia Munareto fundou a Jornada do Autoamor depois de ter vivido, em si mesma, o padrão que hoje transforma em outras.</p>
+          <p>Aos 20 anos: bem-sucedida por fora, vazia por dentro. Corpo desconectado. Libido zerada. Existindo para os outros no automático. Sem conseguir nomear o que estava errado.</p>
+          <blockquote>“Onde está o seu maior nó, está o seu maior propósito.”</blockquote>
+          <p>O que ela mais envergonhava, ela transformou no que a tornaria singular.</p>
+          <p>Em mais de 9 anos de atuação profissional, Bia tornou-se referência na intersecção entre psicologia, corpo e espiritualidade feminina. Com formação em Tantra, Constelação Familiar Sistêmica e Xamânica, Hipnose Ericksoniana, PNL, Neurociência e Reiki — e autora do livro A Jornada do Autoamor.</p>
+          <p>Ela não fala do topo de uma montanha. Ela fala do meio do caminho com a autoridade de quem já atravessou o que está pedindo para você atravessar.</p>
+          <strong>Ela não ensina o que sabe. Ela ensina o que é.</strong>
         </div>
       </div>
+      <div class="wrap credentials">+200 mulheres ativas na Comunidade · +100 clientes em Mentorias · +500 livros vendidos · 9 anos de mercado digital · Instituto Autoamor fundado</div>
     </section>
 
-    <section class="refined-section soft" id="metodo">
-      <div class="refined-container centered">
-        <p class="refined-kicker">O caminho</p>
-        <h2>{method.name}: três vértices para uma transformação inteira</h2>
-        <p class="section-lead">A Bia une mente, corpo e campo para trabalhar onde a programação realmente se instalou.</p>
+    <section class="section testimonials dark">
+      <div class="wrap center narrow">
+        <p class="kicker">Transformação</p>
+        <h2>O que as mulheres da Comunidade dizem</h2>
       </div>
-      <div class="refined-container pillar-grid">
-        {method.pillars.map((pillar, i) => (
-          <article class="pillar-card">
-            <span>{roman[i]}</span>
-            <h3>{pillar.name}</h3>
-            <p>{pillar.description}</p>
+      <div class="wrap testimonial-grid">
+        {testimonialsOne.map(([name, city, quote], i) => (
+          <article>
+            <div class="placeholder">PLACEHOLDER {i === 2 ? "VÍDEO" : "FOTO"}</div>
+            <p>“{quote}”</p>
+            <strong>— {name}, {city}</strong>
           </article>
         ))}
       </div>
     </section>
 
-    <section class="refined-section">
-      <div class="refined-container centered narrow">
-        <p class="refined-kicker">Você vai desenvolver</p>
-        <h2>Uma vida mais leve não nasce do acaso. Ela nasce de prática guiada.</h2>
+    <section class="section community-section" id="comunidade">
+      <div class="wrap narrow center">
+        <p class="kicker">O que é a Comunidade</p>
+        <h2>A Comunidade Jornada do Autoamor não é um curso.</h2>
+        <p class="lead">É um lugar seguro onde você será acompanhada semanalmente por Bia e equipe. Com encontros ao vivo semanais, trilhas de aulas e meditações gravadas para você iniciar hoje mesmo.</p>
+        <p class="lead">Um lugar que une ciência e espiritualidade para despertar o seu Autoamor, Autoestima e Autoconfiança. Um caminho individual, mas também coletivo.</p>
       </div>
-      <div class="refined-container area-cloud">
-        {areas.map((area) => <span>{area}</span>)}
+      <div class="wrap pillar-grid">
+        <article><h3>Ciência</h3><p>Psicologia, corpo, neurociência e práticas terapêuticas para transformar padrões com clareza.</p></article>
+        <article><h3>Espiritualidade</h3><p>Rituais, meditações, mantras e práticas espirituais integradas ao cotidiano real.</p></article>
+        <article><h3>Irmandade</h3><p>Uma comunidade para compartilhar a jornada com mulheres que entendem o que você vive.</p></article>
       </div>
     </section>
 
-    <section class="refined-section split-checks">
-      <div class="refined-container check-grid">
+    <section class="section inside-section">
+      <div class="wrap center narrow">
+        <p class="kicker">O que está dentro</p>
+        <h2>Acompanhamento de 12 meses para construir a mulher que você quer se tornar</h2>
+      </div>
+      <div class="wrap inside-grid">
         <article>
-          <p class="refined-kicker">É para você se...</p>
+          <p class="kicker">Básico — Libertar e Assumir</p>
+          <h3>O primeiro movimento: purificação e construção da nova identidade</h3>
+          <ul>{basicItems.map((item) => <li>{item}</li>)}</ul>
+        </article>
+        <article>
+          <p class="kicker">Aprofundamento — Assumir e Realizar</p>
+          <h3>O segundo movimento: construir a nova identidade e manifestar o novo</h3>
+          <ul>{advancedItems.map((item) => <li>{item}</li>)}</ul>
+        </article>
+      </div>
+      <div class="wrap feature-grid">
+        <article><h3>+ Imersão ao vivo com a Bia — 1 sexta do mês</h3><p>Das 19h às 22h · Práticas de tantra e bioenergética ao vivo. O momento onde o que foi aprendido nos módulos desce da cabeça para o corpo. Não é conteúdo. É experiência.</p></article>
+        <article><h3>+ WhatsApp Irmãs de Alma</h3><p>A irmandade que existe entre os módulos e as lives. O único lugar onde você pode falar o que não fala em nenhum outro lugar — e ser compreendida por mulheres que já sabem o que é carregar tudo sozinha.</p></article>
+      </div>
+    </section>
+
+    <section class="section testimonials light">
+      <div class="wrap center narrow">
+        <p class="kicker">Constância e irmandade</p>
+        <h2>O que faz as mulheres não quererem sair</h2>
+      </div>
+      <div class="wrap testimonial-grid">
+        {testimonialsTwo.map(([name, city, quote], i) => (
+          <article>
+            <div class="placeholder">PLACEHOLDER {i === 1 ? "VÍDEO" : "FOTO"}</div>
+            <p>“{quote}”</p>
+            <strong>— {name}, {city}</strong>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section fit-section">
+      <div class="wrap fit-grid">
+        <article>
+          <p class="kicker">Para quem é</p>
+          <h2>Essa Comunidade é para você se...</h2>
           <ul>{forYou.map((item) => <li>{item}</li>)}</ul>
         </article>
-        <article class="muted-card">
-          <p class="refined-kicker">Não é para você se...</p>
+        <article class="not-card">
+          <p class="kicker">Para quem não é</p>
+          <h2>Não é para você se...</h2>
           <ul>{notForYou.map((item) => <li>{item}</li>)}</ul>
         </article>
       </div>
     </section>
 
-    <section class="refined-section founder-story">
-      <div class="refined-container founder-grid">
-        <img src={founder.image} alt={founder.imageAlt} loading="lazy" />
-        <div>
-          <p class="refined-kicker">Quem conduz</p>
-          <h2>{founder.name}</h2>
-          {founder.bio.map((p) => <p>{p}</p>)}
-          <strong>{founder.signature}</strong>
-        </div>
+    <section class="section pricing-section" id="precos">
+      <div class="wrap center narrow">
+        <p class="kicker">Planos</p>
+        <h2>Escolha como você quer entrar na Comunidade</h2>
+      </div>
+      <div class="wrap price-grid">
+        <article class="price-card monthly">
+          <p class="kicker">Assinatura Mensal — Plano Básico</p>
+          <h3>R$ 72,80 / mês</h3>
+          <p>Renovação automática</p>
+          <h4>O que está incluso:</h4>
+          <ul>{monthlyIncludes.map((item) => <li>{item}</li>)}</ul>
+          <a href="#" class="btn secondary">Entrar pelo Mensal — R$ 72,80/mês</a>
+        </article>
+        <article class="price-card annual">
+          <p class="kicker">Assinatura Anual</p>
+          <h3>A Jornada Mais Completa</h3>
+          <div class="price">12x R$ 59,30</div>
+          <h4>O que está incluso:</h4>
+          <ul>{annualIncludes.map((item) => <li>{item}</li>)}</ul>
+          <a href="#" class="btn primary">Entrar Assinatura Anual — 12x R$ 59,30</a>
+          <p class="micro">Por menos de R$ 2,00 por dia — menos do que um café — você para de tentar sozinha e começa a ser guiada por um método com estrutura que une ciência e espiritualidade.</p>
+        </article>
       </div>
     </section>
 
-    <section class="refined-section soft">
-      <div class="refined-container two-col">
-        <div>
-          <p class="refined-kicker">Dentro da Jornada</p>
-          <h2>{curriculum.title}</h2>
-          <p class="section-lead">Um percurso progressivo para reorganizar tempo, emoções, vínculos, corpo, dinheiro, espiritualidade e amor próprio.</p>
-        </div>
-        <div class="module-list">
-          {curriculum.modules.map((mod, i) => (
-            <div class="module-row">
-              <span>{roman[i]}</span>
-              <div>
-                <strong>{mod.name}</strong>
-                <p>{mod.format}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <section class="refined-section testimonial-section" id="depoimentos">
-      <div class="refined-container centered narrow">
-        <p class="refined-kicker">Mulheres como você</p>
-        <h2>Quando uma mulher se escolhe, ela muda a direção da própria história.</h2>
-      </div>
-      <div class="refined-container quote-grid">
-        {testimonials.items.map((dep) => (
-          <blockquote>
-            <p>“{dep.quote}”</p>
-            <cite>{dep.name}</cite>
-          </blockquote>
-        ))}
-      </div>
-    </section>
-
-    <section class="refined-offer" id="oferta">
-      <div class="refined-container offer-grid">
-        <div class="offer-copy">
-          <p class="refined-kicker">A jornada completa</p>
-          <h2>{featuredProduct.name}</h2>
-          <p>{featuredProduct.description}</p>
-          <ul class="include-list">
-            {featuredProduct.includes.map((item) => <li>{item}</li>)}
-          </ul>
-        </div>
-        <aside class="offer-box">
-          <span class="badge">Mais escolhido</span>
-          <h3>{featuredProduct.subtitle}</h3>
-          <div class="value-stack">
-            {valueStack.map((item) => (
-              <div><span>{item.name}</span><strong>{item.value}</strong></div>
-            ))}
-          </div>
-          <div class="price-block">
-            <span>Hoje por</span>
-            <strong>12x de R$ {featuredProduct.priceMonthly}</strong>
-            <p>ou R$ {featuredProduct.priceCash} à vista</p>
-          </div>
-          <a href={featuredProduct.link} class="refined-cta full">{featuredProduct.cta}</a>
-          <small>Link de checkout pendente de confirmação · {guarantee.days} dias de garantia</small>
-        </aside>
-      </div>
-    </section>
-
-    <section class="refined-section guarantee-section">
-      <div class="refined-container guarantee-grid">
-        <div class="seal-big">{guarantee.days}</div>
-        <div>
-          <p class="refined-kicker">{guarantee.eyebrow}</p>
-          <h2>{guarantee.title}</h2>
-          <p>{guarantee.text}</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="refined-section faq-section">
-      <div class="refined-container narrow">
-        <p class="refined-kicker">Perguntas honestas</p>
-        <h2>{faq.title}</h2>
-        {faq.items.slice(0, 6).map((item) => (
+    <section class="section faq-section">
+      <div class="wrap narrow">
+        <p class="kicker">Objeções / FAQ</p>
+        <h2>Perguntas que as mulheres fazem antes de entrar</h2>
+        {faqs.map(([question, answer]) => (
           <details>
-            <summary>{item.question}</summary>
-            <p>{item.answer}</p>
+            <summary>“{question}”</summary>
+            <p>{answer}</p>
           </details>
         ))}
       </div>
     </section>
 
-    <section class="refined-final">
-      <div class="refined-container narrow">
-        {letter.paragraphs.map((p) => <p>{p}</p>)}
-        <strong>{letter.signatureName}</strong>
-        <a href="#oferta" class="refined-cta">Quero começar minha jornada</a>
+    <section class="final-cta">
+      <div class="wrap narrow center">
+        <h2>Você já sabe o que precisa.</h2>
+        <p>Você chegou até aqui porque algo em você reconheceu o que foi dito nessa página.</p>
+        <p>Não foi acidente.</p>
+        <p>A pergunta não é “será que funciona?” A pergunta é: quanto tempo você ainda quer passar tentando sozinha?</p>
+        <p>A Comunidade Jornada do Autoamor está aqui. A Bia está aqui. As irmãs estão aqui.</p>
+        <strong>O próximo passo é seu.</strong>
+        <div class="cta-row">
+          <a href="#" class="btn secondary">Entrar pelo Mensal — R$ 72,80/mês</a>
+          <a href="#" class="btn primary">Entrar pelo Anual Parcelado — 12x R$ 59,30</a>
+        </div>
+        <em>“Eu não mudei de vida. Eu mudei quem vive essa vida.” — Frase de uma aluna da Comunidade, depois de 12 meses</em>
       </div>
     </section>
   </main>
 
   <style>
-    .refined-page { --r-bg:#fffaf6; --r-soft:#f6ebe5; --r-ink:#231816; --r-muted:#6d5a55; --r-red:#b11226; --r-gold:#c8904b; background:var(--r-bg); color:var(--r-ink); }
-    .refined-container { width:min(1160px, calc(100% - 40px)); margin:0 auto; }
-    .refined-nav { position:sticky; top:0; z-index:20; display:flex; justify-content:space-between; align-items:center; padding:18px clamp(20px, 5vw, 56px); background:rgba(255,250,246,.88); backdrop-filter:blur(18px); border-bottom:1px solid rgba(35,24,22,.08); }
-    .brand-mark { font-family:var(--serif); font-size:28px; font-style:italic; color:var(--r-red); border:0; }
-    .refined-nav nav { display:flex; gap:26px; align-items:center; }
-    .refined-nav a { color:var(--r-muted); font-size:11px; text-transform:uppercase; letter-spacing:.18em; border:0; }
-    .refined-nav .nav-cta { color:#fff; background:var(--r-red); padding:11px 18px; }
-    .refined-hero { position:relative; overflow:hidden; min-height:88vh; display:flex; align-items:center; padding:70px 0 90px; }
-    .hero-orb { position:absolute; width:620px; height:620px; border-radius:50%; background:radial-gradient(circle, rgba(200,144,75,.25), transparent 68%); right:-180px; top:40px; }
-    .hero-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:70px; align-items:center; position:relative; }
-    .refined-kicker { color:var(--r-red); text-transform:uppercase; letter-spacing:.28em; font-size:11px; font-weight:700; margin-bottom:18px; }
-    .hero-content h1 { font-size:clamp(46px, 7vw, 86px); max-width:820px; }
-    .hero-lead, .section-lead { color:var(--r-muted); font-size:19px; line-height:1.75; max-width:660px; }
-    .hero-actions { margin:34px 0 24px; display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
-    .hero-actions p, .offer-box small { color:var(--r-muted); font-size:13px; margin:0; }
-    .refined-cta { display:inline-flex; justify-content:center; align-items:center; background:var(--r-red); color:#fff; padding:18px 30px; text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:800; border:0; box-shadow:0 20px 50px rgba(177,18,38,.18); }
-    .refined-cta.full { width:100%; }
-    .hero-proof { display:inline-flex; gap:14px; align-items:center; border:1px solid rgba(35,24,22,.12); padding:13px 18px; background:rgba(255,255,255,.45); }
-    .hero-proof strong { font-family:var(--serif); color:var(--r-red); font-size:28px; font-style:italic; }
-    .hero-proof span { color:var(--r-muted); font-size:14px; }
-    .hero-portrait { position:relative; padding:18px; background:#fff; border:1px solid rgba(35,24,22,.08); box-shadow:0 35px 90px rgba(80,45,35,.14); }
-    .hero-portrait img { width:100%; max-height:650px; object-fit:cover; object-position:top center; }
-    .hero-portrait figcaption { position:absolute; left:34px; bottom:34px; background:rgba(255,250,246,.92); padding:10px 14px; color:var(--r-red); font-size:11px; letter-spacing:.18em; text-transform:uppercase; }
-    .refined-strip { background:var(--r-red); color:#fff; padding:24px 0; }
-    .strip-grid { display:flex; justify-content:space-between; align-items:center; gap:24px; }
-    .strip-grid p { font-family:var(--serif); font-size:29px; font-style:italic; margin:0; }
-    .strip-grid a { color:#fff; text-transform:uppercase; letter-spacing:.16em; font-size:12px; border-color:rgba(255,255,255,.5); }
-    .refined-section { padding:105px 0; }
-    .soft { background:var(--r-soft); }
-    .two-col { display:grid; grid-template-columns:.9fr 1.1fr; gap:74px; align-items:start; }
-    .two-col h2, .centered h2, .founder-story h2, .refined-offer h2, .guarantee-section h2, .faq-section h2 { font-size:clamp(36px, 5vw, 62px); }
-    .serif-copy { font-family:var(--serif); font-size:25px; line-height:1.65; color:var(--r-ink); }
-    .centered { text-align:center; }
-    .centered .section-lead, .narrow { max-width:760px; }
-    .centered .section-lead { margin:20px auto 0; }
-    .pillar-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; margin-top:48px; }
-    .pillar-card, .check-grid article, .offer-box, .quote-grid blockquote { background:#fff; border:1px solid rgba(35,24,22,.08); padding:34px; }
-    .pillar-card span, .module-row span { color:var(--r-gold); font-family:var(--serif); font-size:30px; font-style:italic; }
-    .pillar-card p, .module-row p, .quote-grid p, .founder-story p, .guarantee-section p, .faq-section p { color:var(--r-muted); }
-    .area-cloud { display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:40px; }
-    .area-cloud span { border:1px solid rgba(177,18,38,.22); color:var(--r-red); background:#fff; padding:13px 18px; border-radius:999px; font-size:14px; }
-    .split-checks { background:#fff; }
-    .check-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
-    .check-grid ul, .include-list { list-style:none; display:grid; gap:16px; }
-    .check-grid li, .include-list li { position:relative; padding-left:28px; color:var(--r-muted); }
-    .check-grid li:before, .include-list li:before { content:"✦"; position:absolute; left:0; color:var(--r-red); }
-    .muted-card { background:var(--r-soft) !important; }
-    .founder-grid { display:grid; grid-template-columns:.82fr 1.18fr; gap:70px; align-items:center; }
-    .founder-grid img { border-radius:2px; box-shadow:0 30px 80px rgba(80,45,35,.12); }
-    .module-list { display:grid; gap:12px; }
-    .module-row { display:grid; grid-template-columns:44px 1fr; gap:18px; padding:18px 0; border-bottom:1px solid rgba(35,24,22,.1); }
-    .module-row strong { color:var(--r-ink); }
-    .quote-grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:18px; margin-top:42px; }
-    .quote-grid blockquote { margin:0; }
-    .quote-grid cite { color:var(--r-red); font-style:normal; font-weight:700; }
-    .refined-offer { padding:110px 0; background:linear-gradient(135deg, #2b1416, #5c101a); color:#fff; }
-    .refined-offer h2, .refined-offer h3 { color:#fff; }
-    .offer-grid { display:grid; grid-template-columns:1fr .86fr; gap:56px; align-items:start; }
-    .offer-copy p, .refined-offer li { color:rgba(255,255,255,.78); }
-    .include-list { margin-top:28px; }
-    .offer-box { color:var(--r-ink); position:sticky; top:96px; }
-    .badge { display:inline-block; color:#fff; background:var(--r-red); padding:8px 12px; font-size:11px; text-transform:uppercase; letter-spacing:.16em; margin-bottom:20px; }
-    .value-stack { border-top:1px solid rgba(35,24,22,.1); margin:24px 0; }
-    .value-stack div { display:flex; justify-content:space-between; gap:18px; padding:11px 0; border-bottom:1px solid rgba(35,24,22,.08); font-size:13px; color:var(--r-muted); }
-    .value-stack strong { color:var(--r-red); white-space:nowrap; }
-    .price-block { background:var(--r-soft); padding:24px; margin-bottom:20px; text-align:center; }
-    .price-block span { color:var(--r-muted); text-transform:uppercase; letter-spacing:.18em; font-size:11px; }
-    .price-block strong { display:block; color:var(--r-red); font-size:30px; margin:8px 0; }
-    .guarantee-grid { display:grid; grid-template-columns:220px 1fr; gap:52px; align-items:center; }
-    .seal-big { width:180px; height:180px; border-radius:50%; display:grid; place-items:center; border:1px solid var(--r-red); color:var(--r-red); font-family:var(--serif); font-size:78px; font-style:italic; }
-    .faq-section details { border-bottom:1px solid rgba(35,24,22,.12); padding:22px 0; }
-    .faq-section summary { cursor:pointer; font-weight:700; color:var(--r-ink); }
-    .refined-final { padding:110px 0; text-align:center; background:var(--r-red); color:#fff; }
-    .refined-final p { font-family:var(--serif); font-size:28px; line-height:1.55; color:#fff; }
-    .refined-final strong { display:block; margin:22px 0 30px; color:#fff; }
-    .refined-final .refined-cta { background:#fff; color:var(--r-red); }
-    @media (max-width:900px){ .refined-nav nav a:not(.nav-cta){display:none;} .hero-grid,.two-col,.check-grid,.founder-grid,.offer-grid,.guarantee-grid{grid-template-columns:1fr;} .pillar-grid,.quote-grid{grid-template-columns:1fr;} .refined-hero{padding-top:40px;} .hero-actions{align-items:flex-start;} .strip-grid{display:block;} .offer-box{position:static;} }
+    .sales-page{--bg:#fffaf7;--soft:#f7ebe6;--ink:#211615;--muted:#6d5954;--red:#b11226;--red2:#7f0f1b;--gold:#c8904b;background:var(--bg);color:var(--ink)}
+    .wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}.narrow{max-width:820px}.center{text-align:center}.section{padding:96px 0}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.25em;color:var(--red);font-weight:800;margin-bottom:16px}.lead{font-size:19px;line-height:1.75;color:var(--muted)}
+    .sales-nav{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:16px clamp(20px,5vw,56px);background:rgba(255,250,247,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(33,22,21,.08)}.sales-nav .brand{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--red);border:0}.sales-nav nav{display:flex;gap:26px}.sales-nav nav a{border:0;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.16em}
+    .hero-sales{position:relative;overflow:hidden;padding:72px 0 90px;background:linear-gradient(110deg,#fffaf7 0%,#fffaf7 52%,#f1d9d4 100%)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}.subbrand{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.12em}.hero-copy h1{font-size:clamp(42px,6.6vw,84px);max-width:900px}.hero-copy h2{font-size:clamp(26px,3.2vw,42px);color:var(--red);margin:20px 0}.hero-copy .lead{max-width:760px}.hero-photo{background:#fff;padding:18px;box-shadow:0 32px 90px rgba(80,45,35,.15)}.hero-photo img{width:100%;max-height:650px;object-fit:cover;object-position:top center}.btn{display:inline-flex;justify-content:center;align-items:center;padding:18px 28px;text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:800;border:0;margin-top:20px}.primary{background:var(--red);color:#fff}.secondary{background:#fff;color:var(--red);border:1px solid rgba(177,18,38,.28)}.micro{font-size:13px;color:var(--muted);margin-top:12px}
+    .proof-bar{background:var(--red);color:#fff;padding:26px 0}.proof-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.proof-grid div{display:flex;gap:10px;align-items:flex-start}.proof-grid span{color:#ffd5cf}.proof-grid strong{color:#fff;font-size:13px;line-height:1.45}
+    .lar-section,.inside-section,.faq-section{background:var(--soft)}.lar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}.lar-card,.pillar-grid article,.inside-grid article,.feature-grid article,.fit-grid article,.price-card,.testimonial-grid article{background:#fff;border:1px solid rgba(33,22,21,.08);padding:32px}.lar-card span{font-family:var(--serif);font-size:74px;color:var(--red);font-style:italic;line-height:1}.lar-card h3,.pillar-grid h3,.feature-grid h3{font-size:34px;color:var(--red)}.lar-card p,.bia-section p,.inside-grid li,.fit-grid li,.price-card li,.faq-section p{color:var(--muted)}.lar-note{margin-top:34px;text-align:center;font-family:var(--serif);font-size:24px;line-height:1.5}.lar-note strong{display:block;color:var(--red);margin-top:14px}
+    .mirror-section{background:#fff}.quote-list{display:grid;gap:14px;margin-top:34px}.quote-list blockquote,.big-quote{font-family:var(--serif);font-size:clamp(25px,3vw,38px);line-height:1.35;text-align:center;color:var(--ink);background:var(--soft);padding:24px;margin:0}.recognition{font-size:20px;color:var(--muted);margin-top:34px}.mirror-section h3{color:var(--red);font-size:42px}.reveal-list{margin:32px 0}.reveal-list p{font-family:var(--serif);font-size:28px;color:var(--ink);margin-bottom:10px}
+    .bia-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}.bia-grid img{box-shadow:0 28px 80px rgba(80,45,35,.14)}.bia-section blockquote{font-family:var(--serif);font-size:34px;color:var(--red);margin:24px 0}.credentials{margin-top:36px;background:var(--red);color:#fff;padding:20px;text-align:center;font-weight:800}
+    .dark{background:linear-gradient(135deg,#391217,#7f0f1b);color:#fff}.dark h2,.dark .kicker,.dark strong{color:#fff}.light{background:#fff}.testimonial-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.dark .testimonial-grid article{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15)}.dark .testimonial-grid p{color:rgba(255,255,255,.86)}.testimonial-grid p{color:var(--muted)}.placeholder{height:120px;border:1px dashed currentColor;display:grid;place-items:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px;opacity:.7}
+    .pillar-grid,.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}.feature-grid{grid-template-columns:1fr 1fr}.inside-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:42px}.inside-grid ul,.fit-grid ul,.price-card ul{list-style:none;display:grid;gap:13px;padding:0}.inside-grid li,.fit-grid li,.price-card li{position:relative;padding-left:25px}.inside-grid li:before,.fit-grid li:before,.price-card li:before{content:"✦";position:absolute;left:0;color:var(--red)}
+    .fit-section{background:#fff}.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.not-card{background:var(--soft)!important}.pricing-section{background:linear-gradient(180deg,#fffaf7,#f4ddd8)}.price-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;margin-top:42px;align-items:start}.price-card h3{font-size:42px;color:var(--red)}.price-card .price{font-family:var(--serif);font-size:56px;color:var(--red);font-style:italic;margin:12px 0}.annual{border:2px solid var(--red)}.price-card .btn{width:100%}
+    .faq-section details{background:#fff;border:1px solid rgba(33,22,21,.08);padding:22px 24px;margin-top:12px}.faq-section summary{cursor:pointer;font-weight:800;color:var(--ink)}.final-cta{background:var(--red);color:#fff;text-align:center;padding:105px 0}.final-cta h2{color:#fff;font-size:clamp(38px,5vw,66px)}.final-cta p{font-family:var(--serif);font-size:27px;line-height:1.45;color:#fff}.final-cta strong{display:block;color:#fff;font-size:24px;margin:22px 0}.cta-row{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:18px 0 28px}.final-cta em{display:block;color:#fff;opacity:.9}.final-cta .primary{background:#fff;color:var(--red)}
+    @media(max-width:900px){.sales-nav nav{display:none}.hero-grid,.bia-grid,.inside-grid,.fit-grid,.price-grid{grid-template-columns:1fr}.proof-grid{grid-template-columns:1fr}.lar-grid,.pillar-grid,.testimonial-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.section{padding:72px 0}.hero-sales{padding-top:44px}}
   </style>
 </Layout>
