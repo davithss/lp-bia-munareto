@@ -339,27 +339,55 @@ const faqs = [
 
     <section class="section pricing-section" id="precos">
       <div class="wrap center narrow">
-        <p class="kicker">Planos</p>
-        <h2>Escolha como você quer entrar na Comunidade</h2>
+        <p class="kicker">Escolha sua forma de entrada</p>
+        <h2>Entre na Comunidade Jornada do Autoamor</h2>
+        <p class="lead">Você pode começar pelo plano mensal ou escolher a jornada anual completa, com mais profundidade, melhor valor por mês e acesso ao aprofundamento.</p>
       </div>
+
+      <div class="wrap payment-summary">
+        <div><span>✓</span> Venda segura</div>
+        <div><span>✓</span> Acesso imediato após confirmação</div>
+        <div><span>✓</span> Assinatura recorrente no cartão</div>
+      </div>
+
       <div class="wrap price-grid">
         <article class="price-card monthly">
-          <p class="kicker">Assinatura Mensal — Plano Básico</p>
-          <h3>R$ 72,80 / mês</h3>
-          <p>Renovação automática</p>
-          <h4>O que está incluso:</h4>
+          <div class="plan-head">
+            <p class="plan-name">Plano Mensal</p>
+            <span>Para começar agora</span>
+          </div>
+          <div class="price-box">
+            <span class="price-prefix">R$</span>
+            <strong>72,80</strong>
+            <span class="price-suffix">/ mês</span>
+          </div>
+          <p class="billing-note">Renovação automática mensal. Você começa pelo básico e sente a Comunidade por dentro.</p>
+          <a href="#" class="btn secondary">Entrar pelo Mensal</a>
+          <h4>Inclui:</h4>
           <ul>{monthlyIncludes.map((item) => <li>{item}</li>)}</ul>
-          <a href="#" class="btn secondary">Entrar pelo Mensal — R$ 72,80/mês</a>
         </article>
-        <article class="price-card annual">
-          <p class="kicker">Assinatura Anual</p>
-          <h3>A Jornada Mais Completa</h3>
-          <div class="price">12x R$ 59,30</div>
-          <h4>O que está incluso:</h4>
+
+        <article class="price-card annual featured-plan">
+          <div class="best-choice">Mais completo</div>
+          <div class="plan-head">
+            <p class="plan-name">Plano Anual</p>
+            <span>A Jornada Mais Completa</span>
+          </div>
+          <div class="price-box annual-price">
+            <span class="price-prefix">12x R$</span>
+            <strong>59,30</strong>
+          </div>
+          <p class="daily-price">Menos de R$ 2,00 por dia</p>
+          <p class="billing-note">A opção para quem quer viver os 12 meses de transformação com estrutura, constância, suporte e aprofundamento.</p>
+          <a href="#" class="btn primary">Entrar no Anual — 12x R$ 59,30</a>
+          <h4>Inclui tudo do mensal + aprofundamento:</h4>
           <ul>{annualIncludes.map((item) => <li>{item}</li>)}</ul>
-          <a href="#" class="btn primary">Entrar Assinatura Anual — 12x R$ 59,30</a>
-          <p class="micro">Por menos de R$ 2,00 por dia — menos do que um café — você para de tentar sozinha e começa a ser guiada por um método com estrutura que une ciência e espiritualidade.</p>
         </article>
+      </div>
+
+      <div class="wrap payment-note">
+        <strong>Como funciona o pagamento?</strong>
+        <p>Ao entrar no plano mensal ou anual, sua assinatura é recorrente no cartão conforme o plano escolhido. Depois da confirmação, você recebe o acesso à Comunidade e pode iniciar sua jornada.</p>
       </div>
     </section>
 
@@ -404,8 +432,8 @@ const faqs = [
     .bia-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}.bia-grid img{box-shadow:0 28px 80px rgba(80,45,35,.14)}.bia-section blockquote{font-family:var(--serif);font-size:34px;color:var(--red);margin:24px 0}.credentials{margin-top:36px;background:var(--red);color:#fff;padding:20px;text-align:center;font-weight:800}
     .dark{background:linear-gradient(135deg,#391217,#7f0f1b);color:#fff}.dark h2,.dark .kicker,.dark strong{color:#fff}.light{background:#fff}.testimonial-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.dark .testimonial-grid article{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15)}.dark .testimonial-grid p{color:rgba(255,255,255,.86)}.testimonial-grid p{color:var(--muted)}.placeholder{height:120px;border:1px dashed currentColor;display:grid;place-items:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px;opacity:.7}
     .pillar-grid,.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}.feature-grid{grid-template-columns:1fr 1fr}.inside-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:42px}.inside-grid ul,.fit-grid ul,.price-card ul{list-style:none;display:grid;gap:13px;padding:0}.inside-grid li,.fit-grid li,.price-card li{position:relative;padding-left:25px}.inside-grid li:before,.fit-grid li:before,.price-card li:before{content:"✦";position:absolute;left:0;color:var(--red)}
-    .fit-section{background:#fff}.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.not-card{background:var(--soft)!important}.pricing-section{background:linear-gradient(180deg,#fffaf7,#f4ddd8)}.price-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;margin-top:42px;align-items:start}.price-card h3{font-size:42px;color:var(--red)}.price-card .price{font-family:var(--serif);font-size:56px;color:var(--red);font-style:italic;margin:12px 0}.annual{border:2px solid var(--red)}.price-card .btn{width:100%}
+    .fit-section{background:#fff}.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.not-card{background:var(--soft)!important}.pricing-section{background:linear-gradient(180deg,#fffaf7,#f4ddd8)}.payment-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}.payment-summary div{background:#fff;border:1px solid rgba(33,22,21,.08);padding:16px 18px;text-align:center;font-weight:800;color:var(--ink);box-shadow:0 18px 50px rgba(80,45,35,.06)}.payment-summary span{color:var(--red);margin-right:6px}.price-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:26px;margin-top:34px;align-items:start}.price-card{position:relative}.plan-head{border-bottom:1px solid rgba(33,22,21,.08);padding-bottom:18px;margin-bottom:22px}.plan-name{font-size:13px;text-transform:uppercase;letter-spacing:.18em;color:var(--red);font-weight:900;margin:0 0 6px}.plan-head span{color:var(--muted);font-size:15px}.price-box{display:flex;align-items:flex-start;gap:8px;color:var(--red);margin:12px 0 10px}.price-prefix{font-weight:900;margin-top:13px}.price-box strong{font-family:var(--serif);font-size:clamp(56px,7vw,86px);line-height:.9;font-style:italic}.price-suffix{align-self:flex-end;color:var(--muted);font-weight:800;margin-bottom:8px}.billing-note{color:var(--muted);font-size:16px;line-height:1.55;margin:14px 0 20px}.featured-plan{border:2px solid var(--red);box-shadow:0 32px 90px rgba(177,18,38,.16);transform:translateY(-10px)}.best-choice{position:absolute;right:24px;top:-17px;background:var(--red);color:#fff;padding:9px 16px;border-radius:999px;text-transform:uppercase;letter-spacing:.16em;font-size:10px;font-weight:900}.annual-price .price-prefix{font-size:22px;margin-top:10px}.daily-price{display:inline-flex;background:rgba(177,18,38,.1);color:var(--red);border-radius:999px;padding:9px 14px;font-weight:900;margin:0 0 10px}.price-card .btn{width:100%;margin:8px 0 22px}.price-card h4{margin:10px 0 16px}.payment-note{margin-top:26px;background:#fff;border:1px solid rgba(33,22,21,.08);padding:24px 28px;text-align:center;box-shadow:0 18px 50px rgba(80,45,35,.06)}.payment-note strong{color:var(--red);font-size:18px}.payment-note p{color:var(--muted);margin:8px auto 0;max-width:820px;line-height:1.65}
     .faq-section details{background:#fff;border:1px solid rgba(33,22,21,.08);padding:22px 24px;margin-top:12px}.faq-section summary{cursor:pointer;font-weight:800;color:var(--ink)}.final-cta{background:var(--red);color:#fff;text-align:center;padding:105px 0}.final-cta h2{color:#fff;font-size:clamp(38px,5vw,66px)}.final-cta p{font-family:var(--serif);font-size:27px;line-height:1.45;color:#fff}.final-cta strong{display:block;color:#fff;font-size:24px;margin:22px 0}.cta-row{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:18px 0 28px}.final-cta em{display:block;color:#fff;opacity:.9}.final-cta .primary{background:#fff;color:var(--red)}
-    @media(max-width:900px){.sales-nav nav{display:none}.hero-grid,.bia-grid,.inside-grid,.fit-grid,.price-grid{grid-template-columns:1fr}.proof-grid{grid-template-columns:1fr}.lar-grid,.pillar-grid,.testimonial-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.section{padding:72px 0}.hero-sales{padding-top:44px}}
+    @media(max-width:900px){.sales-nav nav{display:none}.hero-grid,.bia-grid,.inside-grid,.fit-grid,.price-grid,.payment-summary{grid-template-columns:1fr}.proof-grid{grid-template-columns:1fr}.lar-grid,.pillar-grid,.testimonial-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.section{padding:72px 0}.hero-sales{padding-top:44px}.featured-plan{transform:none}.price-box strong{font-size:58px}}
   </style>
 </Layout>
