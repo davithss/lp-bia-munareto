@@ -154,23 +154,15 @@ const planDeliverables = [
     title: "Básico",
     groups: [
       {
-        title: "Comunidade",
-        items: [
-          ["Acesso à Comunidade Jornada do Autoamor", true],
-          ["Aulas, práticas e meditações", true],
-          ["Encontros semanais ao vivo com Bia", true],
-          ["WhatsApp Irmãs de Alma", true]
-        ]
+        title: "O que você encontra lá dentro",
+        items: monthlyIncludes.map((item) => [item, true] as const)
       },
       {
-        title: "Materiais de apoio",
+        title: "Não incluso no Básico",
         items: [
-          ["Caderno Terapêutico", true],
-          ["Planilha Financeira", true],
-          ["Ferramentas para a vida da mulher moderna", true],
-          ["Aprofundamentos e práticas avançadas", false],
-          ["TRIX Inspira — IA treinada por Bia disponível 24h", false],
-          ["Direcionamento para ervas e práticas espirituais", false],
+          ...advancedItems.map((item) => [item, false] as const),
+          ["TRIX Inspira — IA treinada por Bia disponível 24h por dia", false],
+          ["Direcionamento para utilização de ervas e práticas espirituais", false],
           ["12 meses de encontros presenciais", false],
           ["1 encontro presencial por mês em Aracaju/SE", false]
         ]
@@ -182,18 +174,14 @@ const planDeliverables = [
     groups: [
       {
         title: "Tudo do Básico",
-        items: [
-          ["Comunidade, aulas, práticas e encontros semanais", true],
-          ["WhatsApp Irmãs de Alma", true],
-          ["Caderno Terapêutico, Planilha Financeira e ferramentas de apoio", true]
-        ]
+        items: monthlyIncludes.map((item) => [item, true] as const)
       },
       {
-        title: "Extras do Avançado",
+        title: "Aprofundamentos do Avançado",
         items: [
-          ["Aprofundamentos e práticas avançadas", true],
-          ["TRIX Inspira — IA treinada por Bia disponível 24h", true],
-          ["Direcionamento para ervas e práticas espirituais", true],
+          ...advancedItems.map((item) => [item, true] as const),
+          ["TRIX Inspira — IA treinada por Bia disponível 24h por dia", true],
+          ["Direcionamento para utilização de ervas e práticas espirituais", true],
           ["12 meses de encontros presenciais", false],
           ["1 encontro presencial por mês em Aracaju/SE", false]
         ]
@@ -206,10 +194,11 @@ const planDeliverables = [
       {
         title: "Experiência presencial",
         items: [
-          ["Comunidade, aulas, práticas e encontros semanais", false],
-          ["Caderno Terapêutico, Planilha Financeira e ferramentas de apoio", false],
-          ["TRIX Inspira — IA treinada por Bia disponível 24h", false],
-          ["Direcionamento para ervas e práticas espirituais", false],
+          ...monthlyIncludes.map((item) => [item, false] as const),
+          ...advancedItems.map((item) => [item, false] as const),
+          ["TRIX Inspira — IA treinada por Bia disponível 24h por dia", false],
+          ["Direcionamento para utilização de ervas e práticas espirituais", false],
+          ["Experiência presencial da Jornada do Autoamor", true],
           ["12 meses de encontros presenciais", true],
           ["1 encontro presencial por mês em Aracaju/SE", true],
           ["Vivência mais profunda, íntima e acompanhada com Bia", true],
