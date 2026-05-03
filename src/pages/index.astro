@@ -14,7 +14,7 @@ const roman = ["i","ii","iii","iv","v","vi","vii","viii","ix","x"];
        ════════════════════════════════════════════════════════════════ -->
   <header class="site-header">
     <div class="container row">
-      <a href="/" class="logo">{brand.name}</a>
+      <a href="/" class="logo logo-img"><img src="/images/logo-bia-white.png" alt={brand.name} /></a>
       <nav>
         {header.navItems.map((item) => (
           <a href={item.href}>{item.label}</a>
@@ -430,7 +430,7 @@ const roman = ["i","ii","iii","iv","v","vi","vii","viii","ix","x"];
   <footer class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="logo">{brand.name}</div>
+        <div class="logo logo-img"><img src="/images/logo-bia-white.png" alt={brand.name} /></div>
         <nav>
           {footer.links.map((link) => (
             <a href={link.href}>{link.label}</a>
