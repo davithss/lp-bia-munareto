@@ -545,15 +545,13 @@ const faqs = [
           <div class="best-choice">Mais escolhido</div>
           <div class="plan-head">
             <p class="plan-name">Avançado</p>
-            <span>Para aprofundar a jornada</span>
+            <span>A jornada mais completa 100% online</span>
           </div>
           <div class="price-box annual-price">
             <span class="price-prefix">12x R$</span>
             <strong>59,30</strong>
           </div>
           <p class="daily-price">Menos de R$ 2,00 por dia</p>
-          <p class="billing-note">Inclui tudo do Básico, os aprofundamentos e a TRIX Inspira — IA treinada por Bia como apoio 24h para ervas e práticas espirituais.</p>
-          <a href="#" class="btn primary">Entrar pelo Avançado — 12x R$ 59,30</a>
           <div class="plan-deliverables">
             {planDeliverables[1].groups.map((group) => (
               <div class={group.title.includes("Extras") ? "deliverable-group highlight-group" : "deliverable-group"}>
@@ -568,6 +566,7 @@ const faqs = [
               </div>
             ))}
           </div>
+          <a href="#" class="btn primary annual-cta">Comece agora</a>
         </article>
 
         <article class="price-card premium-plan">
