@@ -215,6 +215,16 @@ const faqs = [
       </div>
     </section>
 
+    <section class="section post-lar-testimonials" aria-label="Depoimentos de alunas">
+      <div class="wrap testimonial-sequence">
+        {[1, 2, 3, 4, 5, 6].map((item) => (
+          <figure>
+            <img src={`/images/dep/sequencia/depoimento-${item}.jpg`} alt={`Depoimento ${item} da Jornada do Autoamor`} loading="lazy" />
+          </figure>
+        ))}
+      </div>
+    </section>
+
     <section class="section mirror-section">
       <div class="wrap center narrow">
         <p class="kicker">Espelho</p>
@@ -454,6 +464,12 @@ const faqs = [
     .proof-shots article{background:rgba(255,247,239,.08)}
     .featured-plan{box-shadow:0 30px 90px rgba(177,18,38,.28)}
     .secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
+
+    .post-lar-testimonials{background:#050302;padding:54px 0}
+    .testimonial-sequence{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;align-items:start}
+    .testimonial-sequence figure{margin:0;background:rgba(255,247,239,.08);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:8px;overflow:hidden}
+    .testimonial-sequence img{display:block;width:100%;height:auto;border-radius:12px}
+    @media(max-width:900px){.testimonial-sequence{grid-template-columns:repeat(2,1fr);gap:12px}.post-lar-testimonials{padding:42px 0}}
 
   </style>
 </Layout>
