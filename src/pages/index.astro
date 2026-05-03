@@ -210,9 +210,9 @@ const faqs = [
     </section>
 
     <section class="section post-lar-testimonials" aria-label="Depoimentos de alunas">
-      <div class="testimonial-carousel">
+      <div class="testimonial-carousel" data-carousel>
         <button class="testimonial-arrow testimonial-prev" type="button" aria-label="Depoimento anterior">‹</button>
-        <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-track">
           {[1, 2, 3, 4, 5, 6].map((item) => (
             <figure>
               <img src={`/images/dep/sequencia/depoimento-${item}.jpg`} alt={`Depoimento ${item} da Jornada do Autoamor`} loading="lazy" />
@@ -250,6 +250,20 @@ const faqs = [
         </div>
         <p class="lead">Assim como você, clientes chegam até mim todos os dias e falam “estou cansada, não aguento mais”. E após minhas intervenções, dizem:</p>
         <blockquote class="big-quote">“Isso é diferente de tudo que eu já fiz. Eu nunca tinha visto por esse caminho.”</blockquote>
+      </div>
+    </section>
+
+    <section class="section post-lar-testimonials reveal-testimonials" aria-label="Mais depoimentos de alunas">
+      <div class="testimonial-carousel" data-carousel>
+        <button class="testimonial-arrow testimonial-prev" type="button" aria-label="Depoimento anterior">‹</button>
+        <div class="testimonial-track">
+          {[1, 2, 3, 4, 5, 6].map((item) => (
+            <figure>
+              <img src={`/images/dep/reveal/depoimento-${item}.jpg`} alt={`Depoimento ${item} sobre a Jornada do Autoamor`} loading="lazy" />
+            </figure>
+          ))}
+        </div>
+        <button class="testimonial-arrow testimonial-next" type="button" aria-label="Próximo depoimento">›</button>
       </div>
     </section>
 
@@ -436,12 +450,14 @@ const faqs = [
   </main>
 
   <script>
-    const testimonialTrack = document.querySelector('#testimonialTrack');
-    document.querySelector('.testimonial-prev')?.addEventListener('click', () => {
-      testimonialTrack?.scrollBy({ left: -testimonialTrack.clientWidth * 0.82, behavior: 'smooth' });
-    });
-    document.querySelector('.testimonial-next')?.addEventListener('click', () => {
-      testimonialTrack?.scrollBy({ left: testimonialTrack.clientWidth * 0.82, behavior: 'smooth' });
+    document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+      const track = carousel.querySelector('.testimonial-track');
+      carousel.querySelector('.testimonial-prev')?.addEventListener('click', () => {
+        track?.scrollBy({ left: -track.clientWidth * 0.82, behavior: 'smooth' });
+      });
+      carousel.querySelector('.testimonial-next')?.addEventListener('click', () => {
+        track?.scrollBy({ left: track.clientWidth * 0.82, behavior: 'smooth' });
+      });
     });
   </script>
 
@@ -477,7 +493,7 @@ const faqs = [
     .featured-plan{box-shadow:0 30px 90px rgba(177,18,38,.28)}
     .secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
 
-    .post-lar-testimonials{background:#050302;padding:58px 0;overflow:hidden}
+    .post-lar-testimonials{background:#050302;padding:58px 0;overflow:hidden}.reveal-testimonials{padding-top:34px}
     .testimonial-carousel{position:relative;width:min(1220px,calc(100% - 36px));margin:0 auto;display:flex;align-items:center;justify-content:center;gap:16px}
     .testimonial-track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:6px 0 18px;max-width:1100px;margin:0 auto}
     .testimonial-track::-webkit-scrollbar{display:none}
