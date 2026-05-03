@@ -138,6 +138,24 @@ const premiumIncludes = [
   "Entrada por lista de espera para a próxima turma Premium"
 ];
 
+const describedBasicDeliverables = [
+  "Trilhas de transformação — acesse os caminhos Básico e Aprofundamento para purificar padrões, construir uma nova identidade e sustentar a mulher que você quer se tornar.",
+  "Encontros semanais ao vivo — acompanhamento, direcionamento e presença para transformar consciência em prática.",
+  "Imersão mensal com a Bia — uma sexta por mês, das 19h às 22h, com práticas de tantra e bioenergética ao vivo.",
+  "WhatsApp Irmãs de Alma — um lugar para compartilhar a jornada com mulheres que entendem o que você vive.",
+  "Práticas, meditações e ferramentas — mantras, meditações guiadas, caderno terapêutico, práticas espirituais e conteúdos para integrar autoamor, autoestima e autoconfiança no cotidiano."
+];
+
+const describedAdvancedDeliverables = [
+  "TRIX Inspira — IA treinada por Bia, disponível 24h por dia, para te aconselhar e te direcionar na utilização de ervas e práticas espirituais."
+];
+
+const describedPremiumDeliverables = [
+  "Experiência presencial da Jornada do Autoamor — 12 meses de encontros presenciais, com 1 encontro por mês em Aracaju/SE.",
+  "Vivência mais profunda, íntima e acompanhada com Bia.",
+  "Entrada por lista de espera para a próxima turma Premium."
+];
+
 const pricingFeatures = [
   ["Acesso à Comunidade Jornada do Autoamor", true, true, true],
   ["Aulas, práticas, meditações e caderno terapêutico", true, true, true],
@@ -155,16 +173,13 @@ const planDeliverables = [
     groups: [
       {
         title: "O que você encontra lá dentro",
-        items: monthlyIncludes.map((item) => [item, true] as const)
+        items: describedBasicDeliverables.map((item) => [item, true] as const)
       },
       {
         title: "Não incluso no Básico",
         items: [
-          ...advancedItems.map((item) => [item, false] as const),
-          ["TRIX Inspira — IA treinada por Bia disponível 24h por dia", false],
-          ["Direcionamento para utilização de ervas e práticas espirituais", false],
-          ["12 meses de encontros presenciais", false],
-          ["1 encontro presencial por mês em Aracaju/SE", false]
+          ...describedAdvancedDeliverables.map((item) => [item, false] as const),
+          ...describedPremiumDeliverables.map((item) => [item, false] as const)
         ]
       }
     ]
@@ -174,16 +189,13 @@ const planDeliverables = [
     groups: [
       {
         title: "Tudo do Básico",
-        items: monthlyIncludes.map((item) => [item, true] as const)
+        items: describedBasicDeliverables.map((item) => [item, true] as const)
       },
       {
-        title: "Aprofundamentos do Avançado",
+        title: "Aprofundamento do Avançado",
         items: [
-          ...advancedItems.map((item) => [item, true] as const),
-          ["TRIX Inspira — IA treinada por Bia disponível 24h por dia", true],
-          ["Direcionamento para utilização de ervas e práticas espirituais", true],
-          ["12 meses de encontros presenciais", false],
-          ["1 encontro presencial por mês em Aracaju/SE", false]
+          ...describedAdvancedDeliverables.map((item) => [item, true] as const),
+          ...describedPremiumDeliverables.map((item) => [item, false] as const)
         ]
       }
     ]
@@ -194,15 +206,9 @@ const planDeliverables = [
       {
         title: "Experiência presencial",
         items: [
-          ...monthlyIncludes.map((item) => [item, false] as const),
-          ...advancedItems.map((item) => [item, false] as const),
-          ["TRIX Inspira — IA treinada por Bia disponível 24h por dia", false],
-          ["Direcionamento para utilização de ervas e práticas espirituais", false],
-          ["Experiência presencial da Jornada do Autoamor", true],
-          ["12 meses de encontros presenciais", true],
-          ["1 encontro presencial por mês em Aracaju/SE", true],
-          ["Vivência mais profunda, íntima e acompanhada com Bia", true],
-          ["Entrada por lista de espera para a próxima turma Premium", true]
+          ...describedBasicDeliverables.map((item) => [item, false] as const),
+          ...describedAdvancedDeliverables.map((item) => [item, false] as const),
+          ...describedPremiumDeliverables.map((item) => [item, true] as const)
         ]
       }
     ]
