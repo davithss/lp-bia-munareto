@@ -254,7 +254,7 @@ const faqs = [
     </section>
 
     <section class="section post-lar-testimonials reveal-testimonials" aria-label="Mais depoimentos de alunas">
-      <div class="testimonial-carousel reveal-carousel" data-carousel>
+      <div class="testimonial-carousel" data-carousel>
         <button class="testimonial-arrow testimonial-prev" type="button" aria-label="Depoimento anterior">‹</button>
         <div class="testimonial-track">
           {[6, 1, 2, 3, 4, 5].map((item) => (
@@ -502,11 +502,7 @@ const faqs = [
     .testimonial-arrow{flex:0 0 48px;width:48px;height:48px;border-radius:999px;border:1px solid rgba(255,255,255,.24);background:rgba(255,247,239,.08);color:#fff;font-size:34px;line-height:1;display:grid;place-items:center;cursor:pointer;z-index:2}
     .testimonial-arrow:hover{background:#8f0f1c}
 
-    .reveal-carousel{width:min(760px,calc(100% - 36px))}
-    .reveal-carousel .testimonial-track{max-width:min(560px,calc(100vw - 120px));gap:18px}
-    .reveal-carousel .testimonial-track figure{flex-basis:min(520px,calc(100vw - 140px));min-height:clamp(430px,58vw,680px)}
-    .reveal-carousel .testimonial-track img{max-height:clamp(410px,56vw,650px)}
-    @media(max-width:900px){.testimonial-carousel{width:100%;gap:8px}.testimonial-track{gap:14px;max-width:calc(100% - 86px)}.testimonial-track figure{flex-basis:68vw}.reveal-carousel .testimonial-track{max-width:calc(100% - 86px)}.reveal-carousel .testimonial-track figure{flex-basis:78vw;min-height:clamp(430px,105vw,620px)}.reveal-carousel .testimonial-track img{max-height:clamp(410px,100vw,600px)}.testimonial-arrow{flex-basis:38px;width:38px;height:38px;font-size:28px}.post-lar-testimonials{padding:42px 0}}
+    @media(max-width:900px){.testimonial-carousel{width:100%;gap:8px}.testimonial-track{gap:14px;max-width:calc(100% - 86px)}.testimonial-track figure{flex-basis:68vw}.testimonial-arrow{flex-basis:38px;width:38px;height:38px;font-size:28px}.post-lar-testimonials{padding:42px 0}}
 
   </style>
 </Layout>
