@@ -9,68 +9,81 @@
     "domain": "biamunaretto.com.br",
     "year": 2026
   },
-
   "seo": {
     "title": "A Jornada do Autoamor — Bia Munareto",
-    "description": "Uma jornada de 12 meses para aprender a se colocar em primeiro lugar — sem culpa, sem ansiedade, sem abrir mão de quem você ama.",
+    "description": "A Jornada do Autoamor é uma experiência terapêutica para a mulher que quer parar de se abandonar e prosperar no amor, no corpo, no dinheiro, nos relacionamentos e na vida.",
     "ogImage": "/images/og.jpg"
   },
-
   "tracking": {
     "gtmId": "[FALTA: GTM ID]"
   },
-
   "cta": {
-    "text": "Quero começar minha jornada",
-    "shortText": "Começar",
+    "text": "Quero viver a Jornada do Autoamor",
+    "shortText": "Entrar na Jornada",
     "link": "#oferta",
     "checkoutPlatform": "Hotmart"
   },
-
   "header": {
     "navItems": [
-      { "label": "o método", "href": "#metodo" },
-      { "label": "depoimentos", "href": "#depoimentos" },
-      { "label": "os produtos", "href": "#oferta" }
+      {
+        "label": "por que agora",
+        "href": "#metodo"
+      },
+      {
+        "label": "o caminho",
+        "href": "#metodo"
+      },
+      {
+        "label": "entrar",
+        "href": "#oferta"
+      }
     ]
   },
-
   "hero": {
-    "eyebrow": "Psicologia · Corpo · Espiritualidade",
-    "headline": "Você se doa para todos — e ainda assim nunca é suficiente para você mesma.",
-    "subheadline": "Um método, três formas de entrar. Do livro ao acompanhamento completo de 12 meses — escolha o próximo passo da sua jornada.",
+    "eyebrow": "Jornada do Autoamor · Prosperidade feminina",
+    "headline": "Para prosperar em todos os campos da vida, uma mulher precisa primeiro voltar para si.",
+    "subheadline": "A Jornada do Autoamor é o caminho para parar de se abandonar, romper padrões emocionais e aprender a viver amor, dinheiro, corpo, espiritualidade e relacionamentos a partir de um novo lugar: você como prioridade.",
     "image": "/images/hero.jpg",
     "imageAlt": "Bia Munareto, psicóloga e mentora de autoamor",
     "proofNumber": "+14 mil",
     "proofLabel": "mulheres já viveram essa transformação",
-    "urgency": "Inscrições abertas · acesso imediato ao módulo 1",
-    "microcopy": "7 dias para experimentar. Não amou? Devolvemos tudo."
+    "urgency": "A prosperidade começa quando você deixa de se tratar como última opção.",
+    "microcopy": "Um convite profundo, seguro e guiado para mulheres que sabem que chegou a hora de mudar."
   },
-
   "kpis": {
     "show": true,
     "items": [
-      { "num": "+14k", "label": "Mulheres transformadas" },
-      { "num": "12", "label": "Meses de jornada" },
-      { "num": "8", "label": "Módulos ao vivo por ano" },
-      { "num": "7", "label": "Dias de garantia" }
+      {
+        "num": "+14k",
+        "label": "Mulheres transformadas"
+      },
+      {
+        "num": "12",
+        "label": "Meses de jornada"
+      },
+      {
+        "num": "8",
+        "label": "Módulos ao vivo por ano"
+      },
+      {
+        "num": "7",
+        "label": "Dias de garantia"
+      }
     ]
   },
-
   "manifesto": {
     "eyebrow": "Carta aberta",
-    "title": "Você não está quebrada. Você está programada.",
+    "title": "Autoamor não é luxo. É estrutura para prosperar.",
     "paragraphs": [
-      "Desde pequena te ensinaram que seu valor depende de quanto você doa, serve e está disponível para o outro. Esse ensinamento não foi uma escolha sua — foi uma programação geracional, instalada muito antes de você ter palavras para questioná-la.",
-      "Então você fez tudo certo. Cuidou de todo mundo, sustentou o emocional de todos, deu conta de tudo. E mesmo assim — no silêncio da noite — sentiu um vazio que nenhuma conquista consegue preencher.",
-      "Você já tentou terapia, cursos, meditação. Ajudou. Mas algo ficou intocado. Porque a programação não vive só na mente. Ela vive no corpo, na ancestralidade, no campo energético. E é exatamente aí que o Método Trikona intervém."
+      "Muitas mulheres tentam prosperar fazendo mais, carregando mais e se cobrando mais. Mas ninguém floresce de verdade enquanto continua se abandonando por dentro.",
+      "Quando uma mulher não se escolhe, ela repete padrões no amor, no dinheiro, no corpo, na família e no trabalho. Ela até avança — mas avança cansada, fragmentada, tentando provar valor para o mundo.",
+      "A Jornada do Autoamor existe para mudar essa raiz. Não é sobre virar outra pessoa. É sobre voltar para a mulher que você era antes de aprender a se diminuir."
     ],
-    "question": "Quando foi a última vez que você se escolheu?"
+    "question": "E se o próximo nível da sua vida não pedisse mais esforço — pedisse mais amor por você?"
   },
-
   "recognize": {
     "eyebrow": "Você se reconhece?",
-    "title": "Talvez você esteja sentindo isso há mais tempo do que admite",
+    "title": "Se isso toca em você, não é acaso. É chamado.",
     "items": [
       {
         "top": "Acordar já exausta, antes mesmo do dia começar.",
@@ -98,74 +111,70 @@
       }
     ]
   },
-
   "founder": {
     "eyebrow": "Quem te guia nessa jornada",
     "name": "Bia Munareto",
     "image": "/images/founder.jpg",
     "imageAlt": "Bia Munareto, psicóloga e mulher tântrica",
     "bio": [
-      "Aos 20 anos, eu vivia o que hoje ensino a transformar. Bem-sucedida na aparência, vazia por dentro. Libido zerada, corpo desconectado, relações que não me sustentavam.",
-      "A virada chegou como uma frase que aterrissou no momento certo: onde está o seu maior nó, está o seu maior propósito. Naquele instante entendi que o que mais me envergonhava era exatamente o que me tornaria singular.",
-      "Hoje sou psicóloga, mulher tântrica, terapeuta integrativa e fundadora da Jornada do Autoamor. Em 11 anos de trajetória, desenvolvi o Método Trikona — a única abordagem que integra psicologia, corpo e espiritualidade simultaneamente, atuando na raiz da programação, não nos sintomas."
+      "Bia Munareto é psicóloga, professora, palestrante, escritora, mãe, esposa, filha, amiga e guardiã do feminino.",
+      "Vem de uma ancestralidade de mulheres que não tinham liberdade: dependiam financeira e emocionalmente, carregando uma vida marcada pela falta de escolha. Foi essa dor que a levou a buscar ferramentas de cura, libertação e reconexão através do autoconhecimento e da espiritualidade.",
+      "Depois de impactar mais de 14 mil mulheres, sua missão é ajudar mulheres a investirem em si sem culpa, descobrirem sua força interior e lembrarem que são manifestadoras da própria realidade."
     ],
     "signature": "— Bia Munareto",
     "mediaLogos": []
   },
-
   "ctaBands": [
     {
-      "title": "Já sente que é hora?",
-      "subtitle": "Você não chegou até aqui por acaso."
+      "title": "Você não precisa se perder para ser amada, escolhida ou próspera.",
+      "subtitle": "Você precisa de um caminho que te ensine a voltar para si — com prática, profundidade e direção."
     },
     {
       "title": "Pronta para colocar você em primeiro lugar?",
       "subtitle": "A jornada começa assim que você confirmar sua entrada."
     }
   ],
-
   "promise": {
-    "eyebrow": "No fim, você vai...",
-    "title": "Voltar para casa — para dentro de você",
+    "eyebrow": "Por que viver essa jornada",
+    "title": "Porque autoamor muda a forma como você vive tudo",
     "items": [
       {
-        "verb": "Acordar",
-        "object": "com tempo e leveza",
-        "reframe": "sem a culpa de estar cuidando de você antes de cuidar de todo mundo"
+        "verb": "Prosperar",
+        "object": "sem se violentar para caber no mundo",
+        "reframe": "dinheiro, carreira e escolhas começam a partir de valor interno"
       },
       {
-        "verb": "Falar 'não'",
-        "object": "sem ansiedade",
-        "reframe": "e sentir que escolher você não é egoísmo — é coragem"
+        "verb": "Amar",
+        "object": "sem se abandonar no relacionamento",
+        "reframe": "você aprende limites, presença e merecimento"
       },
       {
-        "verb": "Reconhecer",
-        "object": "e quebrar os padrões que te prendem",
-        "reframe": "sem precisar passar anos no mesmo ciclo pra entender o que muda"
+        "verb": "Habitar",
+        "object": "o seu corpo com mais prazer e segurança",
+        "reframe": "o corpo deixa de ser inimigo e vira casa"
       },
       {
-        "verb": "Ritualizar",
-        "object": "a sua rotina",
-        "reframe": "pra que cuidar de si vire prazer, não mais uma tarefa da lista"
+        "verb": "Romper",
+        "object": "padrões familiares e emocionais repetidos",
+        "reframe": "você para de viver no automático da sua história"
       },
       {
-        "verb": "Sentir",
-        "object": "que você pertence a um lugar",
-        "reframe": "rodeada de mulheres que entendem exatamente o que você está vivendo"
+        "verb": "Escolher",
+        "object": "você sem culpa",
+        "reframe": "porque se colocar em primeiro lugar não é egoísmo — é maturidade"
       },
       {
-        "verb": "Olhar",
-        "object": "para o espelho com ternura",
-        "reframe": "e reconhecer a mulher que sempre esteve esperando por você"
+        "verb": "Criar",
+        "object": "uma vida que sustenta a mulher que você está se tornando",
+        "reframe": "com rotina, comunidade, espiritualidade e direção"
       }
     ]
   },
-
   "method": {
     "eyebrow": "O método",
-    "title": "A geometria da transformação",
+    "title": "A Jornada atua onde a sua vida realmente trava",
     "name": "Método Trikona",
-    "summary": "Trikona é o triângulo sagrado em sânscrito — símbolo da força feminina primordial. Três vértices em equilíbrio, porque a programação se instalou nos três ao mesmo tempo.",
+    "summary": "O Método Trikona organiza a transformação em três vértices — mente, corpo e campo — porque a prosperidade feminina não nasce de uma frase motivacional. Ela nasce quando a mulher se reorganiza por dentro.",
     "pillars": [
       {
         "name": "Mente",
@@ -181,22 +190,52 @@
       }
     ]
   },
-
   "curriculum": {
     "eyebrow": "Dentro da jornada",
     "title": "12 meses. 8 módulos. Uma mulher diferente.",
     "modules": [
-      { "name": "Gestão do Tempo e Autoamor", "duration": "Módulo 1", "format": "Eliminar culpa · organizar a casa interior" },
-      { "name": "Rompendo Correntes Familiares", "duration": "Módulo 2", "format": "Cura de feridas parentais · libertação de padrões herdados" },
-      { "name": "Maturidade Emocional", "duration": "Módulo 3", "format": "Gestão das emoções · limites saudáveis · integração feminino/masculino" },
-      { "name": "Dinheiro, Poder e Independência", "duration": "Módulo 4", "format": "Ferramentas financeiras · conexão com a abundância" },
-      { "name": "Autoestima e Sexualidade", "duration": "Módulo 5", "format": "Sexualidade sagrada · cura de feridas do passado" },
-      { "name": "Relacionamentos Amorosos", "duration": "Módulo 6", "format": "Liberação de padrões · atração de amor saudável" },
-      { "name": "Propósito e Manifestação", "duration": "Módulo 7", "format": "Escrita criativa · visualização · criação de realidade" },
-      { "name": "ALMA: Práticas Espirituais Diárias", "duration": "Módulo 8", "format": "Intuição · rituais · sonhos · guias espirituais" }
+      {
+        "name": "Gestão do Tempo e Autoamor",
+        "duration": "Módulo 1",
+        "format": "Eliminar culpa · organizar a casa interior"
+      },
+      {
+        "name": "Rompendo Correntes Familiares",
+        "duration": "Módulo 2",
+        "format": "Cura de feridas parentais · libertação de padrões herdados"
+      },
+      {
+        "name": "Maturidade Emocional",
+        "duration": "Módulo 3",
+        "format": "Gestão das emoções · limites saudáveis · integração feminino/masculino"
+      },
+      {
+        "name": "Dinheiro, Poder e Independência",
+        "duration": "Módulo 4",
+        "format": "Ferramentas financeiras · conexão com a abundância"
+      },
+      {
+        "name": "Autoestima e Sexualidade",
+        "duration": "Módulo 5",
+        "format": "Sexualidade sagrada · cura de feridas do passado"
+      },
+      {
+        "name": "Relacionamentos Amorosos",
+        "duration": "Módulo 6",
+        "format": "Liberação de padrões · atração de amor saudável"
+      },
+      {
+        "name": "Propósito e Manifestação",
+        "duration": "Módulo 7",
+        "format": "Escrita criativa · visualização · criação de realidade"
+      },
+      {
+        "name": "ALMA: Práticas Espirituais Diárias",
+        "duration": "Módulo 8",
+        "format": "Intuição · rituais · sonhos · guias espirituais"
+      }
     ]
   },
-
   "bonus": {
     "eyebrow": "Bônus exclusivos",
     "title": "Presentes para a sua jornada",
@@ -223,42 +262,58 @@
       }
     ]
   },
-
   "testimonials": {
-    "eyebrow": "Mulheres como você",
-    "title": "O que dizem as mulheres que já passaram por aqui",
+    "eyebrow": "Prova viva",
+    "title": "Mulheres reais que disseram sim para a própria transformação",
     "items": [
       {
-        "name": "Ingridy Lucena",
-        "city": "Brasil",
-        "image": "/images/dep/dep1.jpg",
-        "quote": "Aprendi a me priorizar sem culpa. Foi a primeira vez na minha vida que senti que cuidar de mim não era egoísmo."
+        "kind": "screenshot",
+        "name": "Depoimento real",
+        "city": "A Jornada do Autoamor",
+        "image": "/images/dep/comdep-1.jpg",
+        "quote": "Essas mulheres disseram SIM para a própria transformação — e mostram, na prática, o que acontece quando uma mulher decide se escolher."
       },
       {
-        "name": "Larissa Pablina",
-        "city": "Brasil",
-        "image": "/images/dep/dep2.jpg",
-        "quote": "Cheguei exausta de tentar dar conta de tudo. Hoje tenho rotina, limites e, pela primeira vez, tempo pra mim."
+        "kind": "screenshot",
+        "name": "Depoimento real",
+        "city": "A Jornada do Autoamor",
+        "image": "/images/dep/comdep-2.jpg",
+        "quote": "Relatos reais de mulheres que começaram a se priorizar, liberar pesos e reorganizar a vida a partir de dentro."
       },
       {
-        "name": "Roberta Souza",
-        "city": "Brasil",
-        "image": "/images/dep/dep3.jpg",
-        "quote": "Mais do que um programa, encontrei uma comunidade. Mulheres que me entendem — e que viraram minhas irmãs de alma."
+        "kind": "screenshot",
+        "name": "Depoimento real",
+        "city": "A Jornada do Autoamor",
+        "image": "/images/dep/comdep-3.jpg",
+        "quote": "Mais clareza, mais presença, mais força para romper padrões e voltar para si."
       },
       {
-        "name": "Vitória Heman",
-        "city": "Brasil",
-        "image": "/images/dep/dep4.jpg",
-        "quote": "Quebrei padrões que estavam na minha família há gerações. Não sabia que era possível mudar tão profundamente."
+        "kind": "screenshot",
+        "name": "Depoimento real",
+        "city": "A Jornada do Autoamor",
+        "image": "/images/dep/comdep-4.jpg",
+        "quote": "Quando uma mulher se transforma, ela abre caminhos no amor, na vida profissional e na relação consigo mesma."
+      },
+      {
+        "kind": "screenshot",
+        "name": "Depoimento real",
+        "city": "A Jornada do Autoamor",
+        "image": "/images/dep/comdep-5.jpg",
+        "quote": "A Jornada não é só conteúdo: é prática, comunidade, acolhimento e decisão diária de não se abandonar."
+      },
+      {
+        "kind": "screenshot",
+        "name": "Depoimento real",
+        "city": "A Jornada do Autoamor",
+        "image": "/images/dep/comdep-6.jpg",
+        "quote": "Depoimentos do site oficial da Bia Munareto, usados como prova social da nova página."
       }
     ]
   },
-
   "offer": {
     "eyebrow": "Escolha seu próximo passo",
     "title": "Onde a sua jornada começa",
-    "subtitle": "Três portas. Cada uma certa para um momento diferente. Todas levam para o mesmo lugar: você.",
+    "subtitle": "Três portas. Mas a mensagem é uma só: se você quer prosperar por inteiro, precisa começar a se tratar como prioridade.",
     "products": [
       {
         "tag": "Comece por aqui",
@@ -323,7 +378,6 @@
       }
     ]
   },
-
   "guarantee": {
     "eyebrow": "Você não tem nada a perder",
     "title": "Garantia incondicional de 7 dias",
@@ -331,7 +385,6 @@
     "text": "Se nos primeiros 7 dias você sentir que esse caminho não é para você, devolvemos 100% do investimento. Sem perguntas, sem burocracia, sem julgamento.",
     "comfort": "É só responder o e-mail de suporte. O reembolso é processado em até 5 dias úteis."
   },
-
   "faq": {
     "eyebrow": "Perguntas honestas",
     "title": "Algumas dúvidas que você pode ter",
@@ -370,7 +423,6 @@
       }
     ]
   },
-
   "letter": {
     "paragraphs": [
       "Querida,",
@@ -382,12 +434,20 @@
     "signature": "Com amor,",
     "signatureName": "Bia Munareto"
   },
-
   "footer": {
     "links": [
-      { "label": "Termos de uso", "href": "/termos" },
-      { "label": "Política de privacidade", "href": "/privacidade" },
-      { "label": "Suporte", "href": "mailto:contato.biamunaretto@gmail.com" }
+      {
+        "label": "Termos de uso",
+        "href": "/termos"
+      },
+      {
+        "label": "Política de privacidade",
+        "href": "/privacidade"
+      },
+      {
+        "label": "Suporte",
+        "href": "mailto:contato.biamunaretto@gmail.com"
+      }
     ]
   }
 }

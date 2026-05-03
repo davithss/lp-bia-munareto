@@ -166,6 +166,39 @@ const roman = ["i","ii","iii","iv","v","vi","vii","viii","ix","x"];
   </section>
 
   <!-- ════════════════════════════════════════════════════════════════
+       07.5 · PARA QUEM É
+       ════════════════════════════════════════════════════════════════ -->
+  <section class="fit">
+    <div class="container">
+      <div class="header">
+        <div class="eyebrow">Discernimento</div>
+        <h2>Essa jornada é para a mulher que decidiu prosperar sem se abandonar.</h2>
+      </div>
+      <div class="fit-grid">
+        <div class="fit-card good">
+          <h3>É para você se...</h3>
+          <ul>
+            <li>Você sente que existe uma versão sua mais livre, próspera e inteira.</li>
+            <li>Você quer parar de repetir padrões no amor, no dinheiro e na família.</li>
+            <li>Você entende que prosperidade começa no valor que você reconhece em si.</li>
+            <li>Você deseja uma jornada guiada, com profundidade, prática e pertencimento.</li>
+          </ul>
+        </div>
+        <div class="fit-card bad">
+          <h3>Não é para você se...</h3>
+          <ul>
+            <li>Você busca uma solução rasa, instantânea ou sem olhar para dentro.</li>
+            <li>Você quer mudar a vida sem mudar a forma como se trata.</li>
+            <li>Você prefere continuar se colocando por último para evitar desconfortos.</li>
+            <li>Você não está disposta a assumir responsabilidade pela sua própria jornada.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════════
        08 · MÉTODO
        ════════════════════════════════════════════════════════════════ -->
   <section class="method" id="metodo">
@@ -263,15 +296,24 @@ const roman = ["i","ii","iii","iv","v","vi","vii","viii","ix","x"];
       </div>
       <div class="grid">
         {testimonials.items.map((dep) => (
-          <div class="card">
-            <div class="top">
-              <img src={dep.image} alt={dep.name} loading="lazy" />
-              <div class="name">
-                <strong>{dep.name}</strong>
-                <span>{dep.city}</span>
-              </div>
-            </div>
-            <blockquote>{dep.quote}</blockquote>
+          <div class={`card ${dep.kind === 'screenshot' ? 'screenshot-card' : ''}`}>
+            {dep.kind === 'screenshot' ? (
+              <>
+                <img class="testimonial-shot" src={dep.image} alt={dep.name} loading="lazy" />
+                <blockquote>{dep.quote}</blockquote>
+              </>
+            ) : (
+              <>
+                <div class="top">
+                  <img src={dep.image} alt={dep.name} loading="lazy" />
+                  <div class="name">
+                    <strong>{dep.name}</strong>
+                    <span>{dep.city}</span>
+                  </div>
+                </div>
+                <blockquote>{dep.quote}</blockquote>
+              </>
+            )}
           </div>
         ))}
       </div>
