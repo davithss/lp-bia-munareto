@@ -517,15 +517,13 @@ const faqs = [
         <article class="price-card monthly">
           <div class="plan-head">
             <p class="plan-name">Básico</p>
-            <span>Para começar agora</span>
+            <span>Assinatura mensal com renovação automática</span>
           </div>
           <div class="price-box">
             <span class="price-prefix">R$</span>
             <strong>72,80</strong>
             <span class="price-suffix">/ mês</span>
           </div>
-          <p class="billing-note">A entrada mensal para viver a Comunidade, acessar as práticas essenciais e caminhar com acompanhamento.</p>
-          <a href="#" class="btn secondary">Entrar pelo Básico</a>
           <div class="plan-deliverables">
             {planDeliverables[0].groups.map((group) => (
               <div class="deliverable-group">
@@ -540,6 +538,7 @@ const faqs = [
               </div>
             ))}
           </div>
+          <a href="#" class="btn primary monthly-cta">Comece agora</a>
         </article>
 
         <article class="price-card annual featured-plan">
