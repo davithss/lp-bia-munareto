@@ -216,12 +216,14 @@ const faqs = [
     </section>
 
     <section class="section post-lar-testimonials" aria-label="Depoimentos de alunas">
-      <div class="wrap testimonial-sequence">
-        {[1, 2, 3, 4, 5, 6].map((item) => (
-          <figure>
-            <img src={`/images/dep/sequencia/depoimento-${item}.jpg`} alt={`Depoimento ${item} da Jornada do Autoamor`} loading="lazy" />
-          </figure>
-        ))}
+      <div class="testimonial-carousel">
+        <div class="testimonial-track">
+          {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((item) => (
+            <figure>
+              <img src={`/images/dep/sequencia/depoimento-${item}.jpg`} alt={`Depoimento ${item} da Jornada do Autoamor`} loading="lazy" />
+            </figure>
+          ))}
+        </div>
       </div>
     </section>
 
@@ -465,11 +467,14 @@ const faqs = [
     .featured-plan{box-shadow:0 30px 90px rgba(177,18,38,.28)}
     .secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
 
-    .post-lar-testimonials{background:#050302;padding:54px 0}
-    .testimonial-sequence{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;align-items:start}
-    .testimonial-sequence figure{margin:0;background:rgba(255,247,239,.08);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:8px;overflow:hidden}
-    .testimonial-sequence img{display:block;width:100%;height:auto;border-radius:12px}
-    @media(max-width:900px){.testimonial-sequence{grid-template-columns:repeat(2,1fr);gap:12px}.post-lar-testimonials{padding:42px 0}}
+    .post-lar-testimonials{background:#050302;padding:58px 0;overflow:hidden}
+    .testimonial-carousel{width:100%;overflow:hidden}
+    .testimonial-track{display:flex;gap:22px;width:max-content;animation:testimonialSlide 42s linear infinite;will-change:transform}
+    .testimonial-track:hover{animation-play-state:paused}
+    .testimonial-track figure{flex:0 0 clamp(280px,28vw,420px);margin:0;background:rgba(255,247,239,.08);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:10px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.26)}
+    .testimonial-track img{display:block;width:100%;height:auto;border-radius:16px}
+    @keyframes testimonialSlide{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 11px))}}
+    @media(max-width:900px){.testimonial-track{gap:14px;animation-duration:34s}.testimonial-track figure{flex-basis:78vw}.post-lar-testimonials{padding:42px 0}}
 
   </style>
 </Layout>
