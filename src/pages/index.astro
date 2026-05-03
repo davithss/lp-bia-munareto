@@ -302,6 +302,16 @@ const faqs = [
           </article>
         ))}
       </div>
+      <div class="wrap testimonial-composition">
+        <article class="composition-feature">
+          <img src="/images/dep/bia-secao/depoimento-1.jpg" alt="Depoimento real sobre a Jornada do Autoamor" loading="lazy" />
+        </article>
+        <article class="composition-stack" aria-label="Montagem de depoimentos">
+          {[2, 3, 4].map((item) => (
+            <img src={`/images/dep/bia-secao/depoimento-${item}.jpg`} alt={`Depoimento real ${item} sobre a Jornada do Autoamor`} loading="lazy" />
+          ))}
+        </article>
+      </div>
     </section>
 
     <section class="section community-section" id="comunidade">
@@ -512,7 +522,7 @@ const faqs = [
     .reveal-grid-carousel .testimonial-track figure{flex:0 0 calc((100% - 54px)/4);min-height:clamp(320px,32vw,470px)}
     .reveal-grid-carousel .testimonial-track img{max-height:clamp(300px,30vw,450px)}
 
-    @media(max-width:900px){.testimonial-carousel{width:100%;gap:8px}.testimonial-track{gap:14px;max-width:calc(100% - 86px)}.testimonial-track figure{flex-basis:68vw}.reveal-grid-carousel .testimonial-track{max-width:calc(100% - 86px)}.reveal-grid-carousel .testimonial-track figure{flex-basis:42vw;min-height:clamp(300px,72vw,460px)}.reveal-grid-carousel .testimonial-track img{max-height:clamp(280px,68vw,440px)}.testimonial-arrow{flex-basis:38px;width:38px;height:38px;font-size:28px}.post-lar-testimonials{padding:42px 0}}
+    @media(max-width:900px){.testimonial-composition{grid-template-columns:1fr}.composition-stack img{max-height:none}.testimonial-carousel{width:100%;gap:8px}.testimonial-track{gap:14px;max-width:calc(100% - 86px)}.testimonial-track figure{flex-basis:68vw}.reveal-grid-carousel .testimonial-track{max-width:calc(100% - 86px)}.reveal-grid-carousel .testimonial-track figure{flex-basis:42vw;min-height:clamp(300px,72vw,460px)}.reveal-grid-carousel .testimonial-track img{max-height:clamp(280px,68vw,440px)}.testimonial-arrow{flex-basis:38px;width:38px;height:38px;font-size:28px}.post-lar-testimonials{padding:42px 0}}
 
   </style>
 </Layout>
