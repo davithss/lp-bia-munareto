@@ -193,13 +193,12 @@ const planDeliverables = [
     title: "Premium",
     groups: [
       {
-        title: "Experiência presencial",
+        title: "Tudo incluso no Premium",
         items: [
-          ...monthlyIncludes.map((item) => [item, false] as const),
-          ...advancedItems.map((item) => [item, false] as const),
-          ["TRIX Inspira — IA treinada por Bia disponível 24h por dia", false],
-          ["Direcionamento para utilização de ervas e práticas espirituais", false],
-          ["Experiência presencial da Jornada do Autoamor", true],
+          ...monthlyIncludes.map((item) => [item, true] as const),
+          ...advancedItems.map((item) => [item, true] as const),
+          ["TRIX Inspira — IA treinada por Bia disponível 24h por dia", true],
+          ["Direcionamento para utilização de ervas e práticas espirituais", true],
           ["12 meses de encontros presenciais", true],
           ["1 encontro presencial por mês em Aracaju/SE", true],
           ["Vivência mais profunda, íntima e acompanhada com Bia", true],
@@ -567,13 +566,12 @@ const faqs = [
         <article class="price-card premium-plan">
           <div class="plan-head">
             <p class="plan-name">Premium</p>
-            <span>A experiência presencial da Jornada</span>
+            <span>Tudo do Básico, do Avançado e do Premium</span>
           </div>
           <div class="price-box premium-price">
             <strong>12 encontros presenciais</strong>
           </div>
-          <p class="billing-note">O Premium é a experiência presencial da Jornada: 12 meses com 1 encontro por mês em Aracaju/SE. A entrada acontece por lista de espera para a próxima turma.</p>
-          <a href="#" class="btn secondary">Entre na lista de espera</a>
+          <p class="billing-note">O Premium inclui tudo do Básico, tudo do Avançado e os encontros presenciais: 12 meses com 1 encontro por mês em Aracaju/SE. A entrada acontece por lista de espera para a próxima turma.</p>
           <div class="plan-deliverables">
             {planDeliverables[2].groups.map((group) => (
               <div class="deliverable-group">
@@ -588,6 +586,7 @@ const faqs = [
               </div>
             ))}
           </div>
+          <a href="#" class="btn primary premium-cta">Entre na lista de espera</a>
         </article>
       </div>
 
