@@ -5,6 +5,8 @@ import content from "../data/content.json";
 const { brand } = content;
 
 const ctaAnchor = "#precos";
+const monthlyCheckoutUrl = "https://payfast.greenn.com.br/119839/offer/lOuOoE";
+const annualCheckoutUrl = "https://payfast.greenn.com.br/119839/offer/GVUYps";
 
 const proofItems = [
   "+14 mil mulheres nos últimos 9 anos",
@@ -509,7 +511,7 @@ const faqs = [
         <article class="price-card monthly">
           <div class="plan-head">
             <p class="plan-name">Básico</p>
-            <span>Assinatura mensal com renovação automática</span>
+            <span>Assinatura mensal com renovação automática · apenas cartão</span>
           </div>
           <div class="price-box">
             <span class="price-prefix">R$</span>
@@ -530,7 +532,7 @@ const faqs = [
               </div>
             ))}
           </div>
-          <a href="#" class="btn primary monthly-cta">Comece agora</a>
+          <a href={monthlyCheckoutUrl} class="btn primary monthly-cta" target="_blank" rel="noopener noreferrer">Comece agora</a>
         </article>
 
         <article class="price-card annual featured-plan">
@@ -543,7 +545,7 @@ const faqs = [
             <span class="price-prefix">12x R$</span>
             <strong>59,30</strong>
           </div>
-          <p class="daily-price">Menos de R$ 2,00 por dia</p>
+          <p class="daily-price">R$ 576,77 à vista ou 12x R$ 59,30</p>
           <div class="plan-deliverables">
             {planDeliverables[1].groups.map((group) => (
               <div class={group.title.includes("Extras") ? "deliverable-group highlight-group" : "deliverable-group"}>
@@ -558,7 +560,7 @@ const faqs = [
               </div>
             ))}
           </div>
-          <a href="#" class="btn primary annual-cta">Comece agora</a>
+          <a href={annualCheckoutUrl} class="btn primary annual-cta" target="_blank" rel="noopener noreferrer">Comece agora</a>
         </article>
 
         <article class="price-card premium-plan">
