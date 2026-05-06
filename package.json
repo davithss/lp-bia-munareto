@@ -1,5 +1,5 @@
 {
-  "name": "lp-coach-starter",
+  "name": "site-agentes-empresas",
   "type": "module",
   "version": "1.0.0",
   "private": true,
@@ -11,6 +11,6 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "astro": "^6.1.10"
+    "astro": "^6.2.2"
   }
 }

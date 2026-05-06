@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100">
+  <rect width="900" height="1100" rx="24" fill="#0B1020"/>
+  <circle cx="680" cy="180" r="160" fill="#19B7B5" opacity=".22"/>
+  <circle cx="160" cy="880" r="220" fill="#D6B25E" opacity=".18"/>
+  <text x="90" y="150" font-family="Georgia" font-size="76" fill="#F5F3EA" font-style="italic">Freya OS</text>
+  <text x="90" y="225" font-family="Inter, Arial" font-size="24" fill="#9EE7E5" letter-spacing="5">CASE FUNDADOR</text>
+  <g fill="none" stroke="#F5F3EA" stroke-width="3" opacity=".75">
+    <rect x="110" y="330" width="250" height="150" rx="18"/>
+    <rect x="540" y="330" width="250" height="150" rx="18"/>
+    <rect x="325" y="620" width="250" height="150" rx="18"/>
+    <path d="M360 405 H540"/><path d="M235 480 L395 620"/><path d="M665 480 L505 620"/>
+  </g>
+  <g font-family="Inter, Arial" font-size="30" font-weight="800" fill="#F5F3EA">
+    <text x="170" y="420">SITE</text><text x="585" y="420">COPY</text><text x="375" y="710">OPERAÇÃO</text>
+  </g>
+</svg>
