@@ -5,10 +5,19 @@ import content from "../data/content.json";
 interface Props {
   title?: string;
   description?: string;
+  canonicalPath?: string;
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title = content.seo.title, description = content.seo.description } = Astro.props;
-const ogImage = content.seo.ogImage;
+const {
+  title = content.seo.title,
+  description = content.seo.description,
+  canonicalPath = "/",
+  structuredData
+} = Astro.props;
+const siteUrl = "https://www.biamunareto.com.br";
+const canonicalUrl = new URL(canonicalPath, siteUrl).toString();
+const ogImage = new URL(content.seo.ogImage, siteUrl).toString();
 const gtmId = content.tracking?.gtmId;
 ---
 
@@ -21,13 +30,18 @@ const gtmId = content.tracking?.gtmId;
 
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={content.brand.name} />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Fontes — substituir aqui se mudar o combo tipográfico -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,6 +53,10 @@ const gtmId = content.tracking?.gtmId;
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    {structuredData && (
+      <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    )}
 
     <!-- Google Tag Manager (configure GTM_ID em content.json > tracking) -->
     {gtmId && gtmId !== "GTM-XXXXXX" && (
