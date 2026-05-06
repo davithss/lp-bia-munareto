@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import content from "../data/content.json";
+
+const { brand } = content;
+const title = `Termos de Uso — ${brand.name}`;
+const description = `Termos de uso da ${brand.nomeFantasia || brand.name}.`;
+---
+
+<Layout title={title} description={description} canonicalPath="/termos">
+  <main class="legal-page">
+    <section class="legal-hero">
+      <a class="back-link" href="/">Voltar para a página inicial</a>
+      <p class="kicker">Documento legal</p>
+      <h1>Termos de Uso</h1>
+      <p>Estes termos orientam o acesso aos conteúdos, páginas, produtos e comunicações digitais da {brand.nomeFantasia || brand.name}.</p>
+    </section>
+
+    <section class="legal-content">
+      <p><strong>Empresa responsável:</strong> {brand.razaoSocial}</p>
+      <p><strong>CNPJ:</strong> {brand.cnpj}</p>
+      <p><strong>Contato:</strong> <a href={`mailto:${brand.supportEmail}`}>{brand.supportEmail}</a></p>
+
+      <h2>1. Aceite dos termos</h2>
+      <p>Ao acessar este site, entrar em contato com a equipe ou adquirir uma oferta apresentada por nossos canais oficiais, você declara que leu, compreendeu e concorda com estes Termos de Uso.</p>
+
+      <h2>2. Natureza dos conteúdos</h2>
+      <p>Os conteúdos, aulas, encontros, materiais e comunicações têm finalidade educacional, terapêutica complementar, informativa e de desenvolvimento pessoal. Eles não substituem atendimento médico, psicológico, psiquiátrico, jurídico, financeiro ou qualquer outro acompanhamento profissional individualizado.</p>
+
+      <h2>3. Acesso a produtos e comunidade</h2>
+      <p>O acesso aos produtos, conteúdos e comunidades depende da confirmação de pagamento, das regras da plataforma de checkout e das condições específicas de cada oferta. Informações como duração, formato, bônus, preço, forma de pagamento e disponibilidade devem ser observadas na página da oferta vigente.</p>
+
+      <h2>4. Pagamentos, cancelamentos e suporte</h2>
+      <p>Pagamentos, assinaturas, reembolsos e cancelamentos seguem as regras informadas no checkout utilizado e na legislação aplicável. Em caso de dúvida, entre em contato pelo e-mail de suporte informado nesta página.</p>
+
+      <h2>5. Uso adequado</h2>
+      <p>Você se compromete a não copiar, revender, distribuir, gravar, disponibilizar publicamente ou explorar comercialmente conteúdos, aulas, materiais, imagens, textos, marcas ou acessos sem autorização expressa.</p>
+
+      <h2>6. Propriedade intelectual</h2>
+      <p>Textos, metodologia, identidade visual, imagens, aulas, materiais, marcas e demais ativos digitais pertencem à empresa responsável ou são utilizados mediante autorização/licença. O uso indevido poderá gerar medidas administrativas e legais.</p>
+
+      <h2>7. Resultados e responsabilidade individual</h2>
+      <p>Resultados pessoais variam conforme histórico, contexto, dedicação, participação e aplicação individual. Nenhuma comunicação deste site deve ser interpretada como promessa de resultado garantido.</p>
+
+      <h2>8. Alterações</h2>
+      <p>Estes termos podem ser atualizados a qualquer momento para refletir ajustes operacionais, legais ou comerciais. A versão publicada nesta página será considerada a versão vigente.</p>
+
+      <p class="updated">Última atualização: maio de 2026.</p>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .legal-page{background:#fffaf7;color:#211615;min-height:100vh;padding:64px 20px 90px}.legal-hero,.legal-content{width:min(840px,100%);margin:0 auto}.back-link{display:inline-block;margin-bottom:34px;color:#b11226;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800;border:0}.kicker{color:#b11226;text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:900}.legal-hero h1{font-family:var(--serif);font-size:clamp(42px,6vw,72px);line-height:1;margin:10px 0 16px;color:#7f0f1b}.legal-hero p{font-size:18px;line-height:1.65;color:#6d5954}.legal-content{margin-top:36px;background:#fff;border:1px solid rgba(33,22,21,.08);border-radius:28px;padding:clamp(24px,5vw,48px);box-shadow:0 24px 80px rgba(80,45,35,.08)}.legal-content h2{font-size:24px;margin:34px 0 10px;color:#7f0f1b}.legal-content p{font-size:16px;line-height:1.75;color:#5f4c47}.legal-content a{color:#b11226}.updated{margin-top:40px;font-size:14px!important;color:#8a7772!important}
+</style>

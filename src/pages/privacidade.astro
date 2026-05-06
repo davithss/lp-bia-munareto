@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import content from "../data/content.json";
+
+const { brand } = content;
+const title = `Política de Privacidade — ${brand.name}`;
+const description = `Política de privacidade da ${brand.nomeFantasia || brand.name}.`;
+---
+
+<Layout title={title} description={description} canonicalPath="/privacidade">
+  <main class="legal-page">
+    <section class="legal-hero">
+      <a class="back-link" href="/">Voltar para a página inicial</a>
+      <p class="kicker">Privacidade e dados</p>
+      <h1>Política de Privacidade</h1>
+      <p>Esta política explica como a {brand.nomeFantasia || brand.name} pode coletar, usar e proteger dados pessoais em seus canais digitais.</p>
+    </section>
+
+    <section class="legal-content">
+      <p><strong>Empresa responsável:</strong> {brand.razaoSocial}</p>
+      <p><strong>CNPJ:</strong> {brand.cnpj}</p>
+      <p><strong>Contato:</strong> <a href={`mailto:${brand.supportEmail}`}>{brand.supportEmail}</a></p>
+
+      <h2>1. Dados que podemos coletar</h2>
+      <p>Podemos coletar dados fornecidos voluntariamente por você, como nome, e-mail, telefone, mensagens enviadas, dados de compra e informações necessárias para suporte, acesso a produtos ou atendimento comercial.</p>
+      <p>Também podemos coletar dados técnicos de navegação, como endereço IP, dispositivo, navegador, páginas acessadas, origem do acesso e interações com botões, quando ferramentas de análise ou rastreamento estiverem configuradas.</p>
+
+      <h2>2. Como usamos os dados</h2>
+      <p>Os dados podem ser usados para responder contatos, liberar acessos, prestar suporte, processar compras, enviar comunicações relacionadas à Jornada do Autoamor, melhorar a experiência no site, medir desempenho de campanhas e cumprir obrigações legais.</p>
+
+      <h2>3. Base legal</h2>
+      <p>Tratamos dados pessoais conforme bases legais aplicáveis, incluindo consentimento, execução de contrato, legítimo interesse, cumprimento de obrigação legal e exercício regular de direitos, conforme a Lei Geral de Proteção de Dados.</p>
+
+      <h2>4. Compartilhamento</h2>
+      <p>Dados podem ser compartilhados com plataformas de pagamento, hospedagem, automação, atendimento, análise, marketing e demais fornecedores necessários à operação. Esses parceiros devem tratar os dados apenas conforme finalidades compatíveis com os serviços prestados.</p>
+
+      <h2>5. Cookies e tecnologias semelhantes</h2>
+      <p>O site pode usar cookies, pixels e tecnologias semelhantes para funcionamento, análise de tráfego, mensuração de campanhas e melhoria da experiência. Você pode gerenciar cookies nas configurações do seu navegador.</p>
+
+      <h2>6. Segurança</h2>
+      <p>Adotamos medidas razoáveis para proteger dados pessoais contra acesso não autorizado, perda, alteração, divulgação indevida ou uso incompatível. Ainda assim, nenhum ambiente digital é absolutamente imune a riscos.</p>
+
+      <h2>7. Seus direitos</h2>
+      <p>Você pode solicitar confirmação de tratamento, acesso, correção, exclusão, portabilidade, informação sobre compartilhamento, revisão de consentimento e demais direitos previstos na LGPD, quando aplicáveis.</p>
+
+      <h2>8. Como falar conosco</h2>
+      <p>Para dúvidas ou solicitações sobre privacidade e dados pessoais, envie uma mensagem para <a href={`mailto:${brand.supportEmail}`}>{brand.supportEmail}</a>.</p>
+
+      <h2>9. Atualizações</h2>
+      <p>Esta política pode ser atualizada para refletir mudanças operacionais, legais ou técnicas. A versão publicada nesta página será considerada a versão vigente.</p>
+
+      <p class="updated">Última atualização: maio de 2026.</p>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .legal-page{background:#fffaf7;color:#211615;min-height:100vh;padding:64px 20px 90px}.legal-hero,.legal-content{width:min(840px,100%);margin:0 auto}.back-link{display:inline-block;margin-bottom:34px;color:#b11226;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800;border:0}.kicker{color:#b11226;text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:900}.legal-hero h1{font-family:var(--serif);font-size:clamp(42px,6vw,72px);line-height:1;margin:10px 0 16px;color:#7f0f1b}.legal-hero p{font-size:18px;line-height:1.65;color:#6d5954}.legal-content{margin-top:36px;background:#fff;border:1px solid rgba(33,22,21,.08);border-radius:28px;padding:clamp(24px,5vw,48px);box-shadow:0 24px 80px rgba(80,45,35,.08)}.legal-content h2{font-size:24px;margin:34px 0 10px;color:#7f0f1b}.legal-content p{font-size:16px;line-height:1.75;color:#5f4c47}.legal-content a{color:#b11226}.updated{margin-top:40px;font-size:14px!important;color:#8a7772!important}
+</style>
