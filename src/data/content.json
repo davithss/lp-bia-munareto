@@ -10,94 +10,115 @@
     "year": 2026
   },
   "seo": {
-    "title": "A operação invisível que seus concorrentes ainda não têm",
-    "description": "Agentes de IA sob medida para transformar tarefas soltas em execução: páginas, tráfego, documentos, PDFs, relatórios e rotina comercial.",
+    "title": "Sua empresa está atrasando entregas que agentes de IA já poderiam executar",
+    "description": "Ops Agents instala um centro de comando com agentes de IA para transformar caos operacional em páginas, documentos, relatórios, PDFs e rotina comercial executada.",
     "ogImage": "/images/og.svg"
   },
   "tracking": {
     "gtmId": ""
   },
   "cta": {
-    "text": "Quero montar meu centro de comando",
+    "text": "Quero meu diagnóstico operacional",
     "shortText": "Diagnóstico",
-    "link": "https://wa.me/557981029218?text=Quero%20montar%20meu%20centro%20de%20comando%20com%20agentes%20de%20IA",
+    "link": "https://wa.me/557981029218?text=Quero%20meu%20diagnostico%20operacional%20do%20Ops%20Agents",
     "checkoutPlatform": "WhatsApp"
   },
   "header": {
     "navItems": [
-      { "label": "o problema", "href": "#metodo" },
-      { "label": "provas", "href": "#depoimentos" },
-      { "label": "implantação", "href": "#oferta" }
+      {
+        "label": "o problema",
+        "href": "#metodo"
+      },
+      {
+        "label": "provas",
+        "href": "#depoimentos"
+      },
+      {
+        "label": "implantação",
+        "href": "#oferta"
+      }
     ]
   },
   "hero": {
-    "eyebrow": "Alerta operacional · empresas em 2026",
-    "headline": "Enquanto você responde mensagens, sua empresa está perdendo execução.",
-    "subheadline": "Construímos agentes de IA que trabalham como uma camada operacional: escrevem, organizam, criam páginas, geram documentos, montam relatórios e preservam decisões antes que tudo vire caos.",
+    "eyebrow": "Diagnóstico brutal · operação com IA",
+    "headline": "Sua empresa não está lenta. Ela está sendo operada no improviso.",
+    "subheadline": "O Ops Agents instala uma camada de agentes de IA para transformar briefing perdido, página parada, relatório atrasado, documento improvisado e decisão solta em execução rastreável — com memória, padrão e aprovação humana.",
     "image": "/images/hero.svg",
     "imageAlt": "Centro de comando escuro com agentes de IA executando tarefas de negócio",
     "proofNumber": "30d",
-    "proofLabel": "para sair do improviso e colocar a primeira frente para rodar",
-    "urgency": "Diagnóstico para operações que já sentem gargalo de execução",
-    "microcopy": "Nada de promessa mágica. Primeiro encontramos o vazamento operacional. Depois montamos agentes para fechar esse buraco."
+    "proofLabel": "para provar o primeiro centro de comando com entregas reais, não slides bonitos",
+    "urgency": "Para empresas que já vendem, mas sentem a operação travar antes da próxima fase",
+    "microcopy": "Não vendemos “IA mágica”. Fazemos o trabalho menos glamouroso e mais valioso: desenhar o sistema, treinar os agentes, conectar os arquivos e colocar a operação para produzir."
   },
   "kpis": {
     "show": true,
     "items": [
-      { "num": "24/7", "label": "execução assistida" },
-      { "num": "6", "label": "frentes críticas" },
-      { "num": "1", "label": "memória central" },
-      { "num": "30d", "label": "primeiro ciclo" }
+      {
+        "num": "24/7",
+        "label": "camada operacional"
+      },
+      {
+        "num": "4+",
+        "label": "agentes por função"
+      },
+      {
+        "num": "1",
+        "label": "memória de decisão"
+      },
+      {
+        "num": "30d",
+        "label": "primeiro deploy"
+      }
     ]
   },
   "manifesto": {
-    "eyebrow": "O diagnóstico incômodo",
-    "title": "Seu problema não é falta de IA. É falta de sistema.",
+    "eyebrow": "A verdade que dói",
+    "title": "Você não tem gargalo de ferramenta. Tem gargalo de execução.",
     "paragraphs": [
-      "Toda empresa que cresce começa a vazar tempo pelos cantos: briefing perdido, proposta atrasada, campanha sem aprendizado, relatório feito no susto, página de venda esperando alguém ter agenda.",
-      "A equipe até tenta compensar no braço. Mas o resultado é previsível: tarefas importantes ficam presas em conversas, decisões somem, o padrão muda de semana para semana e a operação passa a depender da memória de uma ou duas pessoas.",
-      "Agente de IA solto não resolve isso. O que resolve é um centro de comando: agentes com função clara, acesso aos arquivos certos, padrão de qualidade, rotina de aprovação e entrega concreta. Menos teatro tecnológico. Mais trabalho feito."
+      "Toda semana a mesma cena: alguém promete revisar a página, alguém precisa transformar dados em relatório, alguém vai montar proposta “ainda hoje”, alguém tenta lembrar por que a decisão foi tomada. E a empresa segue pagando imposto de desorganização.",
+      "O mercado está fingindo que o problema se resolve comprando mais um SaaS ou abrindo mais uma conversa no ChatGPT. Mentira confortável. Ferramenta sem operação vira brinquedo caro.",
+      "O Ops Agents existe para uma tese simples: empresa que quer crescer precisa de uma camada operacional com memória, agentes por função, arquivos versionados, padrões de qualidade e entregas concretas. Menos inspiração. Mais execução."
     ],
-    "question": "Se cada gargalo tivesse um agente treinado no seu jeito de operar, quanto da sua semana voltaria para decisões de verdade?"
+    "question": "A pergunta não é “como usar IA?”. A pergunta é: quais tarefas já deveriam estar saindo da cabeça do time e entrando em um sistema que executa?"
   },
   "recognize": {
-    "eyebrow": "Sinais de alerta",
-    "title": "O caos costuma avisar antes de cobrar caro",
+    "eyebrow": "Sintomas de uma operação cara demais",
+    "title": "Se isso acontece aí dentro, você não precisa de motivação. Precisa de máquina.",
     "items": [
       {
-        "top": "A página de vendas precisa mudar, mas ninguém quer abrir esse monstro.",
-        "bottom": "copy, design, dev e aprovação viram uma fila que nunca anda."
+        "top": "A página que vende fica sempre uma versão atrasada da sua oferta.",
+        "bottom": "Toda mudança depende de agenda, coragem e alguém lembrar onde está o arquivo certo."
       },
       {
-        "top": "O tráfego gera dados, mas não gera inteligência organizada.",
-        "bottom": "campanhas sobem, números aparecem, e o aprendizado evapora."
+        "top": "Relatórios nascem quando alguém entra em pânico.",
+        "bottom": "Dados existem, mas inteligência executiva só aparece no sufoco."
       },
       {
-        "top": "Propostas, atas e playbooks nascem no improviso.",
-        "bottom": "cada documento parece de uma empresa diferente."
+        "top": "Sua operação comercial está espalhada em áudio, chat e memória humana.",
+        "bottom": "O follow-up, a proposta e a decisão vivem em lugares diferentes."
       },
       {
-        "top": "Relatório importante sempre vira corrida de última hora.",
-        "bottom": "o time gasta energia formatando o que já deveria ter um sistema."
+        "top": "Você testa IA, se impressiona por dez minutos e depois volta para o manual.",
+        "bottom": "Porque conversa bonita não vira processo, arquivo, padrão e rotina."
       },
       {
-        "top": "A operação depende demais da cabeça do fundador ou líder.",
-        "bottom": "se essa pessoa não explicar tudo de novo, a máquina engasga."
+        "top": "O fundador virou servidor central da empresa.",
+        "bottom": "Tudo passa pela cabeça dele. Isso parece controle. Na prática, é risco."
       },
       {
-        "top": "Você já testou IA e sentiu que ela ficou bonita, mas inútil.",
-        "bottom": "responde bem, só que não vira arquivo, entrega, rotina e decisão."
+        "top": "A equipe trabalha muito, mas o sistema não aprende.",
+        "bottom": "Cada entrega começa quase do zero porque o conhecimento não fica operacionalizado."
       }
     ]
   },
   "founder": {
     "eyebrow": "A tese",
-    "name": "Chatbot é brinquedo. Agente operacional é infraestrutura.",
+    "name": "O futuro da empresa pequena não é contratar mais gente para apagar incêndio. É instalar uma operação que lembra, cria e entrega.",
     "image": "/images/founder.svg",
     "imageAlt": "Mapa visual de agentes conectados a arquivos, rotinas e entregas",
     "bio": [
-      "A maioria das empresas está comprando IA como quem compra aplicativo: abre, testa, se impressiona e abandona quando precisa virar processo real.",
-      "A nossa abordagem é outra. Cada agente recebe território, memória, checklist, permissão e padrão de entrega. Ele não existe para conversar bonito. Existe para produzir ativos: páginas, documentos, relatórios, PDFs, roteiros, propostas, análises e rotinas que alguém pode revisar, aprovar e usar."
+      "O Ops Agents não é um chatbot simpático no canto da tela. É uma arquitetura de trabalho: agentes com função, memória, acesso aos documentos certos, checklist de qualidade e saída em arquivo real.",
+      "A diferença é brutal. Um chatbot responde. Um agente operacional transforma contexto em página, proposta, PDF, relatório, pauta, análise, playbook e decisão rastreável. Você revisa. O sistema aprende. A operação para de depender de heroísmo."
     ],
     "signature": "— Odin + Thor",
     "mediaLogos": []
@@ -113,126 +134,157 @@
     }
   ],
   "promise": {
-    "eyebrow": "O que muda na prática",
-    "title": "Você para de pedir favor para a agenda e começa a operar com alavanca",
+    "eyebrow": "A virada",
+    "title": "O que antes dependia de boa vontade passa a ter linha de produção",
     "items": [
       {
-        "verb": "Criar",
-        "object": "páginas de venda, variações de oferta e blocos de copy",
-        "reframe": "sem depender de uma fila eterna para cada ajuste"
+        "verb": "Vender",
+        "object": "LPs, ofertas e variações de copy saem com estrutura profissional",
+        "reframe": "sem esperar a próxima janela livre do designer/dev/copywriter"
       },
       {
-        "verb": "Transformar",
-        "object": "dados de tráfego em aprendizados acionáveis",
-        "reframe": "para mídia paga parar de ser só gasto e virar inteligência"
+        "verb": "Decidir",
+        "object": "relatórios executivos condensam dados, aprendizados e próximos passos",
+        "reframe": "para a liderança parar de decidir no escuro"
       },
       {
-        "verb": "Gerar",
-        "object": "documentos, playbooks, atas, propostas e briefings",
-        "reframe": "com estrutura e voz consistentes"
+        "verb": "Documentar",
+        "object": "atas, propostas, playbooks e briefings ganham padrão",
+        "reframe": "sem cada entrega parecer feita por uma empresa diferente"
       },
       {
-        "verb": "Produzir",
-        "object": "PDFs, relatórios e materiais comerciais",
-        "reframe": "com acabamento suficiente para cliente, sócio e time"
+        "verb": "Escalar",
+        "object": "o jeito certo de operar fica salvo em memória e processo",
+        "reframe": "não preso na cabeça de uma pessoa só"
       },
       {
-        "verb": "Preservar",
-        "object": "memória operacional, decisões e padrões de qualidade",
-        "reframe": "para a empresa não recomeçar do zero toda segunda-feira"
+        "verb": "Executar",
+        "object": "agentes assumem frentes repetíveis com aprovação humana",
+        "reframe": "mais velocidade sem virar bagunça automática"
       }
     ]
   },
   "method": {
-    "eyebrow": "O sistema",
-    "title": "OpsCore OS: agentes de IA com território, memória e entrega",
+    "eyebrow": "A arquitetura",
+    "title": "OpsCore OS: o centro de comando que transforma IA em capacidade operacional",
     "name": "OpsCore OS",
-    "summary": "Mapeamos a operação, criamos agentes por função e conectamos cada um a arquivos, processos, checklists e entregas reais.",
+    "summary": "Nós desenhamos o mapa, separamos agentes por território, organizamos memória e criamos rotinas de entrega. O objetivo não é impressionar. É tirar trabalho crítico da fila.",
     "pillars": [
-      { "name": "Memória", "description": "Contexto de marca, ofertas, clientes, decisões e padrões ficam organizados para o agente não depender de explicação repetida." },
-      { "name": "Produção", "description": "Sites, copy, Google Docs, PDFs, relatórios, propostas e materiais comerciais saem como arquivos prontos para revisão." },
-      { "name": "Governança", "description": "Cada agente tem escopo, aprovação, versionamento e limite. Automação sem controle vira bagunça em alta velocidade." },
-      { "name": "Expansão", "description": "Começamos pelo gargalo mais caro e depois abrimos novas frentes: tráfego, vendas, conteúdo, atendimento e gestão." }
+      {
+        "name": "Território",
+        "description": "Cada agente sabe o que faz, o que não faz, quais arquivos usa e qual saída precisa entregar."
+      },
+      {
+        "name": "Memória",
+        "description": "Decisões, tom de marca, ofertas, padrões e contexto ficam preservados para a empresa não reexplicar tudo."
+      },
+      {
+        "name": "Entrega",
+        "description": "A saída é concreta: página, documento, PDF, relatório, proposta, checklist, análise ou rotina publicada."
+      },
+      {
+        "name": "Controle",
+        "description": "Aprovação humana, versionamento e limites claros impedem que automação vire acidente em escala."
+      }
     ]
   },
   "curriculum": {
     "eyebrow": "Dentro da implantação",
     "title": "O que montamos no primeiro ciclo",
     "modules": [
-      { "name": "Raio-X Operacional", "duration": "Semana 1", "format": "mapa dos gargalos, ativos, canais, responsáveis e riscos" },
-      { "name": "Memória e Workspace", "duration": "Semana 1–2", "format": "estrutura de arquivos, regras de acesso, documentos-base e padrão de marca" },
-      { "name": "Agentes por Função", "duration": "Semana 2–3", "format": "site, copy, tráfego, documentos, relatórios e operação" },
-      { "name": "Primeiras Entregas", "duration": "Semana 3–4", "format": "LP, relatório, PDF comercial, docs ou playbook operando de verdade" },
-      { "name": "Cadência de Uso", "duration": "Semana 4", "format": "treinamento, aprovações, checklist e plano dos próximos ciclos" }
+      {
+        "name": "Autópsia da operação",
+        "duration": "Semana 1",
+        "format": "mapeamos vazamentos de tempo, ativos, canais, dependências e tarefas que travam crescimento"
+      },
+      {
+        "name": "Arquitetura do centro de comando",
+        "duration": "Semana 1–2",
+        "format": "criamos memória, pastas, padrões, permissões, prompts-mestres e governança"
+      },
+      {
+        "name": "Agentes de primeira linha",
+        "duration": "Semana 2–3",
+        "format": "configuramos agentes para site/copy, documentos, relatórios, comercial e operação"
+      },
+      {
+        "name": "Entregas que provam valor",
+        "duration": "Semana 3–4",
+        "format": "publicamos ou geramos ativos reais: LP, PDF, relatório, proposta, docs ou playbook"
+      },
+      {
+        "name": "Cadência de uso e expansão",
+        "duration": "Semana 4",
+        "format": "treinamos o time, definimos aprovação e planejamos os próximos agentes"
+      }
     ]
   },
   "bonus": {
-    "eyebrow": "Ativos do primeiro ciclo",
-    "title": "A implantação já nasce entregando coisa usável",
+    "eyebrow": "O que você recebe",
+    "title": "Não é consultoria de IA. É instalação de capacidade.",
     "items": [
       {
-        "name": "Mapa de Operação com IA",
-        "description": "Documento estratégico com áreas, agentes, permissões, tarefas e prioridades dos primeiros 90 dias.",
+        "name": "Mapa de Gargalos e Alavancas",
+        "description": "Um diagnóstico direto mostrando onde sua empresa perde tempo, dinheiro e velocidade — e quais agentes atacam primeiro.",
         "valueOld": "2500"
       },
       {
-        "name": "Kit de Página de Vendas",
-        "description": "Estrutura editável para criar ou melhorar páginas de oferta com copy, seções e checklist de conversão.",
+        "name": "Centro de Memória Operacional",
+        "description": "Estrutura viva com decisões, padrões, marca, ofertas, tarefas e contexto para os agentes trabalharem sem amnésia.",
         "valueOld": "3500"
       },
       {
-        "name": "Sistema de Relatórios Executivos",
-        "description": "Modelo para transformar dados, aprendizados e decisões em relatórios claros para liderança e clientes.",
-        "valueOld": "2200"
+        "name": "Primeiro Pacote de Entregas",
+        "description": "Ativos reais gerados no ciclo: landing page, PDF comercial, relatório, proposta, playbook ou documentação crítica.",
+        "valueOld": "5000"
       }
     ]
   },
   "testimonials": {
-    "eyebrow": "Provas sem teatro",
-    "title": "O que uma operação bem montada precisa demonstrar",
+    "eyebrow": "Prova operacional",
+    "title": "A única prova que importa: sair arquivo, sair decisão, sair venda melhor preparada",
     "items": [
       {
-        "name": "Página de vendas",
-        "city": "Copy, layout e deploy",
+        "name": "Site que muda rápido",
+        "city": "Oferta e conversão",
         "image": "/images/dep/dep1.svg",
-        "quote": "O agente precisa conseguir transformar contexto em uma página editável, versionada e pronta para revisão — não só sugerir frases bonitas."
+        "quote": "Uma boa operação com IA transforma contexto em página editável, versionada e pronta para ir ao ar — sem recomeçar do zero a cada ajuste."
       },
       {
-        "name": "Rotina comercial",
-        "city": "Documentos e propostas",
+        "name": "Comercial menos artesanal",
+        "city": "Docs, propostas e follow-up",
         "image": "/images/dep/dep2.svg",
-        "quote": "Briefings, propostas, atas e materiais comerciais deixam de depender de memória solta e passam a nascer de um padrão claro."
+        "quote": "A equipe para de montar tudo no improviso e passa a usar padrões, modelos e memória para acelerar cada conversa comercial."
       },
       {
-        "name": "Gestão executiva",
+        "name": "Gestão com rastro",
         "city": "Relatórios e decisões",
         "image": "/images/dep/dep3.svg",
-        "quote": "A liderança ganha uma trilha de decisões, aprendizados e próximos passos em vez de caçar informação em conversas perdidas."
+        "quote": "Dados deixam de ser print solto. Viram relatório, aprendizado, próxima ação e histórico para a empresa não repetir erro."
       }
     ]
   },
   "offer": {
-    "eyebrow": "Primeiro ciclo",
-    "title": "Implantação OpsCore OS para empresas",
+    "eyebrow": "Convite",
+    "title": "Diagnóstico Ops Agents: descubra onde sua empresa pode ganhar uma camada de execução com IA",
     "priceOld": "18000",
     "priceMonthly": "1500",
     "installments": 12,
     "priceCash": "12000",
     "includes": [
-      "Diagnóstico operacional e mapa de automação",
-      "Workspace estruturado com memória e governança",
-      "2 a 4 agentes de IA configurados por função",
-      "Primeiros ativos prontos: LP, Docs, PDF ou relatório",
-      "Treinamento do time e checklist de aprovação",
-      "Suporte de implantação por 30 dias"
+      "Raio-X dos gargalos operacionais que hoje drenam tempo e dinheiro",
+      "Mapa dos primeiros agentes por função: site, copy, tráfego, docs, PDFs, relatórios ou comercial",
+      "Desenho da memória e governança para operar com segurança",
+      "Plano de implantação de 30 dias com primeira entrega concreta",
+      "Prioridade para empresas prontas para sair do improviso"
     ]
   },
   "guarantee": {
-    "eyebrow": "Sem aposta cega",
-    "title": "Garantia de clareza no diagnóstico",
+    "eyebrow": "Sem fantasia tecnológica",
+    "title": "Se IA não for o gargalo certo, a gente fala.",
     "days": 7,
-    "text": "Se depois do diagnóstico inicial ficar claro que sua operação ainda não tem volume, contexto ou processos suficientes para se beneficiar de agentes, nós falamos isso antes de vender implantação completa.",
-    "comfort": "A proposta final só nasce depois do mapa operacional. Sem empurrar IA onde processo simples resolveria."
+    "text": "O diagnóstico existe para separar oportunidade real de hype. Se o problema for processo básico, oferta confusa ou falta de volume, a recomendação será direta — mesmo que isso reduza o escopo.",
+    "comfort": "A pior coisa é automatizar bagunça. A segunda pior é comprar IA para parecer moderno."
   },
   "faq": {
     "eyebrow": "Perguntas honestas",
@@ -266,18 +318,27 @@
   },
   "letter": {
     "paragraphs": [
-      "Se você chegou até aqui, provavelmente já percebeu que IA genérica não resolve operação sozinha.",
-      "A diferença está em contexto, acesso, padrão e rotina. Um agente bom não é o que conversa bonito; é o que entrega arquivo certo, no formato certo, com o raciocínio preservado para a próxima decisão.",
-      "Se sua empresa precisa vender mais, documentar melhor e tirar execução da cabeça de poucas pessoas, esse é o tipo de sistema que vale construir agora."
+      "O próximo salto não vai vir de mais uma ferramenta esquecida na barra de favoritos.",
+      "Vai vir quando sua empresa tiver um sistema que lembra, organiza, escreve, monta, documenta e entrega — com gente no comando e agentes fazendo o trabalho pesado repetível.",
+      "Se você quer continuar operando no improviso, não contrate isso. Se quer transformar caos em capacidade, o diagnóstico é o primeiro movimento."
     ],
     "signature": "Com clareza,",
     "signatureName": "Odin"
   },
   "footer": {
     "links": [
-      { "label": "Termos de uso", "href": "#" },
-      { "label": "Política de privacidade", "href": "#" },
-      { "label": "WhatsApp", "href": "https://wa.me/557981029218" }
+      {
+        "label": "Termos de uso",
+        "href": "#"
+      },
+      {
+        "label": "Política de privacidade",
+        "href": "#"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "https://wa.me/557981029218"
+      }
     ]
   }
 }
