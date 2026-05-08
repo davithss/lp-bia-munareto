@@ -2,383 +2,204 @@
 import Layout from "../layouts/Layout.astro";
 import content from "../data/content.json";
 
-const { brand, cta, header, hero, kpis, manifesto, recognize, founder, ctaBands, promise, method, curriculum, bonus, testimonials, offer, guarantee, faq, letter, footer } = content;
-
-// Numeração romana auxiliar (i, ii, iii, iv, v, vi, vii, viii, ix, x)
-const roman = ["i","ii","iii","iv","v","vi","vii","viii","ix","x"];
+const { brand, cta, hero, kpis, manifesto, recognize, promise, method, curriculum, offer, guarantee, faq, letter, footer } = content;
+const fronts = ["Landing pages", "Tráfego", "Docs", "PDFs", "Relatórios", "Vendas"];
 ---
 
 <Layout>
-  <!-- ════════════════════════════════════════════════════════════════
-       00 · HEADER
-       ════════════════════════════════════════════════════════════════ -->
-  <header class="site-header">
-    <div class="container row">
-      <a href="/" class="logo">{brand.name}</a>
-      <nav>
-        {header.navItems.map((item) => (
-          <a href={item.href}>{item.label}</a>
-        ))}
-        <a href={cta.link} class="cta cta-mini">{cta.shortText}</a>
-      </nav>
-    </div>
+  <header class="war-nav">
+    <a href="/" class="brand">{brand.name}</a>
+    <nav>
+      <a href="#sala">Centro de comando</a>
+      <a href="#arsenal">Arsenal</a>
+      <a href="#implantacao">Implantação</a>
+      <a href={cta.link} class="nav-cta">Diagnóstico</a>
+    </nav>
   </header>
 
-  <!-- ════════════════════════════════════════════════════════════════
-       01 · HERO
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="hero">
-    <div class="container">
-      <div class="grid">
-        <div class="copy">
-          <div class="eyebrow">{hero.eyebrow}</div>
+  <main>
+    <section class="war-hero">
+      <div class="noise"></div>
+      <div class="radar radar-a"></div>
+      <div class="radar radar-b"></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">{hero.eyebrow}</p>
           <h1>{hero.headline}</h1>
-          <p class="sub">{hero.subheadline}</p>
-          <div class="proof">
-            <strong>{hero.proofNumber}</strong>
-            <span>{hero.proofLabel}</span>
+          <p class="lead">{hero.subheadline}</p>
+          <div class="command-strip">
+            <span>{hero.proofNumber}</span>
+            <p>{hero.proofLabel}</p>
           </div>
-          <div>
-            {hero.urgency && <p class="cta-urgency">{hero.urgency}</p>}
+          <div class="actions">
             <a href={cta.link} class="cta">{cta.text}</a>
-            {hero.microcopy && <p class="cta-microcopy">{hero.microcopy}</p>}
+            <p>{hero.microcopy}</p>
           </div>
         </div>
-        <div class="image">
-          <img src={hero.image} alt={hero.imageAlt} loading="eager" />
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ════════════════════════════════════════════════════════════════
-       02 · KPIs
-       ════════════════════════════════════════════════════════════════ -->
-  {kpis.show && (
-    <section class="kpis">
-      <div class="container">
-        <div class="grid">
-          {kpis.items.map((kpi) => (
-            <div>
-              <div class="num">{kpi.num}</div>
-              <div class="lbl">{kpi.label}</div>
+        <aside class="war-room-card" aria-label="Centro de comando operacional">
+          <div class="screen-top">
+            <span></span><span></span><span></span>
+            <strong>COMMAND CENTER · ONLINE</strong>
+          </div>
+          <div class="ops-visual">
+            <div class="ops-sidebar">
+              <small>Frentes ativas</small>
+              {fronts.slice(0, 4).map((front) => <b>{front}</b>)}
             </div>
-          ))}
+            <div class="ops-stage">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="core-mark">OPS</div>
+              <div class="signal s1"></div>
+              <div class="signal s2"></div>
+              <div class="signal s3"></div>
+            </div>
+            <div class="ops-feed">
+              <p><span></span> briefing → página</p>
+              <p><span></span> dados → relatório</p>
+              <p><span></span> conversa → decisão</p>
+            </div>
+          </div>
+          <div class="mission-log">
+            <p><b>01</b> gargalos mapeados</p>
+            <p><b>02</b> agentes com território</p>
+            <p><b>03</b> entregas versionadas</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats-bar">
+      {kpis.items.map((item) => (
+        <div>
+          <strong>{item.num}</strong>
+          <span>{item.label}</span>
+        </div>
+      ))}
+    </section>
+
+    <section class="briefing" id="sala">
+      <div class="section-label">CENTRO DE COMANDO</div>
+      <div class="briefing-grid">
+        <h2>{manifesto.title}</h2>
+        <div>
+          {manifesto.paragraphs.map((p) => <p>{p}</p>)}
+          <p class="big-question">{manifesto.question}</p>
         </div>
       </div>
     </section>
-  )}
 
-  <!-- ════════════════════════════════════════════════════════════════
-       03 · MANIFESTO
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="manifesto">
-    <div class="container">
-      <div class="grid">
-        <div>
-          <div class="eyebrow">{manifesto.eyebrow}</div>
-          <h2>{manifesto.title}</h2>
-        </div>
-        <div class="body">
-          {manifesto.paragraphs.map((p) => <p>{p}</p>)}
-          <p class="question">{manifesto.question}</p>
-        </div>
+    <section class="doctrine">
+      <div class="doctrine-art">
+        <img src={content.founder.image} alt={content.founder.imageAlt} />
       </div>
-    </div>
-  </section>
+      <div class="doctrine-copy">
+        <span>{content.founder.eyebrow}</span>
+        <h2>{content.founder.name}</h2>
+        {content.founder.bio.map((p) => <p>{p}</p>)}
+      </div>
+    </section>
 
-  <!-- ════════════════════════════════════════════════════════════════
-       04 · VOCÊ SE RECONHECE
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="recognize">
-    <div class="container">
-      <div class="header">
-        <div class="eyebrow">{recognize.eyebrow}</div>
+    <section class="threats">
+      <div class="section-head">
+        <span>{recognize.eyebrow}</span>
         <h2>{recognize.title}</h2>
       </div>
-      <div class="list">
-        {recognize.items.map((item) => (
-          <div class="item">
-            <div class="top">{item.top}</div>
-            <div class="bottom">— {item.bottom}</div>
-          </div>
+      <div class="threat-grid">
+        {recognize.items.map((item, i) => (
+          <article>
+            <small>RISCO 0{i + 1}</small>
+            <h3>{item.top}</h3>
+            <p>{item.bottom}</p>
+          </article>
         ))}
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ════════════════════════════════════════════════════════════════
-       05 · FUNDADORA
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="founder">
-    <div class="container">
-      <div class="grid">
-        <img src={founder.image} alt={founder.imageAlt} loading="lazy" />
-        <div>
-          <div class="eyebrow">{founder.eyebrow}</div>
-          <h2>{founder.name}</h2>
-          <div class="bio">
-            {founder.bio.map((p) => <p>{p}</p>)}
-          </div>
-          <div class="signature">{founder.signature}</div>
-          {founder.mediaLogos && founder.mediaLogos.length > 0 && (
-            <div class="media-logos">
-              {founder.mediaLogos.map((logo) => (
-                <img src={logo.image} alt={logo.name} />
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════════
-       06 · CTA BAND
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="cta-band">
-    <div class="container">
-      <h2>{ctaBands[0].title}</h2>
-      <p>{ctaBands[0].subtitle}</p>
-      <a href={cta.link} class="cta">{cta.text}</a>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════════
-       07 · PROMESSA
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="promise">
-    <div class="container">
-      <div class="header">
-        <div class="eyebrow">{promise.eyebrow}</div>
-        <h2>{promise.title}</h2>
-      </div>
-      <div class="list">
-        {promise.items.map((item, i) => (
-          <div class="item">
-            <div class="icon">{roman[i]}</div>
-            <div class="text">
-              <strong>{item.verb}</strong> {item.object}
-              <em>— {item.reframe}</em>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════════
-       08 · MÉTODO
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="method" id="metodo">
-    <div class="container">
-      <div class="header">
-        <div class="eyebrow">{method.eyebrow}</div>
+    <section class="arsenal" id="arsenal">
+      <div class="arsenal-copy">
+        <span>{method.eyebrow}</span>
         <h2>{method.title}</h2>
-        <div class="name">{method.name}</div>
         <p>{method.summary}</p>
       </div>
-      <div class="pillars">
+      <div class="arsenal-grid">
         {method.pillars.map((pillar, i) => (
-          <div class="pillar">
-            <div class="num">{roman[i]}</div>
+          <article>
+            <small>0{i + 1}</small>
             <h3>{pillar.name}</h3>
             <p>{pillar.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="outcomes">
+      <div class="section-head">
+        <span>{promise.eyebrow}</span>
+        <h2>{promise.title}</h2>
+      </div>
+      <div class="outcome-list">
+        {promise.items.map((item) => (
+          <div>
+            <strong>{item.verb}</strong>
+            <p>{item.object}</p>
+            <em>{item.reframe}</em>
           </div>
         ))}
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ════════════════════════════════════════════════════════════════
-       09 · CURRÍCULO
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="curriculum">
-    <div class="container">
-      <div class="grid">
-        <div class="device">[ tela da área de membros ]</div>
-        <div>
-          <div class="eyebrow">{curriculum.eyebrow}</div>
-          <h2>{curriculum.title}</h2>
-          <div class="modules">
-            {curriculum.modules.map((mod, i) => (
-              <div class="module">
-                <div class="n">{roman[i]}</div>
-                <div class="info">
-                  <strong>{mod.name}</strong>
-                  <span>{mod.duration} · {mod.format}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════════
-       10 · BÔNUS
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="bonus">
-    <div class="container">
-      <div class="header">
-        <div class="eyebrow" style="color: var(--ouro);">{bonus.eyebrow}</div>
-        <h2>{bonus.title}</h2>
-      </div>
-      <div class="grid">
-        {bonus.items.map((item, i) => (
-          <div class="card">
-            <span class="label">Bônus {roman[i]}</span>
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>
-              <span class="price-old">de R$ {item.valueOld}</span>
-              <span class="price-new">grátis</span>
-            </p>
+    <section class="implantacao" id="implantacao">
+      <div class="terminal">
+        <div class="terminal-head">DEPLOY OPERACIONAL · 30 DIAS</div>
+        {curriculum.modules.map((mod, i) => (
+          <div class="terminal-row">
+            <span>SEMANA {i + 1}</span>
+            <strong>{mod.name}</strong>
+            <p>{mod.duration} · {mod.format}</p>
           </div>
         ))}
       </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════════
-       11 · CTA BAND 2
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="cta-band">
-    <div class="container">
-      <h2>{ctaBands[1].title}</h2>
-      <p>{ctaBands[1].subtitle}</p>
-      <a href={cta.link} class="cta">{cta.text}</a>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════════
-       12 · DEPOIMENTOS
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="testimonials" id="depoimentos">
-    <div class="container">
-      <div class="header">
-        <div class="eyebrow">{testimonials.eyebrow}</div>
-        <h2>{testimonials.title}</h2>
-      </div>
-      <div class="grid">
-        {testimonials.items.map((dep) => (
-          <div class="card">
-            <div class="top">
-              <img src={dep.image} alt={dep.name} loading="lazy" />
-              <div class="name">
-                <strong>{dep.name}</strong>
-                <span>{dep.city}</span>
-              </div>
-            </div>
-            <blockquote>{dep.quote}</blockquote>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════════
-       13 · OFERTA
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="offer" id="oferta">
-    <div class="container">
-      <div class="box">
-        <div class="eyebrow">{offer.eyebrow}</div>
+      <div class="offer-panel" id="oferta">
+        <span>{offer.eyebrow}</span>
         <h2>{offer.title}</h2>
-
-        <p class="price-old">De R$ {offer.priceOld}</p>
-        <div class="price-main">
-          {offer.installments}x de
-          <strong>R$ {offer.priceMonthly}</strong>
-        </div>
-        <p class="price-cash">ou R$ {offer.priceCash} à vista</p>
-
-        <ul class="includes">
+        <ul>
           {offer.includes.map((item) => <li>{item}</li>)}
         </ul>
-
         <a href={cta.link} class="cta">{cta.text}</a>
-        <p class="cta-microcopy">Pagamento seguro {cta.checkoutPlatform} · Pix, cartão ou boleto.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ════════════════════════════════════════════════════════════════
-       14 · GARANTIA
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="guarantee">
-    <div class="container">
-      <div class="grid">
-        <div class="seal">
-          <div>
-            <strong>{guarantee.days}</strong>
-            <span>dias de garantia</span>
-          </div>
-        </div>
-        <div>
-          <div class="eyebrow">{guarantee.eyebrow}</div>
-          <h2>{guarantee.title}</h2>
-          <p>{guarantee.text}</p>
-          <p style="margin-top: 16px; font-style: italic; color: var(--muted);">
-            {guarantee.comfort}
-          </p>
-        </div>
+    <section class="guarantee-faq">
+      <div class="guarantee-card">
+        <span>{guarantee.eyebrow}</span>
+        <h2>{guarantee.title}</h2>
+        <p>{guarantee.text}</p>
+        <p>{guarantee.comfort}</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════════════
-       15 · FAQ
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="faq">
-    <div class="container">
-      <div class="header">
-        <div class="eyebrow">{faq.eyebrow}</div>
+      <div class="faq-list">
+        <span>{faq.eyebrow}</span>
         <h2>{faq.title}</h2>
-      </div>
-      <div class="list">
         {faq.items.map((item) => (
           <details>
             <summary>{item.question}</summary>
-            <div class="answer">{item.answer}</div>
+            <p>{item.answer}</p>
           </details>
         ))}
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ════════════════════════════════════════════════════════════════
-       16 · CARTA FINAL
-       ════════════════════════════════════════════════════════════════ -->
-  <section class="letter">
-    <div class="container">
-      <div class="box">
-        {letter.paragraphs.map((p) => <p>{p}</p>)}
-        <div class="signature">{letter.signature}</div>
-        <p class="signature-name">{letter.signatureName}</p>
-        <a href={cta.link} class="cta">{cta.text}</a>
-      </div>
-    </div>
-  </section>
+    <section class="final-call">
+      {letter.paragraphs.map((p) => <p>{p}</p>)}
+      <a href={cta.link} class="cta">Quero entrar na centro de comando</a>
+    </section>
+  </main>
 
-  <!-- ════════════════════════════════════════════════════════════════
-       17 · FOOTER
-       ════════════════════════════════════════════════════════════════ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="logo">{brand.name}</div>
-        <nav>
-          {footer.links.map((link) => (
-            <a href={link.href}>{link.label}</a>
-          ))}
-          <a href={`https://wa.me/${brand.whatsapp}`}>WhatsApp</a>
-        </nav>
-      </div>
-      <div class="legal">
-        © {brand.year} {brand.razaoSocial} · CNPJ {brand.cnpj} · Todos os direitos reservados.
-      </div>
+  <footer class="footer">
+    <strong>{brand.name}</strong>
+    <div>
+      {footer.links.map((link) => <a href={link.href}>{link.label}</a>)}
     </div>
   </footer>
 </Layout>

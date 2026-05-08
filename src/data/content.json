@@ -10,165 +10,165 @@
     "year": 2026
   },
   "seo": {
-    "title": "Agentes de IA para executar a operação da sua empresa",
-    "description": "Criamos agentes de IA sob medida para sites de vendas, tráfego, documentos, PDFs, relatórios e rotinas comerciais.",
+    "title": "A operação invisível que seus concorrentes ainda não têm",
+    "description": "Agentes de IA sob medida para transformar tarefas soltas em execução: páginas, tráfego, documentos, PDFs, relatórios e rotina comercial.",
     "ogImage": "/images/og.svg"
   },
   "tracking": {
     "gtmId": ""
   },
   "cta": {
-    "text": "Quero desenhar minha operação",
+    "text": "Quero montar meu centro de comando",
     "shortText": "Diagnóstico",
-    "link": "https://wa.me/557981029218?text=Quero%20desenhar%20uma%20opera%C3%A7%C3%A3o%20com%20agentes%20de%20IA",
+    "link": "https://wa.me/557981029218?text=Quero%20montar%20meu%20centro%20de%20comando%20com%20agentes%20de%20IA",
     "checkoutPlatform": "WhatsApp"
   },
   "header": {
     "navItems": [
-      { "label": "o sistema", "href": "#metodo" },
-      { "label": "casos", "href": "#depoimentos" },
-      { "label": "planos", "href": "#oferta" }
+      { "label": "o problema", "href": "#metodo" },
+      { "label": "provas", "href": "#depoimentos" },
+      { "label": "implantação", "href": "#oferta" }
     ]
   },
   "hero": {
-    "eyebrow": "Operação com IA · 2026",
-    "headline": "Sua empresa não precisa de mais ferramentas. Precisa de execução.",
-    "subheadline": "Montamos agentes de IA que criam páginas de venda, organizam tráfego, escrevem documentos, geram PDFs, relatórios e mantêm a operação andando.",
+    "eyebrow": "Alerta operacional · empresas em 2026",
+    "headline": "Enquanto você responde mensagens, sua empresa está perdendo execução.",
+    "subheadline": "Construímos agentes de IA que trabalham como uma camada operacional: escrevem, organizam, criam páginas, geram documentos, montam relatórios e preservam decisões antes que tudo vire caos.",
     "image": "/images/hero.svg",
-    "imageAlt": "Painel editorial de agentes de IA operando uma empresa",
-    "proofNumber": "1º caso",
-    "proofLabel": "validado na operação da Bia Munareto",
-    "urgency": "Diagnóstico estratégico para empresas selecionadas",
-    "microcopy": "Sem promessa mágica. Primeiro mapeamos a operação, depois automatizamos o que realmente economiza tempo."
+    "imageAlt": "Centro de comando escuro com agentes de IA executando tarefas de negócio",
+    "proofNumber": "30d",
+    "proofLabel": "para sair do improviso e colocar a primeira frente para rodar",
+    "urgency": "Diagnóstico para operações que já sentem gargalo de execução",
+    "microcopy": "Nada de promessa mágica. Primeiro encontramos o vazamento operacional. Depois montamos agentes para fechar esse buraco."
   },
   "kpis": {
     "show": true,
     "items": [
-      { "num": "24/7", "label": "Agentes disponíveis" },
-      { "num": "6", "label": "Frentes operacionais" },
-      { "num": "1", "label": "Workspace central" },
-      { "num": "30d", "label": "Primeiro ciclo de implantação" }
+      { "num": "24/7", "label": "execução assistida" },
+      { "num": "6", "label": "frentes críticas" },
+      { "num": "1", "label": "memória central" },
+      { "num": "30d", "label": "primeiro ciclo" }
     ]
   },
   "manifesto": {
-    "eyebrow": "Carta para empresas sobrecarregadas",
-    "title": "O problema não é falta de ideia. É falta de braço bom.",
+    "eyebrow": "O diagnóstico incômodo",
+    "title": "Seu problema não é falta de IA. É falta de sistema.",
     "paragraphs": [
-      "Toda empresa pequena que cresce chega no mesmo gargalo: tem demanda, tem visão, tem urgência — mas a execução fica presa em meia dúzia de pessoas que já estão no limite.",
-      "O site de vendas atrasa. O gestor de tráfego pede criativos. O relatório fica para depois. O Google Docs vira cemitério de versões. O PDF comercial nunca fica bonito o suficiente para mandar para um cliente grande.",
-      "Foi exatamente esse tipo de problema que começamos a resolver com a Freya, agente da empresa da Bia: uma operação de IA com memória, contexto, padrão de marca e capacidade real de produzir ativos de negócio. Agora estamos empacotando isso para outras empresas."
+      "Toda empresa que cresce começa a vazar tempo pelos cantos: briefing perdido, proposta atrasada, campanha sem aprendizado, relatório feito no susto, página de venda esperando alguém ter agenda.",
+      "A equipe até tenta compensar no braço. Mas o resultado é previsível: tarefas importantes ficam presas em conversas, decisões somem, o padrão muda de semana para semana e a operação passa a depender da memória de uma ou duas pessoas.",
+      "Agente de IA solto não resolve isso. O que resolve é um centro de comando: agentes com função clara, acesso aos arquivos certos, padrão de qualidade, rotina de aprovação e entrega concreta. Menos teatro tecnológico. Mais trabalho feito."
     ],
-    "question": "E se sua empresa tivesse um time operacional de IA, treinado no seu jeito de vender?"
+    "question": "Se cada gargalo tivesse um agente treinado no seu jeito de operar, quanto da sua semana voltaria para decisões de verdade?"
   },
   "recognize": {
-    "eyebrow": "Você se reconhece?",
-    "title": "Talvez sua operação esteja travada nesses pontos",
+    "eyebrow": "Sinais de alerta",
+    "title": "O caos costuma avisar antes de cobrar caro",
     "items": [
       {
-        "top": "Você sabe que precisa de uma página de vendas melhor.",
-        "bottom": "mas cada ajuste depende de designer, dev, copywriter e calendário disponível."
+        "top": "A página de vendas precisa mudar, mas ninguém quer abrir esse monstro.",
+        "bottom": "copy, design, dev e aprovação viram uma fila que nunca anda."
       },
       {
-        "top": "Seu tráfego roda sem produzir aprendizado organizado.",
-        "bottom": "campanhas sobem, números aparecem, mas ninguém transforma isso em decisão clara."
+        "top": "O tráfego gera dados, mas não gera inteligência organizada.",
+        "bottom": "campanhas sobem, números aparecem, e o aprendizado evapora."
       },
       {
-        "top": "Documentos importantes nascem no improviso.",
-        "bottom": "propostas, briefings, atas e playbooks ficam espalhados em conversas."
+        "top": "Propostas, atas e playbooks nascem no improviso.",
+        "bottom": "cada documento parece de uma empresa diferente."
       },
       {
-        "top": "Você precisa de PDFs e relatórios com aparência profissional.",
-        "bottom": "mas o time perde horas formatando o que deveria ser rotina."
+        "top": "Relatório importante sempre vira corrida de última hora.",
+        "bottom": "o time gasta energia formatando o que já deveria ter um sistema."
       },
       {
-        "top": "A empresa depende demais da sua cabeça.",
-        "bottom": "se você não explicar tudo de novo, ninguém sabe exatamente o padrão."
+        "top": "A operação depende demais da cabeça do fundador ou líder.",
+        "bottom": "se essa pessoa não explicar tudo de novo, a máquina engasga."
       },
       {
-        "top": "Você já testou IA, mas ela ficou solta demais.",
-        "bottom": "responde bonito, só que não vira processo, arquivo, entrega e rotina."
+        "top": "Você já testou IA e sentiu que ela ficou bonita, mas inútil.",
+        "bottom": "responde bem, só que não vira arquivo, entrega, rotina e decisão."
       }
     ]
   },
   "founder": {
-    "eyebrow": "A origem do produto",
-    "name": "Do agente da Bia para uma operação vendável",
+    "eyebrow": "A tese",
+    "name": "Chatbot é brinquedo. Agente operacional é infraestrutura.",
     "image": "/images/founder.svg",
-    "imageAlt": "Mapa visual do case Freya e da operação de agentes",
+    "imageAlt": "Mapa visual de agentes conectados a arquivos, rotinas e entregas",
     "bio": [
-      "A Freya começou como uma agente para cuidar do site da Bia Munareto. Aos poucos, virou algo mais interessante: uma gestora digital com memória de marca, contexto de oferta, capacidade de editar site, pensar copy, organizar pedidos e apoiar a operação.",
-      "Essa é a tese da Ops Agents: empresas não precisam de um chatbot genérico. Precisam de agentes com território claro, acesso aos arquivos certos, padrão de qualidade, versionamento e tarefas concretas. Um agente que escreve, cria, revisa, documenta, publica e reporta."
+      "A maioria das empresas está comprando IA como quem compra aplicativo: abre, testa, se impressiona e abandona quando precisa virar processo real.",
+      "A nossa abordagem é outra. Cada agente recebe território, memória, checklist, permissão e padrão de entrega. Ele não existe para conversar bonito. Existe para produzir ativos: páginas, documentos, relatórios, PDFs, roteiros, propostas, análises e rotinas que alguém pode revisar, aprovar e usar."
     ],
     "signature": "— Odin + Thor",
     "mediaLogos": []
   },
   "ctaBands": [
     {
-      "title": "Se sua operação está crescendo no grito, está na hora de sistematizar.",
-      "subtitle": "O diagnóstico mapeia onde agentes de IA podem gerar entrega real nos próximos 30 dias."
+      "title": "Se a sua empresa cresce no grito, a conta vai chegar.",
+      "subtitle": "O diagnóstico mostra onde agentes de IA podem virar capacidade operacional nos próximos 30 dias."
     },
     {
-      "title": "Não compre IA. Compre capacidade operacional.",
-      "subtitle": "A implantação começa pequena, prova valor e expande para as áreas certas."
+      "title": "Não automatize bagunça. Crie um sistema que trabalha.",
+      "subtitle": "Começamos pequeno, provamos valor e expandimos para as frentes certas."
     }
   ],
   "promise": {
-    "eyebrow": "No fim, sua empresa vai conseguir...",
-    "title": "Produzir mais ativos sem aumentar o caos",
+    "eyebrow": "O que muda na prática",
+    "title": "Você para de pedir favor para a agenda e começa a operar com alavanca",
     "items": [
       {
         "verb": "Criar",
-        "object": "páginas de venda e variações de oferta",
-        "reframe": "sem depender de uma fila eterna de briefing e refação"
+        "object": "páginas de venda, variações de oferta e blocos de copy",
+        "reframe": "sem depender de uma fila eterna para cada ajuste"
       },
       {
-        "verb": "Organizar",
-        "object": "campanhas, criativos e aprendizados de tráfego",
-        "reframe": "para que mídia paga vire inteligência, não só gasto"
+        "verb": "Transformar",
+        "object": "dados de tráfego em aprendizados acionáveis",
+        "reframe": "para mídia paga parar de ser só gasto e virar inteligência"
       },
       {
         "verb": "Gerar",
-        "object": "Google Docs, playbooks, atas e propostas",
-        "reframe": "com padrão de escrita, estrutura e contexto da empresa"
+        "object": "documentos, playbooks, atas, propostas e briefings",
+        "reframe": "com estrutura e voz consistentes"
       },
       {
-        "verb": "Entregar",
+        "verb": "Produzir",
         "object": "PDFs, relatórios e materiais comerciais",
         "reframe": "com acabamento suficiente para cliente, sócio e time"
       },
       {
         "verb": "Preservar",
-        "object": "memória operacional e decisões importantes",
+        "object": "memória operacional, decisões e padrões de qualidade",
         "reframe": "para a empresa não recomeçar do zero toda segunda-feira"
       }
     ]
   },
   "method": {
     "eyebrow": "O sistema",
-    "title": "Um centro de comando para agentes de IA",
-    "name": "Método Freya OS",
-    "summary": "Mapeamos a operação, criamos agentes por função e conectamos cada um a arquivos, processos e entregas reais.",
+    "title": "OpsCore OS: agentes de IA com território, memória e entrega",
+    "name": "OpsCore OS",
+    "summary": "Mapeamos a operação, criamos agentes por função e conectamos cada um a arquivos, processos, checklists e entregas reais.",
     "pillars": [
-      { "name": "Memória", "description": "O agente aprende contexto de marca, ofertas, clientes, decisões e padrões de qualidade sem expor dados desnecessários." },
-      { "name": "Produção", "description": "Sites, copy, Google Docs, PDFs, relatórios, calendários, propostas e materiais comerciais saem como arquivos utilizáveis." },
-      { "name": "Operação", "description": "Cada agente tem escopo, checklist, aprovação, versionamento e rotina para não virar bagunça automatizada." },
-      { "name": "Crescimento", "description": "A estrutura começa no gargalo principal e expande para tráfego, vendas, conteúdo, atendimento e gestão." }
+      { "name": "Memória", "description": "Contexto de marca, ofertas, clientes, decisões e padrões ficam organizados para o agente não depender de explicação repetida." },
+      { "name": "Produção", "description": "Sites, copy, Google Docs, PDFs, relatórios, propostas e materiais comerciais saem como arquivos prontos para revisão." },
+      { "name": "Governança", "description": "Cada agente tem escopo, aprovação, versionamento e limite. Automação sem controle vira bagunça em alta velocidade." },
+      { "name": "Expansão", "description": "Começamos pelo gargalo mais caro e depois abrimos novas frentes: tráfego, vendas, conteúdo, atendimento e gestão." }
     ]
   },
   "curriculum": {
     "eyebrow": "Dentro da implantação",
-    "title": "O que montamos na sua empresa",
+    "title": "O que montamos no primeiro ciclo",
     "modules": [
-      { "name": "Diagnóstico Operacional", "duration": "Semana 1", "format": "mapa de gargalos, ativos, canais e oportunidades de automação" },
-      { "name": "Workspace e Memória", "duration": "Semana 1–2", "format": "estrutura de arquivos, regras de acesso, documentos base e padrões de marca" },
+      { "name": "Raio-X Operacional", "duration": "Semana 1", "format": "mapa dos gargalos, ativos, canais, responsáveis e riscos" },
+      { "name": "Memória e Workspace", "duration": "Semana 1–2", "format": "estrutura de arquivos, regras de acesso, documentos-base e padrão de marca" },
       { "name": "Agentes por Função", "duration": "Semana 2–3", "format": "site, copy, tráfego, documentos, relatórios e operação" },
-      { "name": "Primeiros Ativos", "duration": "Semana 3–4", "format": "entregas reais: LP, relatório, PDF comercial, docs e playbook" },
-      { "name": "Rotina de Uso", "duration": "Semana 4", "format": "treinamento do time, aprovações, cadência e próximos ciclos" }
+      { "name": "Primeiras Entregas", "duration": "Semana 3–4", "format": "LP, relatório, PDF comercial, docs ou playbook operando de verdade" },
+      { "name": "Cadência de Uso", "duration": "Semana 4", "format": "treinamento, aprovações, checklist e plano dos próximos ciclos" }
     ]
   },
   "bonus": {
-    "eyebrow": "Ativos inclusos no primeiro ciclo",
-    "title": "A implantação já nasce produzindo",
+    "eyebrow": "Ativos do primeiro ciclo",
+    "title": "A implantação já nasce entregando coisa usável",
     "items": [
       {
         "name": "Mapa de Operação com IA",
@@ -188,32 +188,32 @@
     ]
   },
   "testimonials": {
-    "eyebrow": "Caso fundador",
-    "title": "O que o caso Freya provou",
+    "eyebrow": "Provas sem teatro",
+    "title": "O que uma operação bem montada precisa demonstrar",
     "items": [
       {
-        "name": "Bia Munareto",
-        "city": "Operação digital · autoamor feminino",
+        "name": "Página de vendas",
+        "city": "Copy, layout e deploy",
         "image": "/images/dep/dep1.svg",
-        "quote": "[FALTA: depoimento real da Bia] A Freya passou de agente de site para gestora digital da operação, com memória de marca, copy, conteúdo e rotina."
+        "quote": "O agente precisa conseguir transformar contexto em uma página editável, versionada e pronta para revisão — não só sugerir frases bonitas."
       },
       {
-        "name": "Time interno",
-        "city": "Site, conteúdo e deploy",
+        "name": "Rotina comercial",
+        "city": "Documentos e propostas",
         "image": "/images/dep/dep2.svg",
-        "quote": "A estrutura permitiu editar site, registrar decisões, organizar pedidos de deploy e manter o padrão da marca sem misturar contexto de outros clientes."
+        "quote": "Briefings, propostas, atas e materiais comerciais deixam de depender de memória solta e passam a nascer de um padrão claro."
       },
       {
-        "name": "Próximos clientes",
-        "city": "Empresas com operação comercial",
+        "name": "Gestão executiva",
+        "city": "Relatórios e decisões",
         "image": "/images/dep/dep3.svg",
-        "quote": "[FALTA: estudo de caso] O próximo passo é aplicar o mesmo modelo em empresas que precisam vender, documentar, reportar e operar melhor."
+        "quote": "A liderança ganha uma trilha de decisões, aprendizados e próximos passos em vez de caçar informação em conversas perdidas."
       }
     ]
   },
   "offer": {
     "eyebrow": "Primeiro ciclo",
-    "title": "Implantação Freya OS para empresas",
+    "title": "Implantação OpsCore OS para empresas",
     "priceOld": "18000",
     "priceMonthly": "1500",
     "installments": 12,
@@ -232,14 +232,14 @@
     "title": "Garantia de clareza no diagnóstico",
     "days": 7,
     "text": "Se depois do diagnóstico inicial ficar claro que sua operação ainda não tem volume, contexto ou processos suficientes para se beneficiar de agentes, nós falamos isso antes de vender implantação completa.",
-    "comfort": "A proposta final só nasce depois do mapa operacional. Sem empurrar IA onde planilha bem feita resolveria."
+    "comfort": "A proposta final só nasce depois do mapa operacional. Sem empurrar IA onde processo simples resolveria."
   },
   "faq": {
     "eyebrow": "Perguntas honestas",
     "title": "O que normalmente perguntam antes de contratar",
     "items": [
       {
-        "question": "Isso é um chatbot para atendimento?",
+        "question": "Isso é só um chatbot para atendimento?",
         "answer": "Não. Chatbot pode fazer parte, mas o foco aqui é operação: criar arquivos, escrever documentos, apoiar tráfego, montar páginas, gerar relatórios e manter memória de decisões."
       },
       {
