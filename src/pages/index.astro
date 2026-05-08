@@ -37,28 +37,20 @@ const fronts = ["Landing pages", "Tráfego", "Docs", "PDFs", "Relatórios", "Ven
           </div>
         </div>
 
-        <aside class="war-room-card" aria-label="Centro de comando operacional">
+        <aside class="war-room-card hero-device" aria-label="Centro de comando operacional">
           <div class="screen-top">
             <span></span><span></span><span></span>
             <strong>COMMAND CENTER · ONLINE</strong>
           </div>
-          <div class="ops-visual">
-            <div class="ops-sidebar">
-              <small>Frentes ativas</small>
-              {fronts.slice(0, 4).map((front) => <b>{front}</b>)}
+          <div class="hero-screen">
+            <img src={hero.image} alt={hero.imageAlt} />
+            <div class="floating-card card-one">
+              <small>Próxima entrega</small>
+              <strong>LP versionada</strong>
             </div>
-            <div class="ops-stage">
-              <div class="orbit orbit-one"></div>
-              <div class="orbit orbit-two"></div>
-              <div class="core-mark">OPS</div>
-              <div class="signal s1"></div>
-              <div class="signal s2"></div>
-              <div class="signal s3"></div>
-            </div>
-            <div class="ops-feed">
-              <p><span></span> briefing → página</p>
-              <p><span></span> dados → relatório</p>
-              <p><span></span> conversa → decisão</p>
+            <div class="floating-card card-two">
+              <small>Status</small>
+              <strong>4 agentes ativos</strong>
             </div>
           </div>
           <div class="mission-log">
@@ -192,7 +184,7 @@ const fronts = ["Landing pages", "Tráfego", "Docs", "PDFs", "Relatórios", "Ven
 
     <section class="final-call">
       {letter.paragraphs.map((p) => <p>{p}</p>)}
-      <a href={cta.link} class="cta">Quero entrar na centro de comando</a>
+      <a href={cta.link} class="cta">Quero montar meu centro de comando</a>
     </section>
   </main>
 

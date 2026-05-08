@@ -118,10 +118,11 @@ p { color: var(--muted); }
   max-width: var(--max);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.03fr .97fr;
-  gap: 64px;
+  grid-template-columns: .88fr 1.12fr;
+  gap: 58px;
   align-items: center;
 }
+.hero-copy h1 { font-size: clamp(46px, 5.55vw, 82px); max-width: 700px; line-height: .98; letter-spacing: -.04em; }
 .kicker,
 .section-label,
 .section-head span,
@@ -153,7 +154,7 @@ p { color: var(--muted); }
   height: 1px;
   background: var(--gold);
 }
-.lead { margin-top: 30px; max-width: 690px; font-size: clamp(18px, 2vw, 22px); color: var(--soft); }
+.lead { margin-top: 24px; max-width: 600px; font-size: clamp(16px, 1.35vw, 19px); color: var(--soft); }
 .command-strip {
   width: fit-content;
   display: flex;
@@ -172,7 +173,7 @@ p { color: var(--muted); }
 
 .war-room-card {
   position: relative;
-  min-height: 650px;
+  min-height: 568px;
   padding: 18px;
   border: 1px solid rgba(245,239,227,.16);
   border-radius: 26px;
@@ -183,6 +184,7 @@ p { color: var(--muted); }
   backdrop-filter: blur(14px);
   overflow: hidden;
 }
+.hero-device { transform: perspective(1100px) rotateY(-4deg) rotateX(2deg); transform-origin: center; }
 .war-room-card::before {
   content: "";
   position: absolute;
@@ -193,12 +195,38 @@ p { color: var(--muted); }
 @keyframes slowspin { to { transform: rotate(360deg); } }
 .screen-top,
 .ops-visual,
+.hero-screen,
 .mission-log { position: relative; z-index: 2; }
 .screen-top { display: flex; align-items: center; gap: 8px; padding: 2px 4px 18px; border-bottom: 1px solid var(--line); }
 .screen-top span { width: 9px; height: 9px; border-radius: 50%; background: var(--red); box-shadow: 0 0 18px var(--red); }
 .screen-top span:nth-child(2) { background: var(--gold); box-shadow: 0 0 18px var(--gold); }
 .screen-top span:nth-child(3) { background: var(--cyan); box-shadow: 0 0 18px var(--cyan); }
 .screen-top strong { margin-left: auto; color: #b7b0a1; font-size: 10px; letter-spacing: .20em; }
+.hero-screen {
+  margin-top: 18px;
+  min-height: 420px;
+  border: 1px solid rgba(245,239,227,.12);
+  border-radius: 18px;
+  background: rgba(2,2,3,.56);
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+.hero-screen img { width: 100%; height: 420px; object-fit: cover; }
+.floating-card {
+  position: absolute;
+  z-index: 3;
+  min-width: 176px;
+  padding: 15px 16px;
+  border: 1px solid rgba(245,239,227,.16);
+  border-radius: 18px;
+  background: rgba(6,7,9,.72);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 70px rgba(0,0,0,.36), inset 0 1px 0 rgba(255,255,255,.12);
+}
+.floating-card small { display: block; color: var(--gold2); font-size: 9px; text-transform: uppercase; letter-spacing: .18em; margin-bottom: 6px; }
+.floating-card strong { color: var(--text); font-size: 15px; }
+.card-one { left: 22px; bottom: 24px; }
+.card-two { right: 22px; top: 26px; }
 .ops-visual {
   display: grid;
   grid-template-columns: 150px 1fr;
@@ -330,7 +358,12 @@ details p { margin-top: 12px; color: #aaa194; }
   section { padding: 82px 18px; }
   .war-nav nav a:not(.nav-cta) { display: none; }
   .hero-grid, .briefing-grid, .arsenal, .implantacao, .guarantee-faq, .doctrine { grid-template-columns: 1fr; }
+  .hero-copy h1 { font-size: clamp(42px, 12vw, 62px); }
+  .hero-device { transform: none; }
   .war-room-card { min-height: auto; }
+  .hero-screen { min-height: 320px; }
+  .hero-screen img { height: 320px; }
+  .floating-card { position: static; margin: 12px; min-width: 0; }
   .ops-visual { grid-template-columns: 1fr; height: auto; }
   .ops-sidebar { display: grid; grid-template-columns: repeat(2,1fr); }
   .ops-stage { min-height: 330px; }
