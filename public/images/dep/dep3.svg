@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <rect width="240" height="240" rx="120" fill="#111827"/>
+  <circle cx="120" cy="95" r="42" fill="#19B7B5" opacity=".85"/>
+  <path d="M55 205c12-50 43-76 65-76s53 26 65 76" fill="#D6B25E" opacity=".85"/>
+  <text x="120" y="225" text-anchor="middle" font-family="Inter, Arial" font-size="18" font-weight="800" fill="#F5F3EA">CASE 3</text>
+</svg>

@@ -1,454 +1,283 @@
 {
   "brand": {
-    "name": "Bia Munareto",
-    "founderName": "Bia Munareto",
-    "razaoSocial": "Bia Munareto - a Jornada do Autoamor Ltda",
-    "nomeFantasia": "Bia Munareto - a Jornada do Autoamor",
-    "cnpj": "36.428.155/0001-70",
-    "whatsapp": "5579988342043",
-    "supportEmail": "contato.biamunaretto@gmail.com",
-    "domain": "biamunaretto.com.br",
+    "name": "Ops Agents",
+    "founderName": "Davi Thiesse",
+    "razaoSocial": "[FALTA: razão social]",
+    "cnpj": "[FALTA: CNPJ]",
+    "whatsapp": "557981029218",
+    "supportEmail": "contato@opsagents.ai",
+    "domain": "opsagents.ai",
     "year": 2026
   },
   "seo": {
-    "title": "A Jornada do Autoamor — Bia Munareto",
-    "description": "Uma jornada de 12 meses para aprender a se colocar em primeiro lugar — sem culpa, sem ansiedade, sem abrir mão de quem você ama.",
-    "ogImage": "/images/og.jpg"
+    "title": "A operação invisível que seus concorrentes ainda não têm",
+    "description": "Agentes de IA sob medida para transformar tarefas soltas em execução: páginas, tráfego, documentos, PDFs, relatórios e rotina comercial.",
+    "ogImage": "/images/og.svg"
   },
   "tracking": {
-    "gtmId": "[FALTA: GTM ID]"
+    "gtmId": ""
   },
   "cta": {
-    "text": "Quero começar minha jornada",
-    "shortText": "Começar",
-    "link": "#oferta",
-    "checkoutPlatform": "Hotmart"
+    "text": "Quero montar meu centro de comando",
+    "shortText": "Diagnóstico",
+    "link": "https://wa.me/557981029218?text=Quero%20montar%20meu%20centro%20de%20comando%20com%20agentes%20de%20IA",
+    "checkoutPlatform": "WhatsApp"
   },
   "header": {
     "navItems": [
-      {
-        "label": "o método",
-        "href": "#metodo"
-      },
-      {
-        "label": "depoimentos",
-        "href": "#depoimentos"
-      },
-      {
-        "label": "os produtos",
-        "href": "#oferta"
-      }
+      { "label": "o problema", "href": "#metodo" },
+      { "label": "provas", "href": "#depoimentos" },
+      { "label": "implantação", "href": "#oferta" }
     ]
   },
   "hero": {
-    "eyebrow": "Psicologia · Corpo · Espiritualidade",
-    "headline": "Você se doa para todos — e ainda assim nunca é suficiente para você mesma.",
-    "subheadline": "Um método, três formas de entrar. Do livro ao acompanhamento completo de 12 meses — escolha o próximo passo da sua jornada.",
-    "image": "/images/hero.jpg",
-    "imageAlt": "Bia Munareto, psicóloga e mentora de autoamor",
-    "proofNumber": "+14 mil",
-    "proofLabel": "mulheres já viveram essa transformação",
-    "urgency": "Inscrições abertas · acesso imediato ao módulo 1",
-    "microcopy": "7 dias para experimentar. Não amou? Devolvemos tudo."
+    "eyebrow": "Alerta operacional · empresas em 2026",
+    "headline": "Enquanto você responde mensagens, sua empresa está perdendo execução.",
+    "subheadline": "Construímos agentes de IA que trabalham como uma camada operacional: escrevem, organizam, criam páginas, geram documentos, montam relatórios e preservam decisões antes que tudo vire caos.",
+    "image": "/images/hero.svg",
+    "imageAlt": "Centro de comando escuro com agentes de IA executando tarefas de negócio",
+    "proofNumber": "30d",
+    "proofLabel": "para sair do improviso e colocar a primeira frente para rodar",
+    "urgency": "Diagnóstico para operações que já sentem gargalo de execução",
+    "microcopy": "Nada de promessa mágica. Primeiro encontramos o vazamento operacional. Depois montamos agentes para fechar esse buraco."
   },
   "kpis": {
     "show": true,
     "items": [
-      {
-        "num": "+14k",
-        "label": "Mulheres transformadas"
-      },
-      {
-        "num": "12",
-        "label": "Meses de jornada"
-      },
-      {
-        "num": "8",
-        "label": "Módulos ao vivo por ano"
-      },
-      {
-        "num": "7",
-        "label": "Dias de garantia"
-      }
+      { "num": "24/7", "label": "execução assistida" },
+      { "num": "6", "label": "frentes críticas" },
+      { "num": "1", "label": "memória central" },
+      { "num": "30d", "label": "primeiro ciclo" }
     ]
   },
   "manifesto": {
-    "eyebrow": "Carta aberta",
-    "title": "Você não está quebrada. Você está programada.",
+    "eyebrow": "O diagnóstico incômodo",
+    "title": "Seu problema não é falta de IA. É falta de sistema.",
     "paragraphs": [
-      "Desde pequena te ensinaram que seu valor depende de quanto você doa, serve e está disponível para o outro. Esse ensinamento não foi uma escolha sua — foi uma programação geracional, instalada muito antes de você ter palavras para questioná-la.",
-      "Então você fez tudo certo. Cuidou de todo mundo, sustentou o emocional de todos, deu conta de tudo. E mesmo assim — no silêncio da noite — sentiu um vazio que nenhuma conquista consegue preencher.",
-      "Você já tentou terapia, cursos, meditação. Ajudou. Mas algo ficou intocado. Porque a programação não vive só na mente. Ela vive no corpo, na ancestralidade, no campo energético. E é exatamente aí que o Método Trikona intervém."
+      "Toda empresa que cresce começa a vazar tempo pelos cantos: briefing perdido, proposta atrasada, campanha sem aprendizado, relatório feito no susto, página de venda esperando alguém ter agenda.",
+      "A equipe até tenta compensar no braço. Mas o resultado é previsível: tarefas importantes ficam presas em conversas, decisões somem, o padrão muda de semana para semana e a operação passa a depender da memória de uma ou duas pessoas.",
+      "Agente de IA solto não resolve isso. O que resolve é um centro de comando: agentes com função clara, acesso aos arquivos certos, padrão de qualidade, rotina de aprovação e entrega concreta. Menos teatro tecnológico. Mais trabalho feito."
     ],
-    "question": "Quando foi a última vez que você se escolheu?"
+    "question": "Se cada gargalo tivesse um agente treinado no seu jeito de operar, quanto da sua semana voltaria para decisões de verdade?"
   },
   "recognize": {
-    "eyebrow": "Você se reconhece?",
-    "title": "Talvez você esteja sentindo isso há mais tempo do que admite",
+    "eyebrow": "Sinais de alerta",
+    "title": "O caos costuma avisar antes de cobrar caro",
     "items": [
       {
-        "top": "Acordar já exausta, antes mesmo do dia começar.",
-        "bottom": "como se descansar fosse um luxo que você não pode."
+        "top": "A página de vendas precisa mudar, mas ninguém quer abrir esse monstro.",
+        "bottom": "copy, design, dev e aprovação viram uma fila que nunca anda."
       },
       {
-        "top": "Cuidar de todo mundo — e sentir culpa quando tenta cuidar de si.",
-        "bottom": "porque aprenderam que suas necessidades sempre podem esperar."
+        "top": "O tráfego gera dados, mas não gera inteligência organizada.",
+        "bottom": "campanhas sobem, números aparecem, e o aprendizado evapora."
       },
       {
-        "top": "Repetir os mesmos padrões em relacionamentos, no dinheiro, na rotina.",
-        "bottom": "e não entender por que mesmo sabendo, você não consegue mudar."
+        "top": "Propostas, atas e playbooks nascem no improviso.",
+        "bottom": "cada documento parece de uma empresa diferente."
       },
       {
-        "top": "Dizer 'tá tudo bem' sem nem checar se está.",
-        "bottom": "porque parar de performar dá mais medo do que continuar."
+        "top": "Relatório importante sempre vira corrida de última hora.",
+        "bottom": "o time gasta energia formatando o que já deveria ter um sistema."
       },
       {
-        "top": "Sentir que existe uma versão sua mais leve, mais livre, mais inteira.",
-        "bottom": "mas não saber como chegar até ela."
+        "top": "A operação depende demais da cabeça do fundador ou líder.",
+        "bottom": "se essa pessoa não explicar tudo de novo, a máquina engasga."
       },
       {
-        "top": "Procurar respostas em todo lugar e ainda assim sentir que falta algo.",
-        "bottom": "porque o que falta não é mais conhecimento — é prática e pertencimento."
+        "top": "Você já testou IA e sentiu que ela ficou bonita, mas inútil.",
+        "bottom": "responde bem, só que não vira arquivo, entrega, rotina e decisão."
       }
     ]
   },
   "founder": {
-    "eyebrow": "Quem te guia nessa jornada",
-    "name": "Bia Munareto",
-    "image": "/images/founder.jpg",
-    "imageAlt": "Bia Munareto, psicóloga e mulher tântrica",
+    "eyebrow": "A tese",
+    "name": "Chatbot é brinquedo. Agente operacional é infraestrutura.",
+    "image": "/images/founder.svg",
+    "imageAlt": "Mapa visual de agentes conectados a arquivos, rotinas e entregas",
     "bio": [
-      "Aos 20 anos, eu vivia o que hoje ensino a transformar. Bem-sucedida na aparência, vazia por dentro. Libido zerada, corpo desconectado, relações que não me sustentavam.",
-      "A virada chegou como uma frase que aterrissou no momento certo: onde está o seu maior nó, está o seu maior propósito. Naquele instante entendi que o que mais me envergonhava era exatamente o que me tornaria singular.",
-      "Hoje sou psicóloga, mulher tântrica, terapeuta integrativa e fundadora da Jornada do Autoamor. Em 11 anos de trajetória, desenvolvi o Método Trikona — a única abordagem que integra psicologia, corpo e espiritualidade simultaneamente, atuando na raiz da programação, não nos sintomas."
+      "A maioria das empresas está comprando IA como quem compra aplicativo: abre, testa, se impressiona e abandona quando precisa virar processo real.",
+      "A nossa abordagem é outra. Cada agente recebe território, memória, checklist, permissão e padrão de entrega. Ele não existe para conversar bonito. Existe para produzir ativos: páginas, documentos, relatórios, PDFs, roteiros, propostas, análises e rotinas que alguém pode revisar, aprovar e usar."
     ],
-    "signature": "— Bia Munareto",
+    "signature": "— Odin + Thor",
     "mediaLogos": []
   },
   "ctaBands": [
     {
-      "title": "Já sente que é hora?",
-      "subtitle": "Você não chegou até aqui por acaso."
+      "title": "Se a sua empresa cresce no grito, a conta vai chegar.",
+      "subtitle": "O diagnóstico mostra onde agentes de IA podem virar capacidade operacional nos próximos 30 dias."
     },
     {
-      "title": "Pronta para colocar você em primeiro lugar?",
-      "subtitle": "A jornada começa assim que você confirmar sua entrada."
+      "title": "Não automatize bagunça. Crie um sistema que trabalha.",
+      "subtitle": "Começamos pequeno, provamos valor e expandimos para as frentes certas."
     }
   ],
   "promise": {
-    "eyebrow": "No fim, você vai...",
-    "title": "Voltar para casa — para dentro de você",
+    "eyebrow": "O que muda na prática",
+    "title": "Você para de pedir favor para a agenda e começa a operar com alavanca",
     "items": [
       {
-        "verb": "Acordar",
-        "object": "com tempo e leveza",
-        "reframe": "sem a culpa de estar cuidando de você antes de cuidar de todo mundo"
+        "verb": "Criar",
+        "object": "páginas de venda, variações de oferta e blocos de copy",
+        "reframe": "sem depender de uma fila eterna para cada ajuste"
       },
       {
-        "verb": "Falar 'não'",
-        "object": "sem ansiedade",
-        "reframe": "e sentir que escolher você não é egoísmo — é coragem"
+        "verb": "Transformar",
+        "object": "dados de tráfego em aprendizados acionáveis",
+        "reframe": "para mídia paga parar de ser só gasto e virar inteligência"
       },
       {
-        "verb": "Reconhecer",
-        "object": "e quebrar os padrões que te prendem",
-        "reframe": "sem precisar passar anos no mesmo ciclo pra entender o que muda"
+        "verb": "Gerar",
+        "object": "documentos, playbooks, atas, propostas e briefings",
+        "reframe": "com estrutura e voz consistentes"
       },
       {
-        "verb": "Ritualizar",
-        "object": "a sua rotina",
-        "reframe": "pra que cuidar de si vire prazer, não mais uma tarefa da lista"
+        "verb": "Produzir",
+        "object": "PDFs, relatórios e materiais comerciais",
+        "reframe": "com acabamento suficiente para cliente, sócio e time"
       },
       {
-        "verb": "Sentir",
-        "object": "que você pertence a um lugar",
-        "reframe": "rodeada de mulheres que entendem exatamente o que você está vivendo"
-      },
-      {
-        "verb": "Olhar",
-        "object": "para o espelho com ternura",
-        "reframe": "e reconhecer a mulher que sempre esteve esperando por você"
+        "verb": "Preservar",
+        "object": "memória operacional, decisões e padrões de qualidade",
+        "reframe": "para a empresa não recomeçar do zero toda segunda-feira"
       }
     ]
   },
   "method": {
-    "eyebrow": "O método",
-    "title": "A geometria da transformação",
-    "name": "Método Trikona",
-    "summary": "Trikona é o triângulo sagrado em sânscrito — símbolo da força feminina primordial. Três vértices em equilíbrio, porque a programação se instalou nos três ao mesmo tempo.",
+    "eyebrow": "O sistema",
+    "title": "OpsCore OS: agentes de IA com território, memória e entrega",
+    "name": "OpsCore OS",
+    "summary": "Mapeamos a operação, criamos agentes por função e conectamos cada um a arquivos, processos, checklists e entregas reais.",
     "pillars": [
-      {
-        "name": "Mente",
-        "description": "Psicologia cognitiva, hipnose ericksoniana e PNL para nomear e reprogramar os padrões e crenças que operam abaixo do nível consciente."
-      },
-      {
-        "name": "Corpo",
-        "description": "Práticas bioenergéticas e tântricas para liberar o que ficou preso no corpo — porque a programação não vive só na cabeça."
-      },
-      {
-        "name": "Campo",
-        "description": "Constelação sistêmica, xamanismo e espiritualidade aplicada para romper padrões ancestrais e reconectar com sua força vital feminina."
-      }
+      { "name": "Memória", "description": "Contexto de marca, ofertas, clientes, decisões e padrões ficam organizados para o agente não depender de explicação repetida." },
+      { "name": "Produção", "description": "Sites, copy, Google Docs, PDFs, relatórios, propostas e materiais comerciais saem como arquivos prontos para revisão." },
+      { "name": "Governança", "description": "Cada agente tem escopo, aprovação, versionamento e limite. Automação sem controle vira bagunça em alta velocidade." },
+      { "name": "Expansão", "description": "Começamos pelo gargalo mais caro e depois abrimos novas frentes: tráfego, vendas, conteúdo, atendimento e gestão." }
     ]
   },
   "curriculum": {
-    "eyebrow": "Dentro da jornada",
-    "title": "12 meses. 8 módulos. Uma mulher diferente.",
+    "eyebrow": "Dentro da implantação",
+    "title": "O que montamos no primeiro ciclo",
     "modules": [
-      {
-        "name": "Gestão do Tempo e Autoamor",
-        "duration": "Módulo 1",
-        "format": "Eliminar culpa · organizar a casa interior"
-      },
-      {
-        "name": "Rompendo Correntes Familiares",
-        "duration": "Módulo 2",
-        "format": "Cura de feridas parentais · libertação de padrões herdados"
-      },
-      {
-        "name": "Maturidade Emocional",
-        "duration": "Módulo 3",
-        "format": "Gestão das emoções · limites saudáveis · integração feminino/masculino"
-      },
-      {
-        "name": "Dinheiro, Poder e Independência",
-        "duration": "Módulo 4",
-        "format": "Ferramentas financeiras · conexão com a abundância"
-      },
-      {
-        "name": "Autoestima e Sexualidade",
-        "duration": "Módulo 5",
-        "format": "Sexualidade sagrada · cura de feridas do passado"
-      },
-      {
-        "name": "Relacionamentos Amorosos",
-        "duration": "Módulo 6",
-        "format": "Liberação de padrões · atração de amor saudável"
-      },
-      {
-        "name": "Propósito e Manifestação",
-        "duration": "Módulo 7",
-        "format": "Escrita criativa · visualização · criação de realidade"
-      },
-      {
-        "name": "ALMA: Práticas Espirituais Diárias",
-        "duration": "Módulo 8",
-        "format": "Intuição · rituais · sonhos · guias espirituais"
-      }
+      { "name": "Raio-X Operacional", "duration": "Semana 1", "format": "mapa dos gargalos, ativos, canais, responsáveis e riscos" },
+      { "name": "Memória e Workspace", "duration": "Semana 1–2", "format": "estrutura de arquivos, regras de acesso, documentos-base e padrão de marca" },
+      { "name": "Agentes por Função", "duration": "Semana 2–3", "format": "site, copy, tráfego, documentos, relatórios e operação" },
+      { "name": "Primeiras Entregas", "duration": "Semana 3–4", "format": "LP, relatório, PDF comercial, docs ou playbook operando de verdade" },
+      { "name": "Cadência de Uso", "duration": "Semana 4", "format": "treinamento, aprovações, checklist e plano dos próximos ciclos" }
     ]
   },
   "bonus": {
-    "eyebrow": "Bônus exclusivos",
-    "title": "Presentes para a sua jornada",
+    "eyebrow": "Ativos do primeiro ciclo",
+    "title": "A implantação já nasce entregando coisa usável",
     "items": [
       {
-        "name": "Jornada do Autoamor — Iniciação",
-        "description": "Guia digital de 21 dias para você começar a transformação antes mesmo de entrar no programa.",
-        "valueOld": "467"
+        "name": "Mapa de Operação com IA",
+        "description": "Documento estratégico com áreas, agentes, permissões, tarefas e prioridades dos primeiros 90 dias.",
+        "valueOld": "2500"
       },
       {
-        "name": "Livro Físico — 365 Mensagens",
-        "description": "Um oráculo para o ano todo: mensagens diárias e cartas para acompanhar cada fase da sua jornada.",
-        "valueOld": "157"
+        "name": "Kit de Página de Vendas",
+        "description": "Estrutura editável para criar ou melhorar páginas de oferta com copy, seções e checklist de conversão.",
+        "valueOld": "3500"
       },
       {
-        "name": "Caderno de Exercícios",
-        "description": "Material físico para registrar, refletir e acompanhar sua evolução ao longo dos 12 meses.",
-        "valueOld": "107"
-      },
-      {
-        "name": "Guia da Solidão Consciente",
-        "description": "Um convite para aprender a estar consigo mesma — com presença, não com vazio.",
-        "valueOld": "97"
+        "name": "Sistema de Relatórios Executivos",
+        "description": "Modelo para transformar dados, aprendizados e decisões em relatórios claros para liderança e clientes.",
+        "valueOld": "2200"
       }
     ]
   },
   "testimonials": {
-    "eyebrow": "Mulheres como você",
-    "title": "O que dizem as mulheres que já passaram por aqui",
+    "eyebrow": "Provas sem teatro",
+    "title": "O que uma operação bem montada precisa demonstrar",
     "items": [
       {
-        "kind": "screenshot",
-        "name": "Depoimento real",
-        "city": "Site oficial Bia Munareto",
-        "image": "/images/dep/comdep-1.jpg",
-        "quote": "Depoimento real do site oficial da Bia Munareto."
+        "name": "Página de vendas",
+        "city": "Copy, layout e deploy",
+        "image": "/images/dep/dep1.svg",
+        "quote": "O agente precisa conseguir transformar contexto em uma página editável, versionada e pronta para revisão — não só sugerir frases bonitas."
       },
       {
-        "kind": "screenshot",
-        "name": "Depoimento real",
-        "city": "Site oficial Bia Munareto",
-        "image": "/images/dep/comdep-2.jpg",
-        "quote": "Depoimento real do site oficial da Bia Munareto."
+        "name": "Rotina comercial",
+        "city": "Documentos e propostas",
+        "image": "/images/dep/dep2.svg",
+        "quote": "Briefings, propostas, atas e materiais comerciais deixam de depender de memória solta e passam a nascer de um padrão claro."
       },
       {
-        "kind": "screenshot",
-        "name": "Depoimento real",
-        "city": "Site oficial Bia Munareto",
-        "image": "/images/dep/comdep-3.jpg",
-        "quote": "Depoimento real do site oficial da Bia Munareto."
-      },
-      {
-        "kind": "screenshot",
-        "name": "Depoimento real",
-        "city": "Site oficial Bia Munareto",
-        "image": "/images/dep/comdep-4.jpg",
-        "quote": "Depoimento real do site oficial da Bia Munareto."
-      },
-      {
-        "kind": "screenshot",
-        "name": "Depoimento real",
-        "city": "Site oficial Bia Munareto",
-        "image": "/images/dep/comdep-5.jpg",
-        "quote": "Depoimento real do site oficial da Bia Munareto."
-      },
-      {
-        "kind": "screenshot",
-        "name": "Depoimento real",
-        "city": "Site oficial Bia Munareto",
-        "image": "/images/dep/comdep-6.jpg",
-        "quote": "Depoimento real do site oficial da Bia Munareto."
+        "name": "Gestão executiva",
+        "city": "Relatórios e decisões",
+        "image": "/images/dep/dep3.svg",
+        "quote": "A liderança ganha uma trilha de decisões, aprendizados e próximos passos em vez de caçar informação em conversas perdidas."
       }
     ]
   },
   "offer": {
-    "eyebrow": "Escolha seu próximo passo",
-    "title": "Onde a sua jornada começa",
-    "subtitle": "Três portas. Cada uma certa para um momento diferente. Todas levam para o mesmo lugar: você.",
-    "products": [
-      {
-        "tag": "Comece por aqui",
-        "featured": false,
-        "image": "/images/produtos/livro.jpg",
-        "name": "O Livro",
-        "subtitle": "A Jornada do Autoamor",
-        "description": "365 mensagens diárias como bússola — combinando Psicologia, Constelação Familiar, Tantra e Espiritualidade. Um encontro com você mesma todos os dias do ano.",
-        "includes": [
-          "365 reflexões diárias",
-          "Exercícios práticos de autoamor",
-          "Âncora espiritual para o cotidiano",
-          "Entrega em todo o Brasil"
-        ],
-        "priceOld": "157",
-        "priceMonthly": null,
-        "priceCash": "97",
-        "cta": "Quero meu livro",
-        "link": "[FALTA: link do livro]"
-      },
-      {
-        "tag": "21 dias de despertar",
-        "featured": false,
-        "image": "/images/produtos/iniciacao.jpg",
-        "name": "A Iniciação",
-        "subtitle": "Jornada do Autoamor — 21 dias",
-        "description": "Programa online completo para romper ciclos em 3 semanas. Ciência, espiritualidade e práticas energéticas — 10 a 25 minutos por dia, no seu ritmo.",
-        "includes": [
-          "Aulas gravadas (10–25 min/dia)",
-          "3 meditações guiadas + 3 tântricas",
-          "Guia de Solidão Consciente",
-          "Caderno terapêutico imprimível",
-          "Acesso por 1 ano"
-        ],
-        "priceOld": "497",
-        "priceMonthly": "30,54",
-        "priceCash": "297",
-        "cta": "Quero a Iniciação",
-        "link": "[FALTA: link da iniciação]"
-      },
-      {
-        "tag": "A jornada completa",
-        "featured": true,
-        "image": "/images/produtos/iniciacao.jpg",
-        "name": "O Aprofundamento",
-        "subtitle": "Jornada do Autoamor — 12 meses",
-        "description": "Acompanhamento terapêutico em grupo por 12 meses. Encontros ao vivo, 40+ aulas gravadas, meditações tântricas, comunidade ativa e a Iniciação como bônus.",
-        "includes": [
-          "40+ aulas gravadas (Mente, Corpo, Alma)",
-          "Encontros ao vivo mensais (sextas, 19h–22h30)",
-          "3 meditações tântricas exclusivas",
-          "Comunidade Irmãs de Alma no WhatsApp",
-          "Caderno terapêutico físico",
-          "Bônus: A Iniciação completa (R$497)",
-          "Acesso por 1 ano"
-        ],
-        "priceOld": "2467",
-        "priceMonthly": "153,91",
-        "priceCash": "1397",
-        "cta": "Quero o Aprofundamento",
-        "link": "[FALTA: link do aprofundamento]"
-      }
+    "eyebrow": "Primeiro ciclo",
+    "title": "Implantação OpsCore OS para empresas",
+    "priceOld": "18000",
+    "priceMonthly": "1500",
+    "installments": 12,
+    "priceCash": "12000",
+    "includes": [
+      "Diagnóstico operacional e mapa de automação",
+      "Workspace estruturado com memória e governança",
+      "2 a 4 agentes de IA configurados por função",
+      "Primeiros ativos prontos: LP, Docs, PDF ou relatório",
+      "Treinamento do time e checklist de aprovação",
+      "Suporte de implantação por 30 dias"
     ]
   },
   "guarantee": {
-    "eyebrow": "Você não tem nada a perder",
-    "title": "Garantia incondicional de 7 dias",
+    "eyebrow": "Sem aposta cega",
+    "title": "Garantia de clareza no diagnóstico",
     "days": 7,
-    "text": "Se nos primeiros 7 dias você sentir que esse caminho não é para você, devolvemos 100% do investimento. Sem perguntas, sem burocracia, sem julgamento.",
-    "comfort": "É só responder o e-mail de suporte. O reembolso é processado em até 5 dias úteis."
+    "text": "Se depois do diagnóstico inicial ficar claro que sua operação ainda não tem volume, contexto ou processos suficientes para se beneficiar de agentes, nós falamos isso antes de vender implantação completa.",
+    "comfort": "A proposta final só nasce depois do mapa operacional. Sem empurrar IA onde processo simples resolveria."
   },
   "faq": {
     "eyebrow": "Perguntas honestas",
-    "title": "Algumas dúvidas que você pode ter",
+    "title": "O que normalmente perguntam antes de contratar",
     "items": [
       {
-        "question": "Trabalho fora e tenho filhos pequenos. Vou conseguir acompanhar?",
-        "answer": "O programa foi feito exatamente para você. Os encontros ao vivo acontecem às sextas, das 19h às 22h30 — e tudo é gravado. Você acessa no seu ritmo, nos horários que fizerem sentido pra sua vida."
+        "question": "Isso é só um chatbot para atendimento?",
+        "answer": "Não. Chatbot pode fazer parte, mas o foco aqui é operação: criar arquivos, escrever documentos, apoiar tráfego, montar páginas, gerar relatórios e manter memória de decisões."
       },
       {
-        "question": "Já fiz outras coisas que não funcionaram. Por que essa seria diferente?",
-        "answer": "Porque aqui o foco não é mais informação — é transformação real. Combinamos psicologia, práticas corporais e espiritualidade em um método único. E você tem uma comunidade ativa ao seu lado, não está sozinha no processo."
+        "question": "Minha empresa precisa ter time técnico?",
+        "answer": "Não necessariamente. Nós montamos a base técnica. O time precisa saber pedir, revisar e aprovar. Quando houver site ou deploy, deixamos o fluxo com versionamento e segurança."
       },
       {
-        "question": "Preciso participar dos encontros ao vivo?",
-        "answer": "Não. Tudo é gravado e disponibilizado para assistir quando quiser, com acesso por 1 ano completo."
+        "question": "Os agentes acessam dados sensíveis?",
+        "answer": "Só o necessário. A arquitetura separa memórias, permissões e arquivos por cliente/projeto. Segredo, token e credencial não ficam em memória aberta de agente."
       },
       {
-        "question": "Nunca fiz nada parecido. Funciona para iniciantes?",
-        "answer": "Sim. O programa foi desenhado para receber mulheres em qualquer estágio — seja sua primeira jornada de autoconhecimento ou uma continuação de um caminho já iniciado."
+        "question": "Dá para criar documentos no Google Docs e PDFs?",
+        "answer": "Sim. Podemos estruturar prompts, modelos, fluxos e integrações para gerar Docs, PDFs, propostas e relatórios. Algumas integrações dependem das permissões e contas da empresa."
       },
       {
-        "question": "Isso tem conteúdo religioso?",
-        "answer": "Não. As práticas espirituais são baseadas em tradições terapêuticas e formação profissional — sem vinculação a nenhuma religião específica. Você pode ser de qualquer fé ou de nenhuma."
+        "question": "Vocês fazem tráfego pago também?",
+        "answer": "Podemos apoiar estratégia, criativos, copy, relatórios e organização dos aprendizados. Gestão completa de mídia pode ser feita com parceiro ou time interno, usando os agentes como camada operacional."
       },
       {
-        "question": "O que é meditação tântrica? Tem nudez?",
-        "answer": "Não há nudez nem conteúdo sexual explícito. A meditação tântrica usada aqui é uma filosofia que trabalha com respiração, som e movimento para elevar a energia vital e integrar as polaridades internas."
-      },
-      {
-        "question": "Quais as formas de pagamento?",
-        "answer": "Cartão de crédito (parcelado em até 12x de R$154) ou PIX à vista (R$1.397). Pagamento seguro."
-      },
-      {
-        "question": "Como recebo o acesso?",
-        "answer": "Em até 5 minutos após a confirmação do pagamento, você recebe o e-mail com seus dados de acesso. O módulo 1 fica disponível imediatamente."
+        "question": "Quanto tempo leva para ver valor?",
+        "answer": "O primeiro ciclo é pensado para gerar ativos reais em até 30 dias. Normalmente começamos pelo gargalo mais caro: site de venda, proposta, relatório, conteúdo ou documentação comercial."
       }
     ]
   },
   "letter": {
     "paragraphs": [
-      "Querida,",
-      "Se você chegou até aqui, é porque alguma coisa em você reconheceu o convite. E isso já é suficiente.",
-      "Eu não vou te dizer que é fácil. Mas vou te dizer que é possível. Eu sei — porque vivi primeiro.",
-      "Quando uma mulher se cura, ela não se cura sozinha. Ela liberta as que vieram antes e abre caminho para as que vêm depois.",
-      "Quando se sentir pronta, eu estarei te esperando do outro lado dessa escolha."
+      "Se você chegou até aqui, provavelmente já percebeu que IA genérica não resolve operação sozinha.",
+      "A diferença está em contexto, acesso, padrão e rotina. Um agente bom não é o que conversa bonito; é o que entrega arquivo certo, no formato certo, com o raciocínio preservado para a próxima decisão.",
+      "Se sua empresa precisa vender mais, documentar melhor e tirar execução da cabeça de poucas pessoas, esse é o tipo de sistema que vale construir agora."
     ],
-    "signature": "Com amor,",
-    "signatureName": "Bia Munareto"
+    "signature": "Com clareza,",
+    "signatureName": "Odin"
   },
   "footer": {
     "links": [
-      {
-        "label": "Termos de uso",
-        "href": "/termos"
-      },
-      {
-        "label": "Política de privacidade",
-        "href": "/privacidade"
-      },
-      {
-        "label": "Suporte",
-        "href": "mailto:contato.biamunaretto@gmail.com"
-      }
+      { "label": "Termos de uso", "href": "#" },
+      { "label": "Política de privacidade", "href": "#" },
+      { "label": "WhatsApp", "href": "https://wa.me/557981029218" }
     ]
   }
 }
