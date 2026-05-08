@@ -288,7 +288,7 @@ p { color: var(--muted); }
 .stats-bar strong { display: block; font-family: var(--serif); font-size: 48px; color: var(--gold2); line-height: 1; }
 .stats-bar span { display: block; margin-top: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; font-size: 10px; }
 
-.briefing, .threats, .arsenal, .outcomes, .implantacao, .guarantee-faq, .final-call, .doctrine { max-width: var(--max); margin: 0 auto; }
+.briefing, .threats, .arsenal, .outcomes, .proof-stack, .evidence, .implantacao, .guarantee-faq, .final-call, .doctrine { max-width: var(--max); margin: 0 auto; }
 .briefing-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 72px; }
 .briefing p { margin-bottom: 18px; font-size: 19px; color: #aaa194; }
 .big-question { color: var(--text) !important; font-family: var(--serif); font-size: 32px !important; line-height: 1.1; border-left: 2px solid var(--gold); padding-left: 24px; margin-top: 34px; }
@@ -301,6 +301,8 @@ p { color: var(--muted); }
 .threat-grid, .arsenal-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
 .threat-grid article,
 .arsenal-grid article,
+.bonus-grid article,
+.evidence-grid article,
 .offer-panel,
 .guarantee-card,
 .faq-list,
@@ -326,6 +328,35 @@ p { color: var(--muted); }
 .outcome-list strong { color: var(--gold2); text-transform: uppercase; letter-spacing: .13em; font-size: 11px; }
 .outcome-list p { color: var(--text); margin: 12px 0; }
 .outcome-list em { color: var(--muted); font-size: 13px; }
+
+.proof-stack {
+  position: relative;
+  padding-top: 62px;
+}
+.proof-stack::before {
+  content: "";
+  position: absolute;
+  inset: 24px 24px auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,164,92,.55), transparent);
+}
+.bonus-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.bonus-grid article {
+  min-height: 280px;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(201,164,92,.12), transparent 12rem),
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.028));
+}
+.bonus-grid small, .evidence-grid small { color: var(--gold2); font-size: 10px; font-weight: 950; letter-spacing: .18em; text-transform: uppercase; }
+.bonus-grid h3 { margin: 38px 0 18px; }
+.bonus-grid p { color: #aaa194; }
+.evidence { padding-top: 32px; }
+.evidence-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.evidence-grid article { padding: 0; overflow: hidden; }
+.evidence-grid img { width: 100%; height: 170px; object-fit: cover; border-bottom: 1px solid var(--line); opacity: .92; }
+.evidence-grid div { padding: 24px; }
+.evidence-grid h3 { margin: 12px 0; font-size: 28px; }
+.evidence-grid p { color: #aaa194; }
 
 .implantacao { display: grid; grid-template-columns: 1.05fr .95fr; gap: 24px; }
 .terminal { background: linear-gradient(180deg, rgba(121,220,255,.055), rgba(255,255,255,.035)); }
@@ -368,7 +399,7 @@ details p { margin-top: 12px; color: #aaa194; }
   .ops-sidebar { display: grid; grid-template-columns: repeat(2,1fr); }
   .ops-stage { min-height: 330px; }
   .ops-feed { grid-template-columns: 1fr; }
-  .stats-bar, .threat-grid, .arsenal-grid, .outcome-list { grid-template-columns: 1fr; }
+  .stats-bar, .threat-grid, .arsenal-grid, .outcome-list, .bonus-grid, .evidence-grid { grid-template-columns: 1fr; }
   .arsenal-copy { position: static; }
   .terminal-row { grid-template-columns: 1fr; }
   .terminal-row p { grid-column: auto; }

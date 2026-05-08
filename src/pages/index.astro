@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import content from "../data/content.json";
 
-const { brand, cta, hero, kpis, manifesto, recognize, promise, method, curriculum, offer, guarantee, faq, letter, footer } = content;
+const { brand, cta, hero, kpis, manifesto, recognize, promise, method, curriculum, bonus, testimonials, offer, guarantee, faq, letter, footer } = content;
 const fronts = ["Landing pages", "Tráfego", "Docs", "PDFs", "Relatórios", "Vendas"];
 ---
 
@@ -138,6 +138,41 @@ const fronts = ["Landing pages", "Tráfego", "Docs", "PDFs", "Relatórios", "Ven
             <p>{item.object}</p>
             <em>{item.reframe}</em>
           </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="proof-stack">
+      <div class="section-head">
+        <span>{bonus.eyebrow}</span>
+        <h2>{bonus.title}</h2>
+      </div>
+      <div class="bonus-grid">
+        {bonus.items.map((item, i) => (
+          <article>
+            <small>ATIVO 0{i + 1}</small>
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="evidence">
+      <div class="section-head">
+        <span>{testimonials.eyebrow}</span>
+        <h2>{testimonials.title}</h2>
+      </div>
+      <div class="evidence-grid">
+        {testimonials.items.map((item) => (
+          <article>
+            <img src={item.image} alt={item.name} />
+            <div>
+              <small>{item.city}</small>
+              <h3>{item.name}</h3>
+              <p>{item.quote}</p>
+            </div>
+          </article>
         ))}
       </div>
     </section>
