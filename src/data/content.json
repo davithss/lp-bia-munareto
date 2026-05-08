@@ -10,8 +10,8 @@
     "year": 2026
   },
   "seo": {
-    "title": "Sua empresa está atrasando entregas que agentes de IA já poderiam executar",
-    "description": "Ops Agents instala um centro de comando com agentes de IA para transformar caos operacional em páginas, documentos, relatórios, PDFs e rotina comercial executada.",
+    "title": "O caos operacional da sua empresa está vazando dinheiro todo dia",
+    "description": "Ops Agents cria um centro de comando preto, direto e operacional: agentes de IA para tirar páginas, documentos, PDFs, relatórios e vendas do improviso.",
     "ogImage": "/images/og.svg"
   },
   "tracking": {
@@ -40,15 +40,15 @@
     ]
   },
   "hero": {
-    "eyebrow": "Diagnóstico brutal · operação com IA",
-    "headline": "Sua empresa não está lenta. Ela está sendo operada no improviso.",
-    "subheadline": "O Ops Agents instala uma camada de agentes de IA para transformar briefing perdido, página parada, relatório atrasado, documento improvisado e decisão solta em execução rastreável — com memória, padrão e aprovação humana.",
+    "eyebrow": "Alerta vermelho · operação vazando dinheiro",
+    "headline": "O caos operacional da sua empresa está cobrando juros todos os dias.",
+    "subheadline": "Enquanto página, proposta, relatório, follow-up e documentação dependem de alguém “ter tempo”, dinheiro escapa. O Ops Agents instala agentes de IA com memória, função e entrega para transformar improviso em máquina operacional.",
     "image": "/images/hero.svg",
     "imageAlt": "Centro de comando escuro com agentes de IA executando tarefas de negócio",
     "proofNumber": "30d",
-    "proofLabel": "para provar o primeiro centro de comando com entregas reais, não slides bonitos",
+    "proofLabel": "para colocar a primeira frente crítica em produção — página, docs, relatório, PDF ou comercial",
     "urgency": "Para empresas que já vendem, mas sentem a operação travar antes da próxima fase",
-    "microcopy": "Não vendemos “IA mágica”. Fazemos o trabalho menos glamouroso e mais valioso: desenhar o sistema, treinar os agentes, conectar os arquivos e colocar a operação para produzir."
+    "microcopy": "Se a sua operação ainda depende de áudio perdido, print, arquivo solto e memória do fundador, você não tem escala. Você tem uma bomba-relógio com faturamento em cima."
   },
   "kpis": {
     "show": true,
@@ -73,41 +73,41 @@
   },
   "manifesto": {
     "eyebrow": "A verdade que dói",
-    "title": "Você não tem gargalo de ferramenta. Tem gargalo de execução.",
+    "title": "Toda empresa que cresce no improviso vira refém da própria bagunça.",
     "paragraphs": [
-      "Toda semana a mesma cena: alguém promete revisar a página, alguém precisa transformar dados em relatório, alguém vai montar proposta “ainda hoje”, alguém tenta lembrar por que a decisão foi tomada. E a empresa segue pagando imposto de desorganização.",
-      "O mercado está fingindo que o problema se resolve comprando mais um SaaS ou abrindo mais uma conversa no ChatGPT. Mentira confortável. Ferramenta sem operação vira brinquedo caro.",
-      "O Ops Agents existe para uma tese simples: empresa que quer crescer precisa de uma camada operacional com memória, agentes por função, arquivos versionados, padrões de qualidade e entregas concretas. Menos inspiração. Mais execução."
+      "O perigo não aparece como crise. Aparece como atraso pequeno: a LP que ninguém atualiza, o relatório que sempre sai em cima da hora, a proposta que nasce do zero, o tráfego que gera dado mas não gera decisão.",
+      "Depois isso vira cultura: todo mundo ocupado, pouca coisa empacotada, decisões sumindo em conversas, liderança repetindo o mesmo contexto e a empresa sangrando velocidade sem perceber.",
+      "O Ops Agents entra para instalar comando. Agentes com território, memória e saída real. Não para conversar bonito. Para produzir arquivo, organizar raciocínio, acelerar aprovação e deixar rastro operacional."
     ],
-    "question": "A pergunta não é “como usar IA?”. A pergunta é: quais tarefas já deveriam estar saindo da cabeça do time e entrando em um sistema que executa?"
+    "question": "A sua empresa está crescendo — ou só está empilhando tarefas em cima de pessoas no limite?"
   },
   "recognize": {
     "eyebrow": "Sintomas de uma operação cara demais",
-    "title": "Se isso acontece aí dentro, você não precisa de motivação. Precisa de máquina.",
+    "title": "Os sintomas parecem normais. É exatamente por isso que são perigosos.",
     "items": [
       {
-        "top": "A página que vende fica sempre uma versão atrasada da sua oferta.",
-        "bottom": "Toda mudança depende de agenda, coragem e alguém lembrar onde está o arquivo certo."
+        "top": "Você perde vendas porque a oferta demora demais para virar página.",
+        "bottom": "Quando finalmente publica, o mercado já mudou e o time já está exausto."
       },
       {
-        "top": "Relatórios nascem quando alguém entra em pânico.",
-        "bottom": "Dados existem, mas inteligência executiva só aparece no sufoco."
+        "top": "A liderança decide com base em fragmentos.",
+        "bottom": "Um print daqui, uma planilha dali, uma memória vaga de reunião. Isso não é gestão."
       },
       {
-        "top": "Sua operação comercial está espalhada em áudio, chat e memória humana.",
-        "bottom": "O follow-up, a proposta e a decisão vivem em lugares diferentes."
+        "top": "Cada proposta parece uma operação artesanal.",
+        "bottom": "Bonita às vezes, inconsistente quase sempre, lenta todo dia."
       },
       {
-        "top": "Você testa IA, se impressiona por dez minutos e depois volta para o manual.",
-        "bottom": "Porque conversa bonita não vira processo, arquivo, padrão e rotina."
+        "top": "O conhecimento da empresa mora em conversas privadas.",
+        "bottom": "Se alguém sai, viaja ou esquece, a operação perde pedaços do próprio cérebro."
       },
       {
-        "top": "O fundador virou servidor central da empresa.",
-        "bottom": "Tudo passa pela cabeça dele. Isso parece controle. Na prática, é risco."
+        "top": "IA foi testada como brinquedo, não como infraestrutura.",
+        "bottom": "Sem memória, escopo, arquivos e governança, ela impressiona e depois desaparece."
       },
       {
-        "top": "A equipe trabalha muito, mas o sistema não aprende.",
-        "bottom": "Cada entrega começa quase do zero porque o conhecimento não fica operacionalizado."
+        "top": "O fundador virou gargalo premium.",
+        "bottom": "Tudo importante passa por ele. Parece controle. É fragilidade."
       }
     ]
   },
@@ -135,7 +135,7 @@
   ],
   "promise": {
     "eyebrow": "A virada",
-    "title": "O que antes dependia de boa vontade passa a ter linha de produção",
+    "title": "Depois do Ops Agents, tarefas críticas param de pedir licença para acontecer",
     "items": [
       {
         "verb": "Vender",
@@ -166,7 +166,7 @@
   },
   "method": {
     "eyebrow": "A arquitetura",
-    "title": "OpsCore OS: o centro de comando que transforma IA em capacidade operacional",
+    "title": "OpsCore OS: a máquina preta por trás da execução",
     "name": "OpsCore OS",
     "summary": "Nós desenhamos o mapa, separamos agentes por território, organizamos memória e criamos rotinas de entrega. O objetivo não é impressionar. É tirar trabalho crítico da fila.",
     "pillars": [
@@ -266,7 +266,7 @@
   },
   "offer": {
     "eyebrow": "Convite",
-    "title": "Diagnóstico Ops Agents: descubra onde sua empresa pode ganhar uma camada de execução com IA",
+    "title": "Peça o diagnóstico antes que a operação vire teto de crescimento",
     "priceOld": "18000",
     "priceMonthly": "1500",
     "installments": 12,
@@ -281,7 +281,7 @@
   },
   "guarantee": {
     "eyebrow": "Sem fantasia tecnológica",
-    "title": "Se IA não for o gargalo certo, a gente fala.",
+    "title": "Nada de fantasia. Se a empresa não estiver pronta, a resposta vai ser dura.",
     "days": 7,
     "text": "O diagnóstico existe para separar oportunidade real de hype. Se o problema for processo básico, oferta confusa ou falta de volume, a recomendação será direta — mesmo que isso reduza o escopo.",
     "comfort": "A pior coisa é automatizar bagunça. A segunda pior é comprar IA para parecer moderno."
@@ -318,9 +318,9 @@
   },
   "letter": {
     "paragraphs": [
-      "O próximo salto não vai vir de mais uma ferramenta esquecida na barra de favoritos.",
-      "Vai vir quando sua empresa tiver um sistema que lembra, organiza, escreve, monta, documenta e entrega — com gente no comando e agentes fazendo o trabalho pesado repetível.",
-      "Se você quer continuar operando no improviso, não contrate isso. Se quer transformar caos em capacidade, o diagnóstico é o primeiro movimento."
+      "Toda operação tem um ponto em que força bruta para de funcionar.",
+      "Se você continuar empilhando tarefa crítica em pessoas saturadas, o crescimento vira peso. Se instalar um centro de comando, cada entrega começa a deixar memória, padrão e velocidade para a próxima.",
+      "O Ops Agents é para quem quer parar de admirar IA e começar a usar IA para executar."
     ],
     "signature": "Com clareza,",
     "signatureName": "Odin"
