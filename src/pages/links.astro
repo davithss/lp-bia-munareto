@@ -1,0 +1,120 @@
+---
+import Layout from "../layouts/Layout.astro";
+import content from "../data/content.json";
+
+const brand = content.brand;
+const whatsappUrl = `https://wa.me/${brand.whatsapp}?text=${encodeURIComponent("Oi, equipe Bia Munareto! Vim pela bio e quero saber qual é o melhor próximo passo para mim.")}`;
+
+const primaryLinks = [
+  {
+    label: "Entrar na Comunidade Jornada do Autoamor",
+    href: "/#precos",
+    note: "Assinatura com conteúdos, práticas e acompanhamento"
+  },
+  {
+    label: "Conhecer a Jornada do Autoamor",
+    href: "/",
+    note: "Página completa com método, planos e dúvidas"
+  },
+  {
+    label: "Falar com a equipe da Bia",
+    href: whatsappUrl,
+    note: "Tire dúvidas antes de escolher seu caminho"
+  }
+];
+
+const secondaryLinks = [
+  { label: "Ver o Método LAR", href: "/#metodo" },
+  { label: "Ver o que está incluso", href: "/#comunidade" },
+  { label: "Ver planos", href: "/#precos" }
+];
+---
+
+<Layout
+  title="Links da Bia Munareto"
+  description="Links oficiais da Bia Munareto: Comunidade Jornada do Autoamor, planos e contato com a equipe."
+  canonicalPath="/links"
+>
+  <main class="bio-links-page">
+    <section class="bio-shell" aria-label="Links oficiais da Bia Munareto">
+      <div class="bio-card">
+        <div class="bio-orbit bio-orbit-one"></div>
+        <div class="bio-orbit bio-orbit-two"></div>
+
+        <header class="bio-header">
+          <a class="bio-logo" href="/" aria-label="Voltar para a página inicial">
+            <img src="/images/logo-bia-white.png" alt="Bia Munareto" />
+          </a>
+
+          <div class="bio-photo-wrap">
+            <img src="/images/founder.jpg" alt="Bia Munareto" class="bio-photo" />
+          </div>
+
+          <p class="bio-kicker">Psicologia · Corpo · Espiritualidade</p>
+          <h1>Bia Munareto</h1>
+          <p class="bio-subtitle">Escolha seu próximo passo na Jornada do Autoamor.</p>
+        </header>
+
+        <div class="bio-links-list">
+          {primaryLinks.map((link, index) => (
+            <a class={`bio-link ${index === 0 ? "bio-link-featured" : ""}`} href={link.href} target={link.href.startsWith("http") ? "_blank" : undefined} rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}>
+              <span class="bio-link-number">0{index + 1}</span>
+              <span class="bio-link-copy">
+                <strong>{link.label}</strong>
+                <em>{link.note}</em>
+              </span>
+              <span class="bio-link-arrow">→</span>
+            </a>
+          ))}
+        </div>
+
+        <nav class="bio-pill-row" aria-label="Atalhos da página">
+          {secondaryLinks.map((link) => (
+            <a href={link.href}>{link.label}</a>
+          ))}
+        </nav>
+
+        <footer class="bio-footer">
+          <p>Site oficial · Jornada do Autoamor</p>
+          <a href="/">www.biamunareto.com.br</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    :global(body){background:#080303;color:#fff;}
+    :global(.sticky-cta){display:none!important;}
+    .bio-links-page{min-height:100vh;background:radial-gradient(circle at 50% 0%,rgba(177,18,38,.42),transparent 34%),linear-gradient(180deg,#130507 0%,#050202 58%,#120506 100%);overflow:hidden;}
+    .bio-shell{min-height:100vh;display:grid;place-items:center;padding:34px 18px;position:relative;}
+    .bio-shell:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:42px 42px;mask-image:radial-gradient(circle at center,#000 0%,transparent 74%);pointer-events:none;}
+    .bio-card{width:min(430px,100%);position:relative;padding:28px 20px 24px;border:1px solid rgba(231,177,94,.24);border-radius:34px;background:linear-gradient(180deg,rgba(55,13,18,.82),rgba(10,4,5,.92));box-shadow:0 34px 110px rgba(0,0,0,.58), inset 0 1px 0 rgba(255,255,255,.1);overflow:hidden;}
+    .bio-orbit{position:absolute;border-radius:999px;filter:blur(.1px);pointer-events:none;}
+    .bio-orbit-one{width:240px;height:240px;right:-120px;top:-92px;background:radial-gradient(circle,rgba(231,177,94,.22),transparent 67%);}
+    .bio-orbit-two{width:260px;height:260px;left:-150px;bottom:40px;background:radial-gradient(circle,rgba(177,18,38,.34),transparent 68%);}
+    .bio-header{position:relative;z-index:1;text-align:center;padding:4px 8px 18px;}
+    .bio-logo{display:inline-flex;justify-content:center;border:0;margin-bottom:18px;}
+    .bio-logo img{width:160px;height:auto;object-fit:contain;}
+    .bio-photo-wrap{width:146px;height:146px;margin:0 auto 18px;padding:5px;border-radius:50%;background:linear-gradient(135deg,#e7b15e,#b11226 54%,#fff7ef);box-shadow:0 18px 56px rgba(0,0,0,.38);}
+    .bio-photo{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;border:4px solid #190607;}
+    .bio-kicker{margin:0 0 8px;color:#e7b15e;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.18em;}
+    .bio-header h1{margin:0;color:#fff;font-family:var(--serif);font-size:clamp(42px,12vw,58px);line-height:.9;font-style:italic;letter-spacing:-.035em;text-shadow:0 14px 36px rgba(0,0,0,.45);}
+    .bio-subtitle{max-width:300px;margin:14px auto 0;color:rgba(255,247,239,.78);font-size:15px;line-height:1.55;}
+    .bio-links-list{position:relative;z-index:1;display:grid;gap:12px;margin-top:8px;}
+    .bio-link{display:grid;grid-template-columns:38px 1fr 24px;gap:12px;align-items:center;padding:15px 14px;border-radius:22px;border:1px solid rgba(231,177,94,.22);background:rgba(255,247,239,.075);color:#fff;text-decoration:none;box-shadow:0 16px 44px rgba(0,0,0,.18);transition:transform .2s ease,border-color .2s ease,background .2s ease;}
+    .bio-link:hover{transform:translateY(-2px);border-color:rgba(231,177,94,.58);background:rgba(255,247,239,.12);border-bottom-color:rgba(231,177,94,.58);}
+    .bio-link-featured{background:linear-gradient(135deg,#b11226,#7f0f1b);border-color:rgba(231,177,94,.5);box-shadow:0 22px 56px rgba(177,18,38,.3);}
+    .bio-link-number{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:rgba(231,177,94,.12);border:1px solid rgba(231,177,94,.34);color:#e7b15e;font-size:11px;font-weight:900;}
+    .bio-link-copy{display:grid;gap:2px;}
+    .bio-link-copy strong{color:#fff;font-size:14px;line-height:1.25;font-weight:900;letter-spacing:-.01em;}
+    .bio-link-copy em{color:rgba(255,247,239,.62);font-style:normal;font-size:12px;line-height:1.35;}
+    .bio-link-arrow{color:#e7b15e;font-size:20px;line-height:1;}
+    .bio-pill-row{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 0;}
+    .bio-pill-row a{border:1px solid rgba(231,177,94,.22);border-radius:999px;padding:8px 10px;color:rgba(255,247,239,.74);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;background:rgba(255,247,239,.04);}
+    .bio-pill-row a:hover{color:#fff;border-color:rgba(231,177,94,.48);}
+    .bio-footer{position:relative;z-index:1;margin-top:22px;text-align:center;color:rgba(255,247,239,.55);font-size:12px;}
+    .bio-footer p{margin:0 0 2px;}
+    .bio-footer a{color:#e7b15e;border:0;font-weight:800;}
+    @media(max-width:420px){.bio-card{border-radius:28px;padding:24px 14px 22px}.bio-link{grid-template-columns:34px 1fr 20px;padding:14px 12px}.bio-photo-wrap{width:132px;height:132px}.bio-logo img{width:142px}}
+  </style>
+</Layout>
