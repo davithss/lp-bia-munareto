@@ -2,37 +2,38 @@
 import Layout from "../layouts/Layout.astro";
 import content from "../data/content.json";
 
-const brand = content.brand;
-const whatsappUrl = `https://wa.me/${brand.whatsapp}?text=${encodeURIComponent("Oi, equipe Bia Munareto! Vim pela bio e quero saber qual é o melhor próximo passo para mim.")}`;
-
 const primaryLinks = [
   {
-    label: "Entrar na Comunidade Jornada do Autoamor",
-    href: "/#precos",
-    note: "Assinatura com conteúdos, práticas e acompanhamento"
+    label: "Suma por 30 dias comigo",
+    href: "https://biamunareto.naracode.com.br/caverna-b?utm_source=bio&utm_campaign=caverna&fbclid=PAVERFWARvHupleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadTg9wPyIJQkvvGWxJSlgr7X4U_jGyU94SuQXXeGsgMC7y69GBYhATC8VB3cA_aem_AEOnXjZpoQ_GtFnvQ4MQdQ",
+    note: "Uma experiência de imersão com Bia Munareto"
   },
   {
-    label: "Conhecer a Jornada do Autoamor",
-    href: "/",
-    note: "Página completa com método, planos e dúvidas"
+    label: "Seja minha Cliente",
+    href: "https://www.biamunareto.com.br/",
+    note: "Melhore sua vida pessoal, espiritual, amorosa e profissional na Jornada do Autoamor"
   },
   {
-    label: "Falar com a equipe da Bia",
-    href: whatsappUrl,
-    note: "Tire dúvidas antes de escolher seu caminho"
+    label: "Seja minha Mentoranda",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSd0Vzp0fnw_tW6NiEfCIhh1yfXNBFjou_zo6a71pCNSPigtqg/viewform",
+    note: "Seguro na sua mão e acompanho seu desenvolvimento semanalmente"
+  },
+  {
+    label: "Compre o Livro da Jornada do Autoamor e receba em casa",
+    href: "https://biamunaretto.com.br/livro-a-jornada-do-autoamor-2/",
+    note: "O livro físico da Jornada entregue no seu endereço"
+  },
+  {
+    label: "Contato profissional",
+    href: "https://wa.me/message/VOVQ7D64JUXRC1",
+    note: "Dúvidas, contratação para palestras e eventos"
   }
-];
-
-const secondaryLinks = [
-  { label: "Ver o Método LAR", href: "/#metodo" },
-  { label: "Ver o que está incluso", href: "/#comunidade" },
-  { label: "Ver planos", href: "/#precos" }
 ];
 ---
 
 <Layout
   title="Links da Bia Munareto"
-  description="Links oficiais da Bia Munareto: Comunidade Jornada do Autoamor, planos e contato com a equipe."
+  description="Links oficiais da Bia Munareto: Caverna, Jornada do Autoamor, mentoria, livro e contato profissional."
   canonicalPath="/links"
 >
   <main class="bio-links-page">
@@ -52,7 +53,7 @@ const secondaryLinks = [
 
           <p class="bio-kicker">Psicologia · Corpo · Espiritualidade</p>
           <h1>Bia Munareto</h1>
-          <p class="bio-subtitle">Escolha seu próximo passo na Jornada do Autoamor.</p>
+          <p class="bio-subtitle">Escolha seu próximo passo comigo.</p>
         </header>
 
         <div class="bio-links-list">
@@ -67,12 +68,6 @@ const secondaryLinks = [
             </a>
           ))}
         </div>
-
-        <nav class="bio-pill-row" aria-label="Atalhos da página">
-          {secondaryLinks.map((link) => (
-            <a href={link.href}>{link.label}</a>
-          ))}
-        </nav>
 
         <footer class="bio-footer">
           <p>Site oficial · Jornada do Autoamor</p>
