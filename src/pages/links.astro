@@ -11,25 +11,25 @@ const primaryLinks = [
   {
     label: "Seja minha Cliente",
     href: "https://www.biamunareto.com.br/",
-    note: "Jornada do Autoamor",
+    note: "Melhore sua vida pessoal, espiritual, amorosa e profissional na Jornada do Autoamor",
     image: "/images/bio-link-2.jpg"
   },
   {
     label: "Seja minha Mentoranda",
     href: "https://docs.google.com/forms/d/e/1FAIpQLSd0Vzp0fnw_tW6NiEfCIhh1yfXNBFjou_zo6a71pCNSPigtqg/viewform",
-    note: "Acompanhamento semanal",
+    note: "Seguro na sua mão e acompanho seu desenvolvimento semanalmente",
     image: "/images/bio-link-3.jpg"
   },
   {
-    label: "Compre o Livro da Jornada",
+    label: "Compre o Livro da Jornada do Autoamor",
     href: "https://biamunaretto.com.br/livro-a-jornada-do-autoamor-2/",
-    note: "Receba em casa",
+    note: "E receba em casa",
     image: "/images/bio-link-4.jpg"
   },
   {
     label: "Contato profissional",
     href: "https://wa.me/message/VOVQ7D64JUXRC1",
-    note: "Dúvidas, palestras e eventos",
+    note: "Dúvidas, contratação para palestras e eventos",
     image: "/images/bio-link-5.jpg"
   }
 ];
@@ -42,9 +42,10 @@ const primaryLinks = [
 >
   <main class="links-page" aria-label="Links oficiais da Bia Munareto">
     <section class="links-stack">
-      <div class="links-brand" aria-label="Bia Munareto">
+      <header class="links-brand" aria-label="Bia Munareto">
         <img src="/images/logo.png" alt="Bia Munareto" />
-      </div>
+        <p>Cuido da tua mente, do teu corpo e da tua alma.</p>
+      </header>
 
       {primaryLinks.map((link, index) => (
         <a class={`link-card link-card-${index + 1}`} href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
@@ -66,8 +67,9 @@ const primaryLinks = [
     :global(.sticky-cta){display:none!important;}
     .links-page{min-height:100vh;background:#fbf7f1;padding:36px 20px 38px;display:flex;justify-content:center;align-items:flex-start;}
     .links-stack{width:min(640px,100%);display:grid;gap:13px;}
-    .links-brand{width:min(255px,72%);margin:0 auto 14px;}
-    .links-brand img{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 20px rgba(43,25,21,.08));}
+    .links-brand{width:min(430px,92%);margin:0 auto 16px;text-align:center;display:grid;justify-items:center;gap:10px;}
+    .links-brand img{display:block;width:min(255px,72%);height:auto;filter:grayscale(1) brightness(0) drop-shadow(0 10px 20px rgba(43,25,21,.08));}
+    .links-brand p{margin:0;font-family:var(--sans);font-size:clamp(13px,3.5vw,17px);line-height:1.35;font-weight:500;color:#1f1715;letter-spacing:-.02em;}
     .link-card{position:relative;height:136px;display:flex;align-items:center;overflow:hidden;border-radius:16px;color:#fff;text-decoration:none;background:#2a1412;box-shadow:0 12px 30px rgba(43,25,21,.14);isolation:isolate;transition:transform .22s ease,box-shadow .22s ease;}
     .link-card:hover{transform:translateY(-2px);box-shadow:0 18px 44px rgba(43,25,21,.22);border-bottom-color:transparent;}
     .link-card-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center var(--face-position,32%);z-index:-3;transform:scale(1.01);}
@@ -83,7 +85,7 @@ const primaryLinks = [
     .link-card-content strong{font-family:var(--sans);font-size:clamp(19px,4.4vw,28px);font-style:normal;font-weight:700;line-height:1.04;letter-spacing:-.045em;}
     .link-card-content em{font-style:normal;font-size:clamp(10px,2.2vw,14px);line-height:1.35;font-weight:500;letter-spacing:.01em;color:rgba(255,255,255,.76);}
     .link-card-arrow{position:absolute;right:18px;bottom:18px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);color:#611017;font-size:27px;line-height:1;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.14);}
-    @media(min-width:720px){.links-page{padding:58px 28px 54px}.links-stack{gap:20px}.links-brand{width:310px;margin-bottom:20px}.link-card{height:230px;border-radius:22px}.link-card-border{inset:12px;border-radius:16px}.link-card-content{gap:10px;padding-left:34px;width:min(58%,410px)}.link-card-content strong{font-size:34px}.link-card-content em{font-size:16px}.link-card-arrow{right:28px;bottom:28px;width:42px;height:42px;font-size:34px}}
+    @media(min-width:720px){.links-page{padding:58px 28px 54px}.links-stack{gap:20px}.links-brand{width:min(480px,92%);margin-bottom:20px;gap:12px}.links-brand img{width:310px}.links-brand p{font-size:18px}.link-card{height:230px;border-radius:22px}.link-card-border{inset:12px;border-radius:16px}.link-card-content{gap:10px;padding-left:34px;width:min(58%,410px)}.link-card-content strong{font-size:34px}.link-card-content em{font-size:16px}.link-card-arrow{right:28px;bottom:28px;width:42px;height:42px;font-size:34px}}
     @media(max-width:380px){.links-page{padding-left:16px;padding-right:16px}.link-card{height:128px}.link-card-content{padding-left:20px;width:66%}.link-card-content strong{font-size:18px}.link-card-content em{font-size:10px}.link-card-arrow{right:14px;bottom:14px;width:28px;height:28px;font-size:24px}}
   </style>
 </Layout>
