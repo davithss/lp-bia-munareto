@@ -149,7 +149,7 @@ const premiumIncludes = [
   "Experiência presencial da Jornada do Autoamor",
   "1 encontro presencial por mês durante 12 meses em Aracaju/SE",
   "Vivência mais profunda, íntima e acompanhada com Bia",
-  "Entrada por lista de espera para a próxima turma Premium"
+  "Entrada por lista de espera para a próxima turma Presencial"
 ];
 
 
@@ -205,10 +205,10 @@ const planDeliverables = [
     ]
   },
   {
-    title: "Premium",
+    title: "Presencial",
     groups: [
       {
-        title: "Tudo incluso no Premium",
+        title: "Tudo incluso no Presencial",
         items: [
           ...monthlyIncludes.map((item) => [item, true] as const),
           ...advancedItems.map((item) => [item, true] as const),
@@ -279,7 +279,7 @@ const structuredData = [
       },
       {
         "@type": "Offer",
-        "name": "Premium",
+        "name": "Presencial",
         "price": "1997.00",
         "priceCurrency": "BRL",
         "url": supportWhatsappUrl,
@@ -592,7 +592,7 @@ const faqs = [
         <article class="price-card monthly">
           <div class="plan-head">
             <p class="plan-name">Básico</p>
-            <span><strong>Plano mensal</strong> com entrada promocional · apenas cartão</span>
+            <span><strong>Plano mensal</strong> · apenas cartão</span>
           </div>
           <div class="promo-ribbon">Oferta de entrada</div>
           <div class="price-box">
@@ -651,14 +651,14 @@ const faqs = [
 
         <article class="price-card premium-plan">
           <div class="plan-head">
-            <p class="plan-name">Premium</p>
+            <p class="plan-name">Presencial</p>
             <span>Lista de espera para a experiência presencial</span>
           </div>
           <div class="price-box premium-price">
             <span class="price-prefix">R$</span>
             <strong>1.997</strong>
           </div>
-          <p class="billing-note">O Premium inclui tudo do Básico, tudo do Avançado e 1 encontro presencial por mês durante 12 meses em Aracaju/SE. A entrada acontece por lista de espera para a próxima turma.</p>
+          <p class="billing-note">O Presencial inclui tudo do Básico, tudo do Avançado e 1 encontro presencial por mês durante 12 meses em Aracaju/SE. A entrada acontece por lista de espera para a próxima turma.</p>
           <div class="plan-deliverables">
             {planDeliverables[2].groups.map((group) => (
               group.items.some(([, included]) => included) && (
@@ -682,7 +682,7 @@ const faqs = [
       <div class="wrap payment-note">
         <strong>Como Funciona?</strong>
         <ol>
-          <li>Escolha seu plano (Básico, Avançado ou Premium)</li>
+          <li>Escolha seu plano (Básico, Avançado ou Presencial)</li>
           <li>Faça o pagamento</li>
           <li>Cadastre um email que você tem fácil acesso e utiliza</li>
           <li>Você vai receber por email o link para baixar nosso Aplicativo (computador ou celular) junto com o login e a senha</li>
