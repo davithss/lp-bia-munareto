@@ -2,5 +2,40 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "astro",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "biamunareto.com.br"
+        }
+      ],
+      "destination": "https://www.biamunareto.com.br/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.biamunaretto.com.br"
+        }
+      ],
+      "destination": "https://www.biamunareto.com.br/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "biamunaretto.com.br"
+        }
+      ],
+      "destination": "https://www.biamunareto.com.br/:path*",
+      "permanent": true
+    }
+  ]
 }
