@@ -7,6 +7,7 @@ const { brand } = content;
 const ctaAnchor = "#precos";
 const monthlyCheckoutUrl = "https://payfast.greenn.com.br/119839/offer/ag9n4c";
 const annualCheckoutUrl = "https://payfast.greenn.com.br/119839/offer/GVUYps";
+const premiumCheckoutUrl = "https://payfast.greenn.com.br/127962";
 const supportWhatsappUrl = `http://wa.me/${brand.whatsapp}`;
 
 const proofItems = [
@@ -83,7 +84,7 @@ const basicItems = [
   "Orações, Mantras e meditações guiadas",
   "Práticas espirituais para o dia a dia",
   "Maturidade emocional: aprenda a lidar de forma adulta com as emoções",
-  "Encontros semanais com Bia Munareto"
+  "Encontros semanais online com Bia Munareto via Zoom"
 ];
 
 const advancedItems = [
@@ -130,10 +131,10 @@ const notForYou = [
 
 const monthlyIncludes = [
   ...basicItems,
-  "Comunidade para as Irmãs de Alma",
+  "Comunidade para irmãs de alma - dentro do aplicativo",
+  "Caderno terapêutico disponibilizado em PDF para impressão",
   "Encontro mensal ao vivo Retiro Urbano 100% online",
   "Novos conteúdos e práticas liberados mensalmente",
-  "Caderno Terapêutico",
   "Planilha Financeira",
   "Ferramentas que facilitam a vida da mulher moderna"
 ];
@@ -146,10 +147,10 @@ const annualIncludes = [
 ];
 
 const premiumIncludes = [
-  "Experiência presencial da Jornada do Autoamor",
+  "Tudo do Básico",
+  "Tudo do Avançado",
   "1 encontro presencial por mês durante 12 meses em Aracaju/SE",
-  "Vivência mais profunda, íntima e acompanhada com Bia",
-  "Entrada por lista de espera para a próxima turma Presencial"
+  "4 sessões individuais com Bia (online ou presencial) - duração de 1h cada sessão"
 ];
 
 
@@ -205,17 +206,11 @@ const planDeliverables = [
     ]
   },
   {
-    title: "Presencial",
+    title: "Premium",
     groups: [
       {
-        title: "Tudo incluso no Presencial",
-        items: [
-          ...monthlyIncludes.map((item) => [item, true] as const),
-          ...advancedItems.map((item) => [item, true] as const),
-          ...specialistCourses.map((item) => [item, true] as const),
-          ["TRIX Inspira IA treinada por Bia disponível 24h por dia", true],
-          ["1 encontro presencial por mês durante 12 meses em Aracaju/SE", true]
-        ]
+        title: "Entregáveis",
+        items: premiumIncludes.map((item) => [item, true] as const)
       }
     ]
   }
@@ -279,10 +274,10 @@ const structuredData = [
       },
       {
         "@type": "Offer",
-        "name": "Presencial",
-        "price": "1997.00",
+        "name": "Premium",
+        "price": "2397.00",
         "priceCurrency": "BRL",
-        "url": supportWhatsappUrl,
+        "url": premiumCheckoutUrl,
         "availability": "https://schema.org/LimitedAvailability"
       }
     ]
@@ -600,7 +595,7 @@ const faqs = [
             <strong>47</strong>
             <span class="price-suffix">/ mês</span>
           </div>
-          <p class="intro-price-note">Nos 3 primeiros meses. Depois, sua assinatura segue por R$ 72,80/mês.</p>
+          <p class="intro-price-note">Condição especial de lançamento, válida somente entre os dias 02 e 04/06.</p>
           <div class="plan-deliverables">
             {planDeliverables[0].groups.map((group) => (
               group.items.some(([, included]) => included) && (
@@ -630,6 +625,7 @@ const faqs = [
             <span class="price-prefix">12x R$</span>
             <strong>59,30</strong>
           </div>
+          <p class="intro-price-note">ou à vista por R$ 576,77</p>
           <div class="plan-deliverables">
             {planDeliverables[1].groups.map((group) => (
               group.items.some(([, included]) => included) && (
@@ -651,14 +647,14 @@ const faqs = [
 
         <article class="price-card premium-plan">
           <div class="plan-head">
-            <p class="plan-name">Presencial</p>
-            <span>Lista de espera para a experiência presencial</span>
+            <p class="plan-name">Premium</p>
+            <span>Experiência completa com encontros presenciais e sessões individuais</span>
           </div>
           <div class="price-box premium-price">
-            <span class="price-prefix">R$</span>
-            <strong>1.997</strong>
+            <span class="price-prefix">12x R$</span>
+            <strong>246,45</strong>
           </div>
-          <p class="billing-note">O Presencial inclui tudo do Básico, tudo do Avançado e 1 encontro presencial por mês durante 12 meses em Aracaju/SE. A entrada acontece por lista de espera para a próxima turma.</p>
+          <p class="intro-price-note">ou à vista por R$ 2.397</p>
           <div class="plan-deliverables">
             {planDeliverables[2].groups.map((group) => (
               group.items.some(([, included]) => included) && (
@@ -675,14 +671,14 @@ const faqs = [
               )
             ))}
           </div>
-          <a href={supportWhatsappUrl} class="btn primary premium-cta" target="_blank" rel="noopener noreferrer">Entre na lista de espera</a>
+          <a href={premiumCheckoutUrl} class="btn primary premium-cta" target="_blank" rel="noopener noreferrer">Entrar no Premium</a>
         </article>
       </div>
 
       <div class="wrap payment-note">
         <strong>Como Funciona?</strong>
         <ol>
-          <li>Escolha seu plano (Básico, Avançado ou Presencial)</li>
+          <li>Escolha seu plano (Básico, Avançado ou Premium)</li>
           <li>Faça o pagamento</li>
           <li>Cadastre um email que você tem fácil acesso e utiliza</li>
           <li>Você vai receber por email o link para baixar nosso Aplicativo (computador ou celular) junto com o login e a senha</li>
