@@ -5,7 +5,7 @@ import content from "../data/content.json";
 const { brand } = content;
 
 const ctaAnchor = "#precos";
-const monthlyCheckoutUrl = "https://payfast.greenn.com.br/119839/offer/ag9n4c";
+const monthlyCheckoutUrl = "https://payfast.greenn.com.br/119839/offer/lOuOoE";
 const annualCheckoutUrl = "https://payfast.greenn.com.br/119839/offer/GVUYps";
 const premiumCheckoutUrl = "https://payfast.greenn.com.br/127962";
 const supportWhatsappUrl = `http://wa.me/${brand.whatsapp}`;
@@ -258,8 +258,8 @@ const structuredData = [
     "offers": [
       {
         "@type": "Offer",
-        "name": "Assinatura mensal promocional",
-        "price": "47.00",
+        "name": "Assinatura mensal",
+        "price": "72.80",
         "priceCurrency": "BRL",
         "url": monthlyCheckoutUrl,
         "availability": "https://schema.org/InStock"
@@ -589,13 +589,11 @@ const faqs = [
             <p class="plan-name">Básico</p>
             <span><strong>Plano mensal</strong> · apenas cartão</span>
           </div>
-          <div class="promo-ribbon">Oferta de entrada</div>
           <div class="price-box">
             <span class="price-prefix">R$</span>
-            <strong>47</strong>
+            <strong>72,80</strong>
             <span class="price-suffix">/ mês</span>
           </div>
-          <p class="intro-price-note">Condição especial de lançamento, válida somente entre os dias 02 e 04/06.</p>
           <div class="plan-deliverables">
             {planDeliverables[0].groups.map((group) => (
               group.items.some(([, included]) => included) && (
@@ -612,7 +610,7 @@ const faqs = [
               )
             ))}
           </div>
-          <a href={monthlyCheckoutUrl} class="btn primary monthly-cta" target="_blank" rel="noopener noreferrer">Entrar por R$ 47</a>
+          <a href={monthlyCheckoutUrl} class="btn primary monthly-cta" target="_blank" rel="noopener noreferrer">Entrar por R$ 72,80</a>
         </article>
 
         <article class="price-card annual featured-plan">
