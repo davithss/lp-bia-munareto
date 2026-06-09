@@ -3,15 +3,15 @@ import Layout from "../layouts/Layout.astro";
 
 const primaryLinks = [
   {
-    label: "Faca esse teste gratuito",
+    label: "Faça esse teste gratuito",
     href: "https://biamunareto.naracode.com.br/",
     note: "E ganhe direção para o seu renascimento",
     image: "/images/bio-link-1.jpg"
   },
   {
-    label: "Faca parte da Jornada do Autoamor",
+    label: "Faça parte da Jornada do Autoamor",
     href: "https://www.biamunareto.com.br",
-    note: "Pertenca a comunidade de mulheres que decidiram melhorar sua vida pessoal, profissional, amorosa e espiritual atraves do autoconhecimento e espiritualidade",
+    note: "Pertença à comunidade de mulheres que decidiram melhorar sua vida pessoal, profissional, amorosa e espiritual através do autoconhecimento e espiritualidade",
     image: "/images/bio-link-2.jpg"
   },
   {
@@ -88,11 +88,15 @@ const primaryLinks = [
     .link-card-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,14,14,.98) 0%,rgba(72,25,25,.88) 43%,rgba(72,25,25,.34) 72%,rgba(72,25,25,.02) 100%);z-index:-2;}
     .link-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,0));z-index:-1;}
     .link-card-border{position:absolute;inset:8px;border:1px solid rgba(255,255,255,.30);border-radius:12px;pointer-events:none;}
-    .link-card-content{display:grid;gap:7px;width:min(62%,380px);padding:0 20px 0 24px;text-shadow:0 2px 18px rgba(0,0,0,.28);}
+    .link-card-content{display:grid;gap:7px;width:min(62%,380px);padding:0 20px 0 24px;text-shadow:0 2px 18px rgba(0,0,0,.28);overflow-wrap:anywhere;}
     .link-card-content strong{font-family:var(--sans);font-size:clamp(19px,4.4vw,28px);font-style:normal;font-weight:700;line-height:1.04;letter-spacing:-.045em;}
     .link-card-content em{font-style:normal;font-size:clamp(10px,2.2vw,14px);line-height:1.35;font-weight:500;letter-spacing:.01em;color:rgba(255,255,255,.76);}
+    .link-card-2{height:188px;}
+    .link-card-2 .link-card-content{width:min(76%,460px);padding-right:48px;}
+    .link-card-2 .link-card-content strong{font-size:clamp(18px,4vw,25px);line-height:1.08;}
+    .link-card-2 .link-card-content em{font-size:clamp(10px,2vw,13px);line-height:1.32;}
     .link-card-arrow{position:absolute;right:18px;bottom:18px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);color:#611017;font-size:27px;line-height:1;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.14);}
-    @media(min-width:720px){.links-page{padding:58px 28px 54px}.links-stack{gap:20px}.links-brand{width:min(480px,92%);margin-bottom:20px;gap:12px}.links-brand img{width:310px}.links-brand p{font-size:18px}.link-card{height:230px;border-radius:22px}.link-card-border{inset:12px;border-radius:16px}.link-card-content{gap:10px;padding-left:34px;width:min(58%,410px)}.link-card-content strong{font-size:34px}.link-card-content em{font-size:16px}.link-card-arrow{right:28px;bottom:28px;width:42px;height:42px;font-size:34px}}
-    @media(max-width:380px){.links-page{padding-left:16px;padding-right:16px}.link-card{height:156px}.link-card-content{padding-left:20px;width:68%}.link-card-content strong{font-size:18px}.link-card-content em{font-size:10px}.link-card-arrow{right:14px;bottom:14px;width:28px;height:28px;font-size:24px}}
+    @media(min-width:720px){.links-page{padding:58px 28px 54px}.links-stack{gap:20px}.links-brand{width:min(480px,92%);margin-bottom:20px;gap:12px}.links-brand img{width:310px}.links-brand p{font-size:18px}.link-card{height:230px;border-radius:22px}.link-card-2{height:250px}.link-card-border{inset:12px;border-radius:16px}.link-card-content{gap:10px;padding-left:34px;width:min(58%,410px)}.link-card-content strong{font-size:34px}.link-card-content em{font-size:16px}.link-card-2 .link-card-content{width:min(68%,470px);padding-right:72px}.link-card-2 .link-card-content strong{font-size:30px}.link-card-2 .link-card-content em{font-size:15px}.link-card-arrow{right:28px;bottom:28px;width:42px;height:42px;font-size:34px}}
+    @media(max-width:380px){.links-page{padding-left:16px;padding-right:16px}.link-card{height:156px}.link-card-2{height:184px}.link-card-content{padding-left:20px;width:68%}.link-card-content strong{font-size:18px}.link-card-content em{font-size:10px}.link-card-2 .link-card-content{width:78%;padding-right:38px}.link-card-2 .link-card-content strong{font-size:17px}.link-card-2 .link-card-content em{font-size:9.5px}.link-card-arrow{right:14px;bottom:14px;width:28px;height:28px;font-size:24px}}
   </style>
 </Layout>
