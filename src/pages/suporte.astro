@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+import content from "../data/content.json";
+
+const { brand } = content;
+const supportNumber = "5579981507172";
+const supportMessage = "Olá, equipe da Bia. Preciso de suporte.";
+const whatsappUrl = `https://wa.me/${supportNumber}?text=${encodeURIComponent(supportMessage)}`;
+---
+
+<Layout
+  title={`Suporte — ${brand.name}`}
+  description="Suporte oficial da Bia Munareto via WhatsApp."
+  canonicalPath="/suporte"
+>
+  <main class="support-page">
+    <section class="support-shell" aria-labelledby="supportTitle">
+      <a class="support-logo" href="/" aria-label="Bia Munareto">
+        <img src="/images/logo-bia-white.png" alt={brand.name} />
+      </a>
+
+      <p class="support-kicker">Suporte oficial</p>
+      <h1 id="supportTitle">Atendimento pelo WhatsApp</h1>
+      <p class="support-lead">O suporte da Bia é realizado pelo WhatsApp. Toque no botão abaixo para falar com a equipe e receber orientação pelo canal oficial.</p>
+
+      <a class="support-button" href={whatsappUrl} target="_blank" rel="noopener noreferrer">Falar com o suporte</a>
+
+      <p class="support-note">Número oficial: +55 79 98150-7172</p>
+      <a class="support-back" href="/">Voltar para a Jornada do Autoamor</a>
+    </section>
+  </main>
+
+  <style>
+    :global(body){background:#050302;color:#fff;}
+    :global(.sticky-cta){display:none!important;}
+    .support-page{min-height:100vh;display:grid;place-items:center;padding:28px;background:radial-gradient(circle at 72% 18%,rgba(177,18,38,.34),transparent 34%),linear-gradient(135deg,#050302,#1b0808 58%,#2a0b0d);color:#fff;}
+    .support-shell{width:min(680px,100%);display:grid;justify-items:center;text-align:center;padding:clamp(34px,7vw,64px);border:1px solid rgba(231,177,94,.22);background:rgba(255,247,239,.06);box-shadow:0 34px 110px rgba(0,0,0,.28);}
+    .support-logo{width:min(210px,64vw);margin-bottom:34px;border:0;}
+    .support-logo img{width:100%;height:auto;display:block;}
+    .support-kicker{margin:0 0 14px;color:#e7b15e;font-size:10px;font-weight:900;letter-spacing:.22em;text-transform:uppercase;}
+    .support-shell h1{margin:0 0 18px;color:#fff;font-size:clamp(42px,8vw,76px);line-height:.92;letter-spacing:0;}
+    .support-lead{max-width:520px;margin:0;color:rgba(255,247,239,.78);font-size:18px;line-height:1.62;}
+    .support-button{display:inline-flex;justify-content:center;align-items:center;margin-top:30px;border:0;border-radius:999px;background:#b11226;color:#fff!important;padding:18px 30px;font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 20px 54px rgba(177,18,38,.36);}
+    .support-button:hover{background:#d5364a;border:0;transform:translateY(-2px);}
+    .support-note{margin:18px 0 0;color:#e7b15e;font-size:14px;font-weight:800;}
+    .support-back{margin-top:22px;color:rgba(255,247,239,.7);font-size:13px;font-weight:800;text-decoration:underline;border:0;}
+    @media(max-width:560px){.support-page{padding:16px}.support-shell{min-height:calc(100vh - 32px);justify-content:center;padding:30px 20px}.support-shell h1{font-size:44px}.support-lead{font-size:16px}.support-button{width:100%;padding-left:18px;padding-right:18px}}
+  </style>
+</Layout>
