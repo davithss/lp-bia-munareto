@@ -7,42 +7,38 @@ const { brand } = content;
 
 <Layout
   title="Captura Jornada do Autoamor Bia Munareto"
-  description="Preencha nome, e-mail e telefone para receber o direcionamento da Jornada do Autoamor com Bia Munareto."
+  description="Preencha nome, e-mail e telefone antes de acessar a Jornada do Autoamor com Bia Munareto."
   canonicalPath="/cp-jornada"
 >
-  <main class="capture-page">
-    <section class="capture-hero" aria-labelledby="captureTitle">
-      <div class="capture-media">
-        <img src="/images/hero.jpg" alt="Bia Munareto" loading="eager" />
-      </div>
+  <main class="capture-gate" aria-labelledby="captureTitle">
+    <img class="capture-bg" src="/images/hero.jpg" alt="" loading="eager" />
+    <div class="capture-backdrop"></div>
 
-      <div class="capture-content">
-        <a class="capture-logo" href="/" aria-label="Bia Munareto">
-          <img src="/images/logo-bia-white.png" alt={brand.name} />
-        </a>
-        <p class="capture-kicker">Jornada do Autoamor</p>
-        <h1 id="captureTitle">Receba o direcionamento para o seu próximo passo.</h1>
-        <p class="capture-lead">Preencha seus dados para que a equipe da Bia entenda seu momento e te conduza para a melhor entrada na Jornada do Autoamor.</p>
+    <section class="capture-modal" role="dialog" aria-modal="true" aria-labelledby="captureTitle">
+      <a class="capture-logo" href="/" aria-label="Bia Munareto">
+        <img src="/images/logo-bia-white.png" alt={brand.name} />
+      </a>
+      <p class="capture-kicker">Jornada do Autoamor</p>
+      <h1 id="captureTitle">Antes de abrir a página, preencha seus dados.</h1>
+      <p class="capture-lead">Nome, telefone e e-mail ajudam a equipe da Bia a te direcionar pelo canal oficial antes de você acessar a página completa.</p>
 
-        <form class="capture-form" id="captureForm" data-whatsapp={brand.whatsapp}>
-          <label>
-            <span>Nome</span>
-            <input type="text" name="name" autocomplete="name" required />
-          </label>
-          <label>
-            <span>E-mail</span>
-            <input type="email" name="email" autocomplete="email" required />
-          </label>
-          <label>
-            <span>Telefone</span>
-            <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required />
-          </label>
-          <button type="submit">Enviar e acessar a Jornada</button>
-        </form>
+      <form class="capture-form" id="captureForm" data-whatsapp={brand.whatsapp}>
+        <label>
+          <span>Nome</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          <span>Telefone</span>
+          <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required />
+        </label>
+        <label>
+          <span>E-mail</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <button type="submit">Enviar e abrir a página</button>
+      </form>
 
-        <p class="capture-status" id="captureStatus" hidden>Dados preparados. Se o WhatsApp não abrir automaticamente, toque novamente no botão.</p>
-        <a class="capture-link" href="/">Entrar direto na página da Jornada</a>
-      </div>
+      <p class="capture-status" id="captureStatus" hidden>Dados enviados. Abrindo a página da Jornada...</p>
     </section>
   </main>
 
@@ -55,15 +51,15 @@ const { brand } = content;
       const currentForm = event.currentTarget;
       const data = new FormData(currentForm);
       const name = String(data.get('name') || '').trim();
-      const email = String(data.get('email') || '').trim();
       const phone = String(data.get('phone') || '').trim();
+      const email = String(data.get('email') || '').trim();
       const whatsapp = currentForm.dataset.whatsapp;
       const message = [
         'Olá, equipe da Bia. Quero receber o direcionamento da Jornada do Autoamor.',
         '',
         `Nome: ${name}`,
-        `E-mail: ${email}`,
         `Telefone: ${phone}`,
+        `E-mail: ${email}`,
         '',
         'Vim pela página /cp-jornada.'
       ].join('\n');
@@ -71,37 +67,37 @@ const { brand } = content;
       sessionStorage.setItem('biaLeadGateDismissed', 'true');
 
       if (window.dataLayer) {
-        window.dataLayer.push({ event: 'lead_capture_submit', lead_source: 'cp_jornada' });
+        window.dataLayer.push({ event: 'lead_capture_submit', lead_source: 'cp_jornada_popup' });
       }
 
       window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
       if (status) status.hidden = false;
+      window.setTimeout(() => {
+        window.location.href = '/';
+      }, 700);
     });
   </script>
 
   <style>
     :global(body){background:#050302;color:#fff;}
     :global(.sticky-cta){display:none!important;}
-    .capture-page{min-height:100vh;background:#050302;color:#fff;}
-    .capture-hero{min-height:100vh;display:grid;grid-template-columns:minmax(0,.9fr) minmax(360px,.72fr);}
-    .capture-media{position:relative;min-height:100vh;overflow:hidden;background:#1b0808;}
-    .capture-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,3,2,.08),rgba(5,3,2,.55));}
-    .capture-media img{width:100%;height:100%;object-fit:cover;object-position:center top;}
-    .capture-content{display:flex;flex-direction:column;justify-content:center;padding:54px clamp(24px,5vw,72px);background:radial-gradient(circle at 18% 18%,rgba(177,18,38,.32),transparent 32%),linear-gradient(135deg,#050302,#1b0808);border-left:1px solid rgba(231,177,94,.16);}
-    .capture-logo{width:min(190px,58vw);margin-bottom:34px;border:0;}
+    .capture-gate{position:relative;min-height:100vh;display:grid;place-items:center;padding:20px;overflow:hidden;background:#050302;color:#fff;}
+    .capture-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(.92);}
+    .capture-backdrop{position:absolute;inset:0;background:radial-gradient(circle at 50% 22%,rgba(177,18,38,.24),transparent 34%),rgba(5,3,2,.72);backdrop-filter:blur(6px);}
+    .capture-modal{position:relative;width:min(480px,100%);max-height:calc(100vh - 40px);overflow:auto;padding:34px;border:1px solid rgba(231,177,94,.32);border-radius:24px;background:linear-gradient(145deg,rgba(255,250,247,.98),rgba(247,235,230,.96));color:#211615;box-shadow:0 34px 110px rgba(0,0,0,.42);}
+    .capture-logo{display:block;width:min(188px,58vw);margin:0 auto 26px;border:0;filter:invert(1) brightness(.1);}
     .capture-logo img{display:block;width:100%;height:auto;}
-    .capture-kicker{margin:0 0 14px;color:#e7b15e;font-size:10px;font-weight:900;letter-spacing:.22em;text-transform:uppercase;}
-    .capture-content h1{margin:0 0 18px;color:#fff;font-size:clamp(39px,5.8vw,70px);line-height:.92;letter-spacing:0;max-width:660px;}
-    .capture-lead{margin:0 0 28px;max-width:540px;color:rgba(255,247,239,.78);font-size:17px;line-height:1.62;}
-    .capture-form{display:grid;gap:13px;width:min(470px,100%);}
+    .capture-kicker{margin:0 0 11px;color:#b11226;font-size:10px;font-weight:900;letter-spacing:.22em;text-transform:uppercase;text-align:center;}
+    .capture-modal h1{margin:0 0 14px;color:#7f0f1b;font-size:clamp(34px,7.6vw,50px);line-height:.94;letter-spacing:0;text-align:center;}
+    .capture-lead{margin:0 0 24px;color:#6d5954;font-size:15.5px;line-height:1.58;text-align:center;}
+    .capture-form{display:grid;gap:13px;}
     .capture-form label{display:grid;gap:7px;}
-    .capture-form span{color:#e7b15e;font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;}
-    .capture-form input{width:100%;border:1px solid rgba(231,177,94,.24);border-radius:14px;background:rgba(255,247,239,.08);padding:15px 16px;color:#fff;font:inherit;outline:none;}
-    .capture-form input:focus{border-color:#e7b15e;box-shadow:0 0 0 3px rgba(231,177,94,.14);}
-    .capture-form button{margin-top:7px;border:0;border-radius:999px;background:#b11226;color:#fff;padding:17px 22px;font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;cursor:pointer;box-shadow:0 18px 48px rgba(177,18,38,.34);}
+    .capture-form span{font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#7f0f1b;}
+    .capture-form input{width:100%;border:1px solid rgba(33,22,21,.14);border-radius:14px;background:#fff;padding:14px 15px;color:#211615;font:inherit;outline:none;}
+    .capture-form input:focus{border-color:#b11226;box-shadow:0 0 0 3px rgba(177,18,38,.12);}
+    .capture-form button{width:100%;margin-top:6px;border:0;border-radius:999px;background:#b11226;color:#fff;padding:17px 20px;font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;cursor:pointer;box-shadow:0 18px 46px rgba(177,18,38,.25);}
     .capture-form button:hover{background:#d5364a;}
-    .capture-status{width:min(470px,100%);margin:14px 0 0;color:#e7b15e;font-size:13px;line-height:1.45;}
-    .capture-link{width:max-content;max-width:100%;margin-top:18px;color:rgba(255,247,239,.72);font-size:13px;font-weight:800;text-decoration:underline;border:0;}
-    @media(max-width:860px){.capture-hero{grid-template-columns:1fr;}.capture-media{min-height:42vh;}.capture-media:after{background:linear-gradient(180deg,rgba(5,3,2,.02),rgba(5,3,2,.64));}.capture-content{min-height:58vh;border-left:0;border-top:1px solid rgba(231,177,94,.16);padding:34px 22px 44px;}.capture-logo{margin-bottom:24px}.capture-content h1{font-size:42px}.capture-lead{font-size:16px}}
+    .capture-status{margin:14px 0 0;color:#7f0f1b;font-size:13px;font-weight:800;line-height:1.45;text-align:center;}
+    @media(max-width:520px){.capture-gate{padding:12px;align-items:end}.capture-modal{padding:28px 22px 24px;border-radius:22px 22px 0 0}.capture-modal h1{font-size:34px}.capture-lead{font-size:15px}}
   </style>
 </Layout>
