@@ -31,6 +31,30 @@
     {
       "source": "/comunidade-j",
       "destination": "https://biamunareto.naracode.com.br/comunidade-j"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://biamunareto.naracode.com.br/_next/:path*"
+    },
+    {
+      "source": "/prova-social/:path*",
+      "destination": "https://biamunareto.naracode.com.br/prova-social/:path*"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "https://biamunareto.naracode.com.br/favicon.ico"
+    },
+    {
+      "source": "/favicon-32x32.png",
+      "destination": "https://biamunareto.naracode.com.br/favicon-32x32.png"
+    },
+    {
+      "source": "/favicon-192x192.png",
+      "destination": "https://biamunareto.naracode.com.br/favicon-192x192.png"
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "destination": "https://biamunareto.naracode.com.br/apple-touch-icon.png"
     }
   ],
   "redirects": [
