@@ -3,6 +3,36 @@
   "outputDirectory": "dist",
   "framework": "astro",
   "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/comunidade-d",
+      "destination": "https://biamunareto.naracode.com.br/comunidade-d"
+    },
+    {
+      "source": "/comunidade-e",
+      "destination": "https://biamunareto.naracode.com.br/comunidade-e"
+    },
+    {
+      "source": "/comunidade-f",
+      "destination": "https://biamunareto.naracode.com.br/comunidade-f"
+    },
+    {
+      "source": "/comunidade-g",
+      "destination": "https://biamunareto.naracode.com.br/comunidade-g"
+    },
+    {
+      "source": "/comunidade-h",
+      "destination": "https://biamunareto.naracode.com.br/comunidade-h"
+    },
+    {
+      "source": "/comunidade-i",
+      "destination": "https://biamunareto.naracode.com.br/comunidade-i"
+    },
+    {
+      "source": "/comunidade-j",
+      "destination": "https://biamunareto.naracode.com.br/comunidade-j"
+    }
+  ],
   "redirects": [
     {
       "source": "/:path*",
